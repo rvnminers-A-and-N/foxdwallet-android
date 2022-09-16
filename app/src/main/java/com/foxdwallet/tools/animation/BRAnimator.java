@@ -71,7 +71,7 @@ public class BRAnimator {
     public static float t2Size;
     public static boolean supportIsShowing;
 
-    public static void showRvnSignal(Activity activity, String title, String iconDescription, int drawableId, BROnSignalCompletion completion) {
+    public static void showfoxdSignal(Activity activity, String title, String iconDescription, int drawableId, BROnSignalCompletion completion) {
         FragmentSignal fragmentSignal = new FragmentSignal();
         Bundle bundle = new Bundle();
         bundle.putString(FragmentSignal.TITLE, title);
@@ -534,14 +534,14 @@ public class BRAnimator {
             app.getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
     }
 
-    public static void startRvnIfNotStarted(Activity app) {
+    public static void startfoxdIfNotStarted(Activity app) {
         if (!(app instanceof HomeActivity))
-            startRvnActivity(app, false);
+            startfoxdActivity(app, false);
     }
 
-    public static void startRvnActivity(Activity from, boolean auth) {
+    public static void startfoxdActivity(Activity from, boolean auth) {
         if (from == null) return;
-        Log.e(TAG, "startRvnActivity: " + from.getClass().getName());
+        Log.e(TAG, "startfoxdActivity: " + from.getClass().getName());
         Class toStart = auth ? LoginActivity.class : HomeActivity.class;
         Intent intent = new Intent(from, toStart);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);

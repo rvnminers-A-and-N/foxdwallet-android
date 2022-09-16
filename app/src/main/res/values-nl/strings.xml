@@ -4,7 +4,7 @@
     <!-- About screen blog label -->
   <string name="About.blog">Blog</string>
   <!-- About screen footer -->
-  <string name="About.footer">Gemaakt door het globale RVN team. Versie %1$s</string>
+  <string name="About.footer">Gemaakt door het globale foxd team. Versie %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Privacyverklaring</string>
   <!-- About screen reddit label -->
@@ -26,7 +26,7 @@
   <!-- Keystore error -->
   <string name="Alert.keystore.generic.android">Er is een probleem het uw Android OS keystore, neemt u alstublieft contact op met support@ravencoin.org</string>
   <!-- KeyStore error, keys are invalidated -->
-  <string name="Alert.keystore.invalidated.android">Uw door RVN geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.</string>
+  <string name="Alert.keystore.invalidated.android">Uw door foxd geëncrypteerde data is onlangs ongeldig gemaakt omdat uw Android schermvergrendeling is uitgeschakeld.</string>
   <!-- Keystore error title -->
   <string name="Alert.keystore.title.android">Android KeyStore fout</string>
   <!-- No internet alert message -->
@@ -126,7 +126,7 @@
     <!-- Importing wallet progress view label -->
     <!-- Caption for graphics -->
     <!-- Import wallet intro screen message -->
-  <string name="Import.message">Door een portemonnee te importeren plaats je het geld van je andere portemonnee naar je RVN portemonnee via een enkele transactie.</string>
+  <string name="Import.message">Door een portemonnee te importeren plaats je het geld van je andere portemonnee naar je foxd portemonnee via een enkele transactie.</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">Deze persoonlijke sleutel is beveiligd met een wachtwoord.</string>
   <!-- password textfield placeholder -->
@@ -187,7 +187,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">Connectiestatus van de node</string>
   <!-- Node Selector view title -->
-  <string name="RvnNodeSelector.title">Bitcoin-nodes</string>
+  <string name="foxdNodeSelector.title">Bitcoin-nodes</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">Slecht Betalingsverzoek</string>
   <!-- Error opening payment protocol file message -->
@@ -217,7 +217,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">Transactie Geweigerd</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">Help ons bij het verbeteren van RVN door je anonieme data met ons te delen</string>
+  <string name="Prompts.ShareData.body">Help ons bij het verbeteren van foxd door je anonieme data met ons te delen</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">Deel Anonieme Data</string>
   <!-- Enable touch ID prompt body -->
@@ -229,7 +229,7 @@
   <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
   <string name="Prompts.TouchId.usePin.android">PIN</string>
   <!-- Upgrade PIN prompt body. -->
-  <string name="Prompts.UpgradePin.body">RVN is geüpgrade naar een 6-cijferige PIN. Tik hier om te upgraden.</string>
+  <string name="Prompts.UpgradePin.body">foxd is geüpgrade naar een 6-cijferige PIN. Tik hier om te upgraden.</string>
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">PIN Upgraden</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
@@ -263,7 +263,7 @@
   <!-- Enter paper key instruction -->
   <string name="RecoverWallet.instruction">Papieren Sleutel Invoeren</string>
   <!-- Recover wallet intro -->
-  <string name="RecoverWallet.intro">Herstel je RVN met je papieren sleutel.</string>
+  <string name="RecoverWallet.intro">Herstel je foxd met je papieren sleutel.</string>
   <!-- Invalid paper key message -->
   <string name="RecoverWallet.invalid">De papieren sleutel die je hebt ingevoerd is ongeldig. Check ieder woord a.u.b. en probeer het opnieuw.</string>
   <!-- Previous button accessibility label -->
@@ -285,7 +285,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45 minuten</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">Als een transactie als voltooid staat op het Bitcoin netwerk maar niet in je RVN.</string>
+  <string name="ReScan.body2">Als een transactie als voltooid staat op het Bitcoin netwerk maar niet in je foxd.</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">Je kreeg herhaaldelijk een foutmelding die zei dat je transactie werd afgewezen.</string>
   <!-- Start Sync button label -->
@@ -313,13 +313,13 @@
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">Papieren Sleutel</string>
   <!-- PIN button description -->
-  <string name="SecurityCenter.pinDescription">Beschermt je RVN van ongeautoriseerde gebruikers.</string>
+  <string name="SecurityCenter.pinDescription">Beschermt je foxd van ongeautoriseerde gebruikers.</string>
   <!-- PIN button title -->
   <string name="SecurityCenter.pinTitle">6-cijferige PIN</string>
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">Veiligheidscentrum</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">Ontgrendel je RVN handig en stuur geld tot een bepaalde ingestelde limiet.</string>
+  <string name="SecurityCenter.touchIdDescription">Ontgrendel je foxd handig en stuur geld tot een bepaalde ingestelde limiet.</string>
   <!-- Touch ID button title -->
     <!-- Security center fingerprint authentication button -->
   <string name="SecurityCenter.touchIdTitle.android">Authenticatie met vingerafdruk</string>
@@ -330,7 +330,7 @@
   <!-- Instructions how to allow the camera access for the app -->
   <string name="Send.cameraUnavailabeMessage.android">Sta cameratoegang toe via \"Instellingen\" &gt; \"Apps\" &gt; \"Bread\" &gt; \"Toestemmingen\"</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">RVN heeft geen toegang tot de camera</string>
+  <string name="Send.cameraUnavailabeTitle.android">foxd heeft geen toegang tot de camera</string>
   <!-- Camera not allowed message -->
     <!-- Camera not allowed alert title -->
     <!-- Warning when sending to self. -->
@@ -393,14 +393,14 @@
   <!-- Start or recover another wallet menu label. -->
   <string name="Settings.wipe">Begin of herstel een andere portomonnee</string>
   <!-- Share data view body -->
-  <string name="ShareData.body">Help om RVN te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.</string>
+  <string name="ShareData.body">Help om foxd te verbeteren door je anonieme data met ons te delen. Dit bevat geen financiële informatie. We respecteren je financiële privacy.</string>
   <!-- Share data header -->
   <string name="ShareData.header">Data Delen?</string>
   <!-- Share data switch label. -->
   <string name="ShareData.toggleLabel">Anonieme Data Delen?</string>
   <!-- button label -->
     <!-- Paper key explanation text. -->
-  <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je RVN te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
+  <string name="StartPaperPhrase.body">Je papieren sleutel is de enige manier om je foxd te herstellen als je telefoon verloren, gestolen, kapot of geüpgrade is.\n\nWe zullen je een lijst met woorden laten zie die je op een papiertje moet schrijven en veilig moet bewaren.</string>
   <!-- button label -->
   <string name="StartPaperPhrase.buttonTitle">Schrijf Papieren Sleutel Op</string>
   <!-- Argument is date -->
@@ -422,12 +422,12 @@
   <!-- Fingerprint Is Not Setup -->
   <string name="TouchIdSettings.disabledWarning.title.android">Authenticatie met vingerafdruk niet ingesteld</string>
   <!-- Touch Id screen label -->
-  <string name="TouchIdSettings.label">Gebruik je vingerafdruk om je RVN te ontgrendelen en geld tot een ingestelde limiet te versturen.</string>
+  <string name="TouchIdSettings.label">Gebruik je vingerafdruk om je foxd te ontgrendelen en geld tot een ingestelde limiet te versturen.</string>
   <!-- Link Text (see TouchIdSettings.customizeText) -->
     <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">Bestedingslimiet: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
-    <!-- Enable fingerprint for this wallet called RVN -->
+    <!-- Enable fingerprint for this wallet called foxd -->
   <string name="TouchIdSettings.switchLabel.android">Stel authenticatie met vingerafdruk</string>
   <!-- Touch ID settings view title -->
     <!-- Fingerprint authentication label -->
@@ -496,7 +496,7 @@
   <!-- Update PIN caption text -->
   <string name="UpdatePin.caption">Onthoud deze PIN. Als je deze vergeet, zul je niet in staat zijn om bij je Bitcoins te kunnen.</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je RVN te ontgrendelen en geld te versturen.</string>
+  <string name="UpdatePin.createInstruction">Je PIN zal worden gebruikt om je foxd te ontgrendelen en geld te versturen.</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">PIN Instellen</string>
   <!-- Update PIN title -->
@@ -538,9 +538,9 @@
     <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">Voer de herstelzin van deze portomonnee in om hem te wissen of een anderen te herstellen. Je huidige saldo zal op deze zin blijven.</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">Een andere portemonnee beginnen of herstellen zal u toestaan om nog een RVN portemonnee op dit apparaat te gebruiken.</string>
+  <string name="WipeWallet.startMessage">Een andere portemonnee beginnen of herstellen zal u toestaan om nog een foxd portemonnee op dit apparaat te gebruiken.</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">U zal niet langer uw huidige RVN portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.</string>
+  <string name="WipeWallet.startWarning">U zal niet langer uw huidige foxd portemonnee kunnen bereiken vanaf dit apparaat. Uw saldo zal hetzelfde blijven.</string>
   <!-- Wipe wallet navigation item title. -->
     <!-- Wipe wallet button title -->
   <string name="WipeWallet.wipe">Wissen</string>

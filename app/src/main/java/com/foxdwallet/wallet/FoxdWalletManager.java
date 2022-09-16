@@ -585,7 +585,7 @@ public class FoxdWalletManager extends BRCoreWalletManager implements BaseWallet
             @Override
             public void run() {
                 if (app instanceof Activity)
-                    BRAnimator.showRvnSignal((Activity) app, app.getString(R.string.Alert_error),
+                    BRAnimator.showfoxdSignal((Activity) app, app.getString(R.string.Alert_error),
                             "Error: " + error, R.drawable.ic_error_outline_black_24dp, new BROnSignalCompletion() {
                                 @Override
                                 public void onComplete() {
@@ -605,7 +605,7 @@ public class FoxdWalletManager extends BRCoreWalletManager implements BaseWallet
             @Override
             public void run() {
                 if (app instanceof Activity) {
-                    BRAnimator.showRvnSignal((Activity) app, alertTitle,
+                    BRAnimator.showfoxdSignal((Activity) app, alertTitle,
                             alertText, alertIcon, new BROnSignalCompletion() {
                                 @Override
                                 public void onComplete() {

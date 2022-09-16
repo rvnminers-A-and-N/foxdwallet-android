@@ -111,7 +111,7 @@ public class APIClient {
 //        if (ActivityUTILS.isMainThread()) {
 //            throw new NetworkOnMainThreadException();
 //        }
-//        if (ctx == null) ctx = FoxdApp.getRvnContext();
+//        if (ctx == null) ctx = FoxdApp.getfoxdContext();
 //        if (ctx == null) return null;
 //        try {
 //            String strUtl = BASE_URL + TOKEN;
@@ -510,7 +510,7 @@ public class APIClient {
 //    }
 
 //    public boolean tryExtractTar() {
-//        Context app = FoxdApp.getRvnContext();
+//        Context app = FoxdApp.getfoxdContext();
 //        if (app == null) {
 //            Log.e(TAG, "tryExtractTar: failed to extract, app is null");
 //            return false;

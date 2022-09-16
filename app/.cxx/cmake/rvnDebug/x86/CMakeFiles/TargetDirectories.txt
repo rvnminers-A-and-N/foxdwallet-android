@@ -1,3 +1,3 @@
-C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/rvnDebug/x86/CMakeFiles/core.dir
-C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/rvnDebug/x86/CMakeFiles/edit_cache.dir
-C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/rvnDebug/x86/CMakeFiles/rebuild_cache.dir
+C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/foxdDebug/x86/CMakeFiles/core.dir
+C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/foxdDebug/x86/CMakeFiles/edit_cache.dir
+C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/foxdDebug/x86/CMakeFiles/rebuild_cache.dir

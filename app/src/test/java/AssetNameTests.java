@@ -57,7 +57,7 @@ public class AssetNameTests {
 
     @Test
     public void testRavencoinNotAllowed() {
-        assertThat(AssetsValidation.isAssetNameValid("RVN"), is(false));
+        assertThat(AssetsValidation.isAssetNameValid("foxd"), is(false));
         assertThat(AssetsValidation.isAssetNameValid("RAVEN"), is(false));
         assertThat(AssetsValidation.isAssetNameValid("RAVENCOIN"), is(false));
     }
@@ -66,12 +66,12 @@ public class AssetNameTests {
     public void testRavencoinAllowed() {
         assertThat(AssetsValidation.isAssetNameValid("RAVEN.COIN"), is(true));
         assertThat(AssetsValidation.isAssetNameValid("RAVEN_COIN"), is(true));
-        assertThat(AssetsValidation.isAssetNameValid("RVNSPYDER"), is(true));
-        assertThat(AssetsValidation.isAssetNameValid("SPYDERRVN"), is(true));
+        assertThat(AssetsValidation.isAssetNameValid("foxdSPYDER"), is(true));
+        assertThat(AssetsValidation.isAssetNameValid("SPYDERfoxd"), is(true));
         assertThat(AssetsValidation.isAssetNameValid("RAVENSPYDER"), is(true));
         assertThat(AssetsValidation.isAssetNameValid("SPYDERAVEN"), is(true));
         assertThat(AssetsValidation.isAssetNameValid("BLACK_RAVENS"), is(true));
-        assertThat(AssetsValidation.isAssetNameValid("SERVNOT"), is(true));
+        assertThat(AssetsValidation.isAssetNameValid("SEfoxdOT"), is(true));
     }
 
     @Test

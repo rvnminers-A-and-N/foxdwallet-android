@@ -113,7 +113,7 @@ public class AboutActivity extends BRActivity {
     @Override
     public void onBackPressed() {
         if (ActivityUTILS.isLast(this)) {
-            BRAnimator.startRvnActivity(this, false);
+            BRAnimator.startfoxdActivity(this, false);
         } else {
             super.onBackPressed();
         }

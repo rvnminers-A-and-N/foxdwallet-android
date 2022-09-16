@@ -889,7 +889,7 @@ public class CameraActivity extends BRActivity implements View.OnClickListener, 
 //                        public void run() {
 //                            try {
 //                                Thread.sleep(1000);
-//                                CameraPlugin.handleCameraImageTaken(FoxdApp.getRvnContext(), bytes);
+//                                CameraPlugin.handleCameraImageTaken(FoxdApp.getfoxdContext(), bytes);
 //                            } catch (InterruptedException e) {
 //                                e.printStackTrace();
 //                            }

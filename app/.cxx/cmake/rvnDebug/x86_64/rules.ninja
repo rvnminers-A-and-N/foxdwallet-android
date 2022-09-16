@@ -52,7 +52,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\Users\bill\foxdwallet-android\app -BC:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnDebug\x86_64
+  command = C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\Users\bill\foxdwallet-android\app -BC:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdDebug\x86_64
   description = Re-running CMake...
   generator = 1
 

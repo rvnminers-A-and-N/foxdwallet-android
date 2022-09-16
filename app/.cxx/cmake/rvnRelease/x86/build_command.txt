@@ -9,13 +9,13 @@ arguments :
 -DCMAKE_ANDROID_ARCH_ABI=x86
 -DCMAKE_ANDROID_NDK=C:\Users\bill\AppData\Local\Android\Sdk\ndk\21.0.6113669
 -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\bill\foxdwallet-android\app\build\intermediates\cmake\rvnRelease\obj\x86
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=C:\Users\bill\foxdwallet-android\app\build\intermediates\cmake\foxdRelease\obj\x86
 -DCMAKE_MAKE_PROGRAM=C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
 -DCMAKE_SYSTEM_NAME=Android
 -DCMAKE_SYSTEM_VERSION=24
 -DANDROID_TOOLCHAIN=clang
 -DANDROID_STL=c++_shared
--BC:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnRelease\x86
+-BC:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdRelease\x86
 -GNinja
 jvmArgs : 
 

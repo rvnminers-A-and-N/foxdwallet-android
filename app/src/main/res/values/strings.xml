@@ -4,7 +4,7 @@
     <!-- About screen blog label -->
     <string name="About.blog">Blog</string>
     <!-- About screen footer -->
-    <string name="About.footer">Made by the global RVN team. Version %1$s</string>
+    <string name="About.footer">Made by the global foxd team. Version %1$s</string>
     <!-- Privay Policy button label -->
     <string name="About.privacy">Privacy Policy</string>
     <!-- About screen reddit label -->
@@ -132,7 +132,7 @@
     <!-- Importing wallet progress view label -->
     <!-- Caption for graphics -->
     <!-- Import wallet intro screen message -->
-    <string name="Import.message">Importing a wallet transfers all the money from your other wallet into your RVN Wallet using a single transaction.</string>
+    <string name="Import.message">Importing a wallet transfers all the money from your other wallet into your foxd Wallet using a single transaction.</string>
     <!-- Enter password alert view title -->
     <string name="Import.password">This private key is password protected.</string>
     <!-- password textfield placeholder -->
@@ -203,7 +203,7 @@
     <!-- Node status label -->
     <string name="NodeSelector.statusLabel">Node Connection Status</string>
     <!-- Node Selector view title -->
-    <string name="RvnNodeSelector.title">Ravencoin Nodes</string>
+    <string name="foxdNodeSelector.title">Ravencoin Nodes</string>
     <!-- Raven Node Selector view title -->
     <string name="RavenNodeSelector.title">Ravencoin Nodes</string>
     <!-- Bad Payment request alert title -->
@@ -215,9 +215,9 @@
     <string name="PaymentProtocol.Errors.requestExpired">request expired</string>
     <!-- Payment too small alert title -->
     <!-- Amount too small error message -->
-    <string name="PaymentProtocol.Errors.smallPayment">RVN payments can\'t be less than %1$s.</string>
+    <string name="PaymentProtocol.Errors.smallPayment">foxd payments can\'t be less than %1$s.</string>
     <!-- Output too small error message. -->
-    <string name="PaymentProtocol.Errors.smallTransaction">RVN transaction outputs can\'t be less than %1$s.</string>
+    <string name="PaymentProtocol.Errors.smallTransaction">foxd transaction outputs can\'t be less than %1$s.</string>
     <!-- Unsupported signature type payment protocol error message -->
     <!-- Untrusted certificate payment protocol error message -->
     <string name="PaymentProtocol.Errors.untrustedCertificate">untrusted certificate</string>
@@ -386,7 +386,7 @@
     <!-- Send money to label -->
     <string name="Send.toLabel">To</string>
     <!-- Adress already used alert message - first part -->
-    <string name="Sendrvn.UsedAddress.firstLine">Raven addresses are intended for single use only.</string>
+    <string name="Sendfoxd.UsedAddress.firstLine">Raven addresses are intended for single use only.</string>
 
     <!-- Adress already used alert message - second part -->
     <string name="Send.UsedAddress.secondLIne">Re-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn\'t directly control the address.</string>
@@ -527,7 +527,7 @@
     <!-- Wallet unlocked message -->
     <string name="UnlockScreen.unlocked">Wallet Unlocked</string>
     <!-- Update PIN caption text -->
-    <string name="UpdatePin.caption">Remember this PIN. If you forget it, you won\'t be able to access your rvn.</string>
+    <string name="UpdatePin.caption">Remember this PIN. If you forget it, you won\'t be able to access your foxd.</string>
     <!-- PIN creation info. -->
     <string name="UpdatePin.createInstruction">Your PIN will be used to unlock your Ravencoin Wallet and send money.</string>
     <!-- Update PIN title -->
@@ -654,8 +654,8 @@
     <string name="tutorial_third_screen_title">BTC/Fiat &amp; Gold/Silver</string>
     <string name="tutorial_third_screen_text">Choose your preferred display currency: Settings/Display Currency.</string>
     <string name="tutorial_fourth_screen_title">Wallet generates new key pair for every transaction</string>
-    <string name="tutorial_fourth_screen_text">Public address is changed with every transaction, RVN wallet still manages all keys for you, you can re-use old addresses but this is against best practices</string>
-    <string name="tutorial_fifth_screen_title">RVN Wallet doesn\'t store your money</string>
+    <string name="tutorial_fourth_screen_text">Public address is changed with every transaction, foxd wallet still manages all keys for you, you can re-use old addresses but this is against best practices</string>
+    <string name="tutorial_fifth_screen_title">foxd Wallet doesn\'t store your money</string>
     <string name="tutorial_fifth_screen_text">Your money is on the network, the wallet contains keys … a keychain.</string>
     <string name="skip">Skip</string>
     <string name="next">Next</string>
@@ -668,7 +668,7 @@
     <string name="wipe">Wipe</string>
 
     <!-- Chart -->
-    <string name="chart_title">RVN to BTC ratio (Bittrex)</string>
+    <string name="chart_title">foxd to BTC ratio (Bittrex)</string>
     <string name="Send.generateAddressLabel">Generate Address</string>
     <string name="used_address">Used Addresses</string>
     <string name="reset_title">Reset</string>

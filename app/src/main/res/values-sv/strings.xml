@@ -4,7 +4,7 @@
     <!-- About screen blog label -->
   <string name="About.blog">Blogg</string>
   <!-- About screen footer -->
-  <string name="About.footer">Skapad av det lokala teamet för RVN. Version %1$s</string>
+  <string name="About.footer">Skapad av det lokala teamet för foxd. Version %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">Sekretesspolicy</string>
   <!-- About screen reddit label -->
@@ -26,7 +26,7 @@
   <!-- Keystore error -->
   <string name="Alert.keystore.generic.android">Det har uppstått ett problem med KeyStore till Android OS. Kontakta support@ravencoin.org</string>
   <!-- KeyStore error, keys are invalidated -->
-  <string name="Alert.keystore.invalidated.android">Dina krypterade RVN-uppgifter har nyligen ogiltigförklarats på grund av att Androids skärmlås inaktiverades.</string>
+  <string name="Alert.keystore.invalidated.android">Dina krypterade foxd-uppgifter har nyligen ogiltigförklarats på grund av att Androids skärmlås inaktiverades.</string>
   <!-- Keystore error title -->
   <string name="Alert.keystore.title.android">KeyStore-fel för Android</string>
   <!-- No internet alert message -->
@@ -102,7 +102,7 @@
   <!-- Email unavailable alert title -->
     <!-- Email unavailable alert title -->
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-  <string name="ErrorMessages.loopingLockScreen.android">RVN kan inte verifieras på grund av en bugg i din version av Android. [Klicka här för mer information.]</string>
+  <string name="ErrorMessages.loopingLockScreen.android">foxd kan inte verifieras på grund av en bugg i din version av Android. [Klicka här för mer information.]</string>
   <!-- Messaging unavailable alert title -->
     <!-- Messaging unavailable alert title -->
     <!-- Fingerprint was not recognized by the scanner, please try scanning again -->
@@ -136,7 +136,7 @@
     <!-- Importing wallet progress view label -->
     <!-- Caption for graphics -->
     <!-- Import wallet intro screen message -->
-  <string name="Import.message">Genom att importera en plånbok överförs alla pengar från din andra plånbok till RVN genom en enda transaktion.</string>
+  <string name="Import.message">Genom att importera en plånbok överförs alla pengar från din andra plånbok till foxd genom en enda transaktion.</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">Denna privata nyckel är lösenordsskyddad.</string>
   <!-- password textfield placeholder -->
@@ -197,7 +197,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">Nodens anslutningsstatus</string>
   <!-- Node Selector view title -->
-  <string name="RvnNodeSelector.title">Bitcoin-noder</string>
+  <string name="foxdNodeSelector.title">Bitcoin-noder</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">Felaktig utbetalningsbegäran</string>
   <!-- Error opening payment protocol file message -->
@@ -227,7 +227,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">Transaktionen avslogs</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">Hjälp till att förbättra RVN genom att dela dina anonyma data med oss</string>
+  <string name="Prompts.ShareData.body">Hjälp till att förbättra foxd genom att dela dina anonyma data med oss</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">Dela anonyma data</string>
   <!-- Enable touch ID prompt body -->
@@ -239,11 +239,11 @@
   <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
   <string name="Prompts.TouchId.usePin.android">PIN-kod</string>
   <!-- Upgrade PIN prompt body. -->
-  <string name="Prompts.UpgradePin.body">RVN har uppgraderat till att använda 6-siffrig PIN-kod. Klicka här för att uppgradera.</string>
+  <string name="Prompts.UpgradePin.body">foxd har uppgraderat till att använda 6-siffrig PIN-kod. Klicka här för att uppgradera.</string>
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">Uppgradera PIN-kod</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-  <string name="PushNotifications.body">Slå på aviseringar för att få särskilda meddelanden från RVN i framtiden.</string>
+  <string name="PushNotifications.body">Slå på aviseringar för att få särskilda meddelanden från foxd i framtiden.</string>
   <!-- Push notifications toggle switch label -->
   <string name="PushNotifications.label">Push-meddelanden</string>
   <!-- Push notifications are off label -->
@@ -271,7 +271,7 @@
   <!-- Enter paper key instruction -->
   <string name="RecoverWallet.instruction">Ange ordnyckel</string>
   <!-- Recover wallet intro -->
-  <string name="RecoverWallet.intro">Återupprätta RVN med din ordnyckel.</string>
+  <string name="RecoverWallet.intro">Återupprätta foxd med din ordnyckel.</string>
   <!-- Invalid paper key message -->
   <string name="RecoverWallet.invalid">Den ordnyckel du angav är ogiltig. Dubbelkolla varje ord och försök igen.</string>
   <!-- Previous button accessibility label -->
@@ -293,7 +293,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45 minuter</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">Om en transaktion visar sig som klar i bitcoins nätverk men inte i RVN.</string>
+  <string name="ReScan.body2">Om en transaktion visar sig som klar i bitcoins nätverk men inte i foxd.</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">Du får gång på gång ett meddelande som säger att din transaktion avvisades.</string>
   <!-- Start Sync button label -->
@@ -321,13 +321,13 @@
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">Ordnyckel</string>
   <!-- PIN button description -->
-  <string name="SecurityCenter.pinDescription">Skyddar ditt RVN från obehöriga användare.</string>
+  <string name="SecurityCenter.pinDescription">Skyddar ditt foxd från obehöriga användare.</string>
   <!-- PIN button title -->
   <string name="SecurityCenter.pinTitle">6-siffrig PIN-kod</string>
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">Säkerhetscenter</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">Lås enkelt upp ditt RVN och skicka pengar upp till en inställd gräns.</string>
+  <string name="SecurityCenter.touchIdDescription">Lås enkelt upp ditt foxd och skicka pengar upp till en inställd gräns.</string>
   <!-- Touch ID button title -->
     <!-- Security center fingerprint authentication button -->
   <string name="SecurityCenter.touchIdTitle.android">Fingeravtrycksautentisering</string>
@@ -336,9 +336,9 @@
   <!-- Balance: $4.00 -->
   <string name="Send.balance">Saldo: %1$s</string>
   <!-- Instructions how to allow the camera access for the app -->
-  <string name="Send.cameraUnavailabeMessage.android">Tillåt kameraåtkomst under Inställningar &gt; Appar &gt; RVN &gt; Behörigheter</string>
+  <string name="Send.cameraUnavailabeMessage.android">Tillåt kameraåtkomst under Inställningar &gt; Appar &gt; foxd &gt; Behörigheter</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">RVN har inte åtkomst till kameran</string>
+  <string name="Send.cameraUnavailabeTitle.android">foxd har inte åtkomst till kameran</string>
   <!-- Camera not allowed message -->
     <!-- Camera not allowed alert title -->
     <!-- Warning when sending to self. -->
@@ -401,14 +401,14 @@
   <!-- Start or recover another wallet menu label. -->
   <string name="Settings.wipe">Starta/Återställ en annan plånbok</string>
   <!-- Share data view body -->
-  <string name="ShareData.body">Hjälp till att förbättra RVN genom att dela dina anonyma uppgifter med oss. Detta inbegriper inga ekonomiska uppgifter. Vi respekterar din ekonomiska sekretess.</string>
+  <string name="ShareData.body">Hjälp till att förbättra foxd genom att dela dina anonyma uppgifter med oss. Detta inbegriper inga ekonomiska uppgifter. Vi respekterar din ekonomiska sekretess.</string>
   <!-- Share data header -->
   <string name="ShareData.header">Dela uppgifter?</string>
   <!-- Share data switch label. -->
   <string name="ShareData.toggleLabel">Dela anonyma uppgifter?</string>
   <!-- button label -->
     <!-- Paper key explanation text. -->
-  <string name="StartPaperPhrase.body">Din ordnyckel  är enda sättet att återupprätta RVN om du förlorat din telefon, blivit bestulen på den eller har uppgraderat den.\n\nVi visar dig en lista över ord som du kan skriva ner på ett papper och gömma undan.</string>
+  <string name="StartPaperPhrase.body">Din ordnyckel  är enda sättet att återupprätta foxd om du förlorat din telefon, blivit bestulen på den eller har uppgraderat den.\n\nVi visar dig en lista över ord som du kan skriva ner på ett papper och gömma undan.</string>
   <!-- button label -->
   <string name="StartPaperPhrase.buttonTitle">Skriv ner ordnyckel</string>
   <!-- Argument is date -->
@@ -430,12 +430,12 @@
   <!-- Fingerprint Is Not Setup -->
   <string name="TouchIdSettings.disabledWarning.title.android">Fingeravtrycksautentisering har inte aktiverats</string>
   <!-- Touch Id screen label -->
-  <string name="TouchIdSettings.label">Använd ditt fingeravtryck för att låsa upp RVN och skicka pengar upp till en inställd gräns.</string>
+  <string name="TouchIdSettings.label">Använd ditt fingeravtryck för att låsa upp foxd och skicka pengar upp till en inställd gräns.</string>
   <!-- Link Text (see TouchIdSettings.customizeText) -->
     <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">Utnyttjandegräns: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
-    <!-- Enable fingerprint for this wallet called RVN -->
+    <!-- Enable fingerprint for this wallet called foxd -->
   <string name="TouchIdSettings.switchLabel.android">Aktivera fingeravtrycksautentisering</string>
   <!-- Touch ID settings view title -->
     <!-- Fingerprint authentication label -->
@@ -504,7 +504,7 @@
   <!-- Update PIN caption text -->
   <string name="UpdatePin.caption">Kom ihåg PIN-koden. Om du glömmer den, kommer du inte åt dina bitcoin.</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">Din PIN-kod används för att låsa upp ditt RVN och skicka pengar</string>
+  <string name="UpdatePin.createInstruction">Din PIN-kod används för att låsa upp ditt foxd och skicka pengar</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">Ställ in PIN-kod</string>
   <!-- Update PIN title -->

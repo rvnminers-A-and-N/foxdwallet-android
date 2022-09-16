@@ -88,7 +88,7 @@ public class CurrencySettingsActivity extends BRActivity {
                                         BRSharedPrefs.putStartHeight(CurrencySettingsActivity.this, BRSharedPrefs.getCurrentWalletIso(CurrencySettingsActivity.this), 0);
                                         BRSharedPrefs.putAllowSpend(CurrencySettingsActivity.this, BRSharedPrefs.getCurrentWalletIso(CurrencySettingsActivity.this), false);
                                         WalletsMaster.getInstance(CurrencySettingsActivity.this).getCurrentWallet(CurrencySettingsActivity.this).rescan(app);
-                                        BRAnimator.startRvnActivity(CurrencySettingsActivity.this, false);
+                                        BRAnimator.startfoxdActivity(CurrencySettingsActivity.this, false);
 
                                     }
                                 });

@@ -1,2 +1,2 @@
-ninja: Entering directory `C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnTestnetDebug\x86'
+ninja: Entering directory `C:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdTestnetDebug\x86'
 ninja: no work to do.

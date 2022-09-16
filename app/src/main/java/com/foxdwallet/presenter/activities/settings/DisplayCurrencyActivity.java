@@ -103,7 +103,7 @@ public class DisplayCurrencyActivity extends BRActivity {
             }
         });
 
-        int unit = BRSharedPrefs.getCryptoDenomination(this, "RVN"); // any iso, using one for all for now
+        int unit = BRSharedPrefs.getCryptoDenomination(this, "foxd"); // any iso, using one for all for now
         if (unit == BRConstants.CURRENT_UNIT_UFOXD) {
             setButton(0);
         }

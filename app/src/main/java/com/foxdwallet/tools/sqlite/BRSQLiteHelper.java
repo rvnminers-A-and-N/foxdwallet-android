@@ -60,7 +60,7 @@ public class BRSQLiteHelper extends SQLiteOpenHelper {
     private static final String MB_DATABASE_CREATE = "create table if not exists " + MB_TABLE_NAME + " (" +
             MB_COLUMN_ID + " integer primary key autoincrement, " +
             MB_BUFF + " blob, " +
-            MB_ISO + " text DEFAULT 'RVN' , " +
+            MB_ISO + " text DEFAULT 'foxd' , " +
             MB_HEIGHT + " integer);";
 
     /**
@@ -80,7 +80,7 @@ public class BRSQLiteHelper extends SQLiteOpenHelper {
             TX_BUFF + " blob, " +
             TX_BLOCK_HEIGHT + " integer, " +
             TX_TIME_STAMP + " integer, " +
-            TX_ISO + " text DEFAULT 'RVN' );";
+            TX_ISO + " text DEFAULT 'foxd' );";
 
     /**
      * Peer table
@@ -99,7 +99,7 @@ public class BRSQLiteHelper extends SQLiteOpenHelper {
             PEER_ADDRESS + " blob," +
             PEER_PORT + " blob," +
             PEER_TIMESTAMP + " blob," +
-            PEER_ISO + "  text default 'RVN');";
+            PEER_ISO + "  text default 'foxd');";
     /**
      * Currency table
      */
@@ -109,13 +109,13 @@ public class BRSQLiteHelper extends SQLiteOpenHelper {
     public static final String CURRENCY_CODE = "code";
     public static final String CURRENCY_NAME = "name";
     public static final String CURRENCY_RATE = "rate";
-    public static final String CURRENCY_ISO = "iso";//iso for the currency of exchange (BTC, RVN)
+    public static final String CURRENCY_ISO = "iso";//iso for the currency of exchange (BTC, foxd)
 
     private static final String CURRENCY_DATABASE_CREATE = "create table if not exists " + CURRENCY_TABLE_NAME + " (" +
             CURRENCY_CODE + " text," +
             CURRENCY_NAME + " text," +
             CURRENCY_RATE + " integer," +
-            CURRENCY_ISO + " text DEFAULT 'RVN', " +
+            CURRENCY_ISO + " text DEFAULT 'foxd', " +
             "PRIMARY KEY (" + CURRENCY_CODE + ", " + CURRENCY_ISO + ")" +
             ");";
 

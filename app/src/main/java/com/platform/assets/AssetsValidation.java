@@ -25,7 +25,7 @@ public class AssetsValidation {
     private final static String CHANNEL_INDICATOR = "^[^~]~[^~]$";
     private final static String OWNER_INDICATOR = "^[^!]+!$";
 
-    private final static String RAVEN_NAMES = "^RVN|^RAVEN|^RAVENCOIN|^RAVENC0IN|^RAVENCO1N|^RAVENC01N";
+    private final static String RAVEN_NAMES = "^foxd|^RAVEN|^RAVENCOIN|^RAVENC0IN|^RAVENCO1N|^RAVENC01N";
 
     private static boolean isRootNameValid(final String name) {
         return name.matches(ROOT_NAME_CHARACTERS) &&

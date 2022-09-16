@@ -123,8 +123,8 @@ public class BaseAddressValidation extends Fragment {
                                 String walletIso = wm.getIso(getActivity());
                                 String firstLine = "";
 
-                                if (walletIso.equalsIgnoreCase("RVN")) {
-                                    firstLine = getString(R.string.Sendrvn_UsedAddress_firstLine);
+                                if (walletIso.equalsIgnoreCase("foxd")) {
+                                    firstLine = getString(R.string.Sendfoxd_UsedAddress_firstLine);
                                 } /*else if (walletIso.equalsIgnoreCase("BCH")) {
                                             firstLine = getString(R.string.Sendbch_UsedAddress_firstLine);
                                         }*/

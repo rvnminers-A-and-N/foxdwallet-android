@@ -201,7 +201,7 @@ public class FragmentFingerprint extends Fragment
 
         if (completion != null) completion.onComplete();
         BRAnimator.killAllFragments(app);
-        BRAnimator.startRvnIfNotStarted(app);
+        BRAnimator.startfoxdIfNotStarted(app);
 
         closeMe();
 

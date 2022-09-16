@@ -115,7 +115,7 @@ public class BREventManager implements FoxdApp.OnAppBackgrounded {
 
 //    private void pushToServer() {
 ////        Log.d(TAG, "pushToServer");
-//        Context app = FoxdApp.getRvnContext();
+//        Context app = FoxdApp.getfoxdContext();
 //        if (app != null) {
 //            List<JSONArray> arrs = getEventsFromDisk(app);
 //            int fails = 0;

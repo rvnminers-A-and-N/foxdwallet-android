@@ -47,9 +47,9 @@ public class BRSharedPrefs {
     public static List<OnIsoChangedListener> isoChangedListeners = new ArrayList<>();
     public static final String PREFS_NAME = "MyPrefsFile";
     private static final String CURRENT_WALLET_CURRENCY_CODE = "currentWalletIso";
-    private static final String LAST_RESCAN_MODE_USED = "lastRescanModeUsed_RVN";
-    private static final String LAST_SEND_TRANSACTION_BLOCK_HEIGHT = "lastSendTransactionBlockheight_RVN";
-    private static final String RESCAN_TIME = "rescanTime_RVN";
+    private static final String LAST_RESCAN_MODE_USED = "lastRescanModeUsed_foxd";
+    private static final String LAST_SEND_TRANSACTION_BLOCK_HEIGHT = "lastSendTransactionBlockheight_foxd";
+    private static final String RESCAN_TIME = "rescanTime_foxd";
 
     public interface OnIsoChangedListener {
         void onIsoChanged(String iso);
@@ -370,8 +370,8 @@ public class BRSharedPrefs {
     public static String getCurrentWalletIso(Context activity) {
 //        Log.d(TAG, "getCurrentWalletIso() Activity -> " + activity.getClass().getSimpleName());
         SharedPreferences prefs = activity.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
-//        Log.d(TAG, "Getting current wallet ISO -> " + prefs.getString("currentWalletIso", "RVN"));
-        return prefs.getString(CURRENT_WALLET_CURRENCY_CODE, "RVN");
+//        Log.d(TAG, "Getting current wallet ISO -> " + prefs.getString("currentWalletIso", "foxd"));
+        return prefs.getString(CURRENT_WALLET_CURRENCY_CODE, "foxd");
     }
 
     public static void putCurrentWalletIso(Context activity, String iso) {

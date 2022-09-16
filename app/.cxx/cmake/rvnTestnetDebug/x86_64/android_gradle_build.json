@@ -1,6 +1,6 @@
 {
   "stringTable": {
-    "0": "C:/Users/bill/foxdwallet-android/app/.cxx/cmake/rvnTestnetDebug/x86_64",
+    "0": "C:/Users/bill/foxdwallet-android/app/.cxx/cmake/foxdTestnetDebug/x86_64",
     "1": "--target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/bill/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/bill/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcore_EXPORTS -I../../../../src/main/jni -I../../../../src/main/jni/core -I../../../../src/main/jni/core/secp256k1/include -I../../../../src/main/jni/core/secp256k1/src -I../../../../src/main/jni/core/secp256k1 -I../../../../src/main/jni/core/crypto/ethash -I/System/Library/Frameworks/JavaVM.framework/Headers -I../../../../src/main/secp/secp256k1/include -I../../../../src/main/secp/secp256k1/src -I../../../../src/main/secp/secp256k1 -I../../../../src/main/secp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -DTESTNET=1 -O0 -fno-limit-debug-info -fPIC",
     "2": "--target=x86_64-none-linux-android24 --gcc-toolchain=C:/Users/bill/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/bill/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcore_EXPORTS -I../../../../src/main/jni -I../../../../src/main/jni/core -I../../../../src/main/jni/core/secp256k1/include -I../../../../src/main/jni/core/secp256k1/src -I../../../../src/main/jni/core/secp256k1 -I../../../../src/main/jni/core/crypto/ethash -I/System/Library/Frameworks/JavaVM.framework/Headers -I../../../../src/main/secp/secp256k1/include -I../../../../src/main/secp/secp256k1/src -I../../../../src/main/secp/secp256k1 -I../../../../src/main/secp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC -std=gnu++14"
   },
@@ -10,12 +10,12 @@
     "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake"
   ],
   "cleanCommands": [
-    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86_64\" clean"
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86_64\" clean"
   ],
-  "buildTargetsCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "buildTargetsCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
   "libraries": {
     "core-Debug-x86_64": {
-      "buildCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86_64\" core",
+      "buildCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86_64\" core",
       "buildType": "debug",
       "toolchain": "2354756352",
       "abi": "x86_64",
@@ -602,7 +602,7 @@
           "workingDirectoryOrdinal": 0
         }
       ],
-      "output": "C:\\Users\\bill\\foxdwallet-android\\app\\build\\intermediates\\cmake\\rvnTestnetDebug\\obj\\x86_64\\libcore.so"
+      "output": "C:\\Users\\bill\\foxdwallet-android\\app\\build\\intermediates\\cmake\\foxdTestnetDebug\\obj\\x86_64\\libcore.so"
     }
   },
   "toolchains": {

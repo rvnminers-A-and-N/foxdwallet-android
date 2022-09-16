@@ -87,7 +87,7 @@ extern "C" {
     void BRTxOutputSetAddress(BRTxOutput *output, const char *address);
     void BRTxOutputSetScript(BRTxOutput *output, const uint8_t *script, size_t scriptLen);
     
-    // RVN ASSETS
+    // foxd ASSETS
     typedef uint64_t Amount;
     
     typedef enum {
@@ -118,7 +118,7 @@ extern "C" {
         uint8_t hasIPFS;     // 1 Byte
         char IPFSHash[46]; // MAX 46 Bytes
     } BRAsset;
-    // RVN ASSETS END
+    // foxd ASSETS END
     
     typedef struct {
         UInt256 txHash;

@@ -1,7 +1,7 @@
 Executable : C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
 arguments : 
 -C
-C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnDebug\arm64-v8a
+C:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdDebug\arm64-v8a
 core
 jvmArgs : 
 

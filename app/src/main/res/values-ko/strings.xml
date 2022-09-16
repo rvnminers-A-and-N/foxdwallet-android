@@ -4,7 +4,7 @@
     <!-- About screen blog label -->
   <string name="About.blog">블로그</string>
   <!-- About screen footer -->
-  <string name="About.footer">글로벌 RVN 팀 제작. 버전 %1$s</string>
+  <string name="About.footer">글로벌 foxd 팀 제작. 버전 %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">개인정보 보호정책</string>
   <!-- About screen reddit label -->
@@ -92,7 +92,7 @@
   <!-- Email unavailable alert title -->
     <!-- Email unavailable alert title -->
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-  <string name="ErrorMessages.loopingLockScreen.android">현재 이용 중인 안드로이드 버전의 버그로 인해 RVN가 인증될 수 없습니다. [Please tap here for more information.]</string>
+  <string name="ErrorMessages.loopingLockScreen.android">현재 이용 중인 안드로이드 버전의 버그로 인해 foxd가 인증될 수 없습니다. [Please tap here for more information.]</string>
   <!-- Messaging unavailable alert title -->
     <!-- Messaging unavailable alert title -->
     <!-- Fingerprint was not recognized by the scanner, please try scanning again -->
@@ -126,7 +126,7 @@
     <!-- Importing wallet progress view label -->
     <!-- Caption for graphics -->
     <!-- Import wallet intro screen message -->
-  <string name="Import.message">지갑 불러오기는 단일 거래를 사용하여 귀하의 다른 지갑으로부터 귀하의 RVN 지갑으로 모든 돈을 송금합니다.</string>
+  <string name="Import.message">지갑 불러오기는 단일 거래를 사용하여 귀하의 다른 지갑으로부터 귀하의 foxd 지갑으로 모든 돈을 송금합니다.</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">이 개인 열쇠는 비밀번호로 보호됩니다.</string>
   <!-- password textfield placeholder -->
@@ -187,7 +187,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">노드 연결 상태</string>
   <!-- Node Selector view title -->
-  <string name="RvnNodeSelector.title">비트코인 노드</string>
+  <string name="foxdNodeSelector.title">비트코인 노드</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">틀린 결제 요청</string>
   <!-- Error opening payment protocol file message -->
@@ -217,7 +217,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">거래 거절됨</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">RVN가 발전할 수 있도록 익명 데이터를 공유해주십시오</string>
+  <string name="Prompts.ShareData.body">foxd가 발전할 수 있도록 익명 데이터를 공유해주십시오</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">익명 데이터 공유</string>
   <!-- Enable touch ID prompt body -->
@@ -326,9 +326,9 @@
   <!-- Balance: $4.00 -->
   <string name="Send.balance">잔액: %1$s</string>
   <!-- Instructions how to allow the camera access for the app -->
-  <string name="Send.cameraUnavailabeMessage.android">\"설정\" &gt; \"앱\" &gt; \"RVN\" &gt; \"허용\"에서 카메라 접속을 허용해 주세요</string>
+  <string name="Send.cameraUnavailabeMessage.android">\"설정\" &gt; \"앱\" &gt; \"foxd\" &gt; \"허용\"에서 카메라 접속을 허용해 주세요</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">RVN의 카메라 접속이 허용되지 않았습니다</string>
+  <string name="Send.cameraUnavailabeTitle.android">foxd의 카메라 접속이 허용되지 않았습니다</string>
   <!-- Camera not allowed message -->
     <!-- Camera not allowed alert title -->
     <!-- Warning when sending to self. -->
@@ -425,7 +425,7 @@
     <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">지불 한도: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
-    <!-- Enable fingerprint for this wallet called RVN -->
+    <!-- Enable fingerprint for this wallet called foxd -->
   <string name="TouchIdSettings.switchLabel.android">지문 본인확인 켜기</string>
   <!-- Touch ID settings view title -->
     <!-- Fingerprint authentication label -->
@@ -494,7 +494,7 @@
   <!-- Update PIN caption text -->
   <string name="UpdatePin.caption">이 PIN 코드를 기억하세요. PIN 코드를 잊어버리면 자신의 비트코인을 사용할 수 없게 됩니다.</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">귀하의 PIN 코드는 RVN의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.</string>
+  <string name="UpdatePin.createInstruction">귀하의 PIN 코드는 foxd의 잠금을 해제하고 돈을 송금하는 데 사용됩니다.</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">PIN 설정</string>
   <!-- Update PIN title -->
@@ -536,9 +536,9 @@
     <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">월렛을 초기화하고 다른 월렛을 시작하거나 복원하려면 이 월렛의 초기화 문구를 입력해 주세요. 현재 잔액은 이 문구에 그대로 보관됩니다.</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">다른 지갑을 만들거나 복구하면 이 장치에서 다른 RVN 지갑을 이용하고 관리할 수 있습니다.</string>
+  <string name="WipeWallet.startMessage">다른 지갑을 만들거나 복구하면 이 장치에서 다른 foxd 지갑을 이용하고 관리할 수 있습니다.</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">이장치에서 현재 RVN 지갑을 더는 이용할 수 없게 됩니다. 잔고는 남아 있게 됩니다.</string>
+  <string name="WipeWallet.startWarning">이장치에서 현재 foxd 지갑을 더는 이용할 수 없게 됩니다. 잔고는 남아 있게 됩니다.</string>
   <!-- Wipe wallet navigation item title. -->
     <!-- Wipe wallet button title -->
   <string name="WipeWallet.wipe">초기화</string>

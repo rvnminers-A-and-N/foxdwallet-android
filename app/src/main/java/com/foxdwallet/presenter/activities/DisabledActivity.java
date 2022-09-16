@@ -76,7 +76,7 @@ public class DisabledActivity extends BRActivity {
         if (AuthManager.getInstance().isWalletDisabled(DisabledActivity.this)) {
             SpringAnimator.failShakeAnimation(DisabledActivity.this, disabled);
         } else {
-            BRAnimator.startRvnActivity(DisabledActivity.this, true);
+            BRAnimator.startfoxdActivity(DisabledActivity.this, true);
         }
     }
 
@@ -128,7 +128,7 @@ public class DisabledActivity extends BRActivity {
         } else if (AuthManager.getInstance().isWalletDisabled(DisabledActivity.this)) {
             SpringAnimator.failShakeAnimation(DisabledActivity.this, disabled);
         } else {
-            BRAnimator.startRvnActivity(DisabledActivity.this, true);
+            BRAnimator.startfoxdActivity(DisabledActivity.this, true);
         }
         overridePendingTransition(R.anim.fade_up, R.anim.fade_down);
     }

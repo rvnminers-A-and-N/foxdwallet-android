@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
-public class RVNToBTCData {
+public class foxdToBTCData {
 
     public List<SubData> getResult() {
         return result;

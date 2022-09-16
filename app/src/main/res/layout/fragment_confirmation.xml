@@ -146,7 +146,7 @@
             android:textColor="@color/black"
             android:textSize="15.0sp"
             app:customTFont="CircularPro-Book.otf"
-            tools:text="0.011834 RVN" />
+            tools:text="0.011834 foxd" />
     </LinearLayout>
 
     <LinearLayout
@@ -174,7 +174,7 @@
             android:textColor="@color/black"
             android:textSize="15.0sp"
             app:customTFont="CircularPro-Book.otf"
-            tools:text="500 RVN" />
+            tools:text="500 foxd" />
     </LinearLayout>
 
     <LinearLayout
@@ -202,7 +202,7 @@
             android:textColor="@color/black"
             android:textSize="15.0sp"
             app:customTFont="CircularPro-Book.otf"
-            tools:text="500.011834 RVN" />
+            tools:text="500.011834 foxd" />
     </LinearLayout>
 
     <LinearLayout

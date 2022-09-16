@@ -57,4 +57,4 @@
 74831	78661	684303773	CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionAsset.c.o	5f9d2ee0a305add3
 73631	79081	684303773	CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePeerManager.c.o	c0b8672e420d6dde
 77298	81066	684303775	CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreWallet.c.o	82d9a00c46abad49
-81067	82991	684303777	../../../../build/intermediates/cmake/rvnRelease/obj/x86/libcore.so	8d076e21e52128cf
+81067	82991	684303777	../../../../build/intermediates/cmake/foxdRelease/obj/x86/libcore.so	8d076e21e52128cf

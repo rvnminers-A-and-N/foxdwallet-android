@@ -98,7 +98,7 @@ public class FoxdApp extends Application {
         }
     }
 
-//    public static Map<String, String> getRvnHeaders() {
+//    public static Map<String, String> getfoxdHeaders() {
 //        return mHeaders;
 //    }
 

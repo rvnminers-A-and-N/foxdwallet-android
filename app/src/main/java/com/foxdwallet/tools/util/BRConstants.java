@@ -117,7 +117,7 @@ public class BRConstants {
     public static final String paperKey = "security/paper-key.html";
     public static final String enableFingerprint = "security/fingerprint.html";
     public static final String fingerprintSpendingLimit = "fingerprint-spending-limit";
-    public static final String transactionDetails = "send-receive/rvn-transaction.html";
+    public static final String transactionDetails = "send-receive/foxd-transaction.html";
     public static final String manageWallet = "app-settings";
     public static final String receive = "send-receive";
     public static final String send = "send-receive";
@@ -157,7 +157,7 @@ public class BRConstants {
                     "n1BurnXXXXXXXXXXXXXXXXXXXXXXU1qejP");
 
     //fetch Utxos urls
-    public static String fetchRvnUtxosPath() {
+    public static String fetchfoxdUtxosPath() {
         return BuildConfig.TESTNET ? "https://api.testnet.ravencoin.org/api/addr/%s/utxo" : "https://api.ravencoin.com/api/addr/%s/utxo";
     }
 

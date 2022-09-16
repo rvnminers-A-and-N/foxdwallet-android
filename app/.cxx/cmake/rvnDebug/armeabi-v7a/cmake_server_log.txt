@@ -17,7 +17,7 @@ CMAKE SERVER: {
     "minor": 1
   },
   "sourceDirectory": "C:/Users/bill/foxdwallet-android-testing/app",
-  "buildDirectory": "C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/rvnDebug/armeabi-v7a",
+  "buildDirectory": "C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/foxdDebug/armeabi-v7a",
   "generator": "Ninja"
 }
 
@@ -45,7 +45,7 @@ CMAKE SERVER: {
     "-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a",
     "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669",
     "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\bill\\foxdwallet-android-testing\\app\\build\\intermediates\\cmake\\rvnDebug\\obj\\armeabi-v7a",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\bill\\foxdwallet-android-testing\\app\\build\\intermediates\\cmake\\foxdDebug\\obj\\armeabi-v7a",
     "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe",
     "-DCMAKE_SYSTEM_NAME\u003dAndroid",
     "-DCMAKE_SYSTEM_VERSION\u003d24",

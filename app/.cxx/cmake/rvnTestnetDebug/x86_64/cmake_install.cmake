@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/bill/foxdwallet-android/app/.cxx/cmake/rvnTestnetDebug/x86_64/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/bill/foxdwallet-android/app/.cxx/cmake/foxdTestnetDebug/x86_64/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

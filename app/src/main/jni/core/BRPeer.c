@@ -151,9 +151,9 @@ typedef struct {
 
     void (*volatile mempoolCallback)(void *info, int success);
     
-    // RVN Start
+    // foxd Start
     void (*receiveAssetData) (void *info, BRAsset *asset);
-    // RVN End
+    // foxd End
 
     pthread_t thread;
 } BRPeerContext;

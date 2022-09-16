@@ -1,4 +1,4 @@
-ninja: Entering directory `C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnRelease\x86_64'
+ninja: Entering directory `C:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdRelease\x86_64'
 [1/59] Building C object CMakeFiles/core.dir/src/main/jni/core/BRBase58.c.o
 [2/59] Building C object CMakeFiles/core.dir/src/main/jni/core/BRBIP39Mnemonic.c.o
 [3/59] Building C object CMakeFiles/core.dir/src/main/jni/core/BRBIP44Sequence.c.o
@@ -958,4 +958,4 @@ void PeerManagerGetAssetData(BRPeerManager *manager, void *infoManager, char *as
 void PeerManagerGetAssetData(BRPeerManager *manager, void *infoManager, char *assetName, size_t nameLen,
                                                                               ^
 28 warnings generated.
-[59/59] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\rvnRelease\obj\x86_64\libcore.so
+[59/59] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\foxdRelease\obj\x86_64\libcore.so

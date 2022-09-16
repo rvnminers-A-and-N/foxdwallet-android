@@ -197,7 +197,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">Estado de la conexión del nodo</string>
   <!-- Node Selector view title -->
-  <string name="RvnNodeSelector.title">Nodos Bitcoin</string>
+  <string name="foxdNodeSelector.title">Nodos Bitcoin</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">Solicitud de pago incorrecta</string>
   <!-- Error opening payment protocol file message -->

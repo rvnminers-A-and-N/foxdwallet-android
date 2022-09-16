@@ -714,9 +714,9 @@ BRWalletCreateTxForRootAssetTransferOwnership(BRWallet *wallet, uint64_t amount,
     return transaction;
 }
 
-// returns an unsigned transaction that sends 500 RVN from the wallet to the burn and assign asset and ownership to owned addrs
+// returns an unsigned transaction that sends 500 foxd from the wallet to the burn and assign asset and ownership to owned addrs
 // require 3 outputs min, NEW_ASSET ASSET, OWNER and Burn + change is any!
-// only rvn inputs are needed for Network Fees + Burn
+// only foxd inputs are needed for Network Fees + Burn
 // Outupts order is imporatant, Shuffled(Burn + change) NEW_ASSET ASSET then OWNER
 // result must be freed by calling TransactionFree()
 BRTransaction *
@@ -783,9 +783,9 @@ BRWalletCreateTxForRootAssetCreation(BRWallet *wallet, uint64_t amount, const ch
     return tx;
 }
 
-// returns an unsigned transaction that sends 100 RVN from the wallet to the burn, assign sub-asset and ownership to owned addrs and send root asset to the change to prove ownership.
+// returns an unsigned transaction that sends 100 foxd from the wallet to the burn, assign sub-asset and ownership to owned addrs and send root asset to the change to prove ownership.
 // require 4 outputs min, NEW_ASSET ASSET, OWNER, TRANSFER! and Burn + change is any!
-// rvn inputs are needed for Network Fees + Burn + Transfer Ownership.
+// foxd inputs are needed for Network Fees + Burn + Transfer Ownership.
 // Outupts order is imporatant, Shuffled(Burn + change) TRANSFER! NEW_ASSET -SUB-ASSET then OWNER
 // result must be freed by calling TransactionFree()
 BRTransaction *
@@ -903,9 +903,9 @@ BRWalletCreateTxForSubAssetCreation(BRWallet *wallet, uint64_t amount, const cha
     return transaction;
 }
 
-// returns an unsigned transaction that sends 5 RVN from the wallet to the burn, assign unique-asset send root asset to the change to prove ownership.
+// returns an unsigned transaction that sends 5 foxd from the wallet to the burn, assign unique-asset send root asset to the change to prove ownership.
 // require 3 outputs min, NEW_ASSET ASSET, TRANSFER! and Burn + change is any!
-// rvn inputs are needed for Network Fees + Burn + Transfer Ownership.
+// foxd inputs are needed for Network Fees + Burn + Transfer Ownership.
 // Outupts order is imporatant, Shuffled(Burn + change) TRANSFER! NEW_ASSET -UNIQUE-ASSET
 // result must be freed by calling TransactionFree()
 BRTransaction *
@@ -1030,9 +1030,9 @@ BRWalletCreateTxForUniqueAssetCreation(BRWallet *wallet, uint64_t amount, const 
     return transaction;
 }
 
-// returns an unsigned transaction that sends 100 RVN from the wallet to the burn, assign reissued-asset to owned addrs and send root asset to the change to prove ownership.
+// returns an unsigned transaction that sends 100 foxd from the wallet to the burn, assign reissued-asset to owned addrs and send root asset to the change to prove ownership.
 // require 3 outputs min, REISSUE, TRANSFER! and Burn + change is any!
-// rvn inputs are needed for Network Fees + Burn + Transfer Ownership.
+// foxd inputs are needed for Network Fees + Burn + Transfer Ownership.
 // Outupts order is imporatant, Shuffled(Burn + change) TRANSFER! NEW_ASSET -SUB-ASSET then OWNER
 // result must be freed by calling TransactionFree()
 BRTransaction *BRWalletCreateTxForAssetsReissue(BRWallet *wallet, uint64_t amount, const char *addr,

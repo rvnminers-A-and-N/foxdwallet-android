@@ -102,7 +102,7 @@
   <!-- Email unavailable alert title -->
     <!-- Email unavailable alert title -->
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-  <string name="ErrorMessages.loopingLockScreen.android">RVNは、お使いのAndroidのバージョンに不具合があるため認証できません。 [詳しい情報はこちらをタップしてご覧ください。]</string>
+  <string name="ErrorMessages.loopingLockScreen.android">foxdは、お使いのAndroidのバージョンに不具合があるため認証できません。 [詳しい情報はこちらをタップしてご覧ください。]</string>
   <!-- Messaging unavailable alert title -->
     <!-- Messaging unavailable alert title -->
     <!-- Fingerprint was not recognized by the scanner, please try scanning again -->
@@ -197,7 +197,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">ノードの接続状況</string>
   <!-- Node Selector view title -->
-  <string name="RvnNodeSelector.title">ビットコインノード</string>
+  <string name="foxdNodeSelector.title">ビットコインノード</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">不正な支払い要求</string>
   <!-- Error opening payment protocol file message -->
@@ -227,7 +227,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">トランザクションが拒否されました</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">匿名のデータを共有してRVNの機能向上に役立てる</string>
+  <string name="Prompts.ShareData.body">匿名のデータを共有してfoxdの機能向上に役立てる</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">匿名のデータを共有する</string>
   <!-- Enable touch ID prompt body -->
@@ -243,7 +243,7 @@
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">PINコードを更新する</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-  <string name="PushNotifications.body">今後、RVNからの特別なメッセージを受け取るために通知をオンにしてください。</string>
+  <string name="PushNotifications.body">今後、foxdからの特別なメッセージを受け取るために通知をオンにしてください。</string>
   <!-- Push notifications toggle switch label -->
   <string name="PushNotifications.label">プッシュ通知</string>
   <!-- Push notifications are off label -->
@@ -293,7 +293,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20〜45分</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">ビットコインネットワークでトランザクションが完了したと表示されているが、RVN上では完了と表示されない場合。</string>
+  <string name="ReScan.body2">ビットコインネットワークでトランザクションが完了したと表示されているが、foxd上では完了と表示されない場合。</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">送金しているが、拒否され続けている場合。</string>
   <!-- Start Sync button label -->
@@ -327,7 +327,7 @@
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">セキュリティセンター</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">RVNロック解除の他、設定した限度額までの送金も指紋認証で出来ます。</string>
+  <string name="SecurityCenter.touchIdDescription">foxdロック解除の他、設定した限度額までの送金も指紋認証で出来ます。</string>
   <!-- Touch ID button title -->
     <!-- Security center fingerprint authentication button -->
   <string name="SecurityCenter.touchIdTitle.android">指紋認証</string>
@@ -435,7 +435,7 @@
     <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">利用限度: %1$s (%2$s)</string>
   <!-- Touch id switch label. -->
-    <!-- Enable fingerprint for this wallet called RVN -->
+    <!-- Enable fingerprint for this wallet called foxd -->
   <string name="TouchIdSettings.switchLabel.android">指紋認証を有効にする</string>
   <!-- Touch ID settings view title -->
     <!-- Fingerprint authentication label -->
@@ -546,9 +546,9 @@
     <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">ウォレットを消去し、新しいウォレットを作成したり、復元したりしたい場合は復旧フレーズを入力してください。この段階では残高は残っています。</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">別のウォレットを開設するか復元することにより、このデバイス上で異なるRVNウォレットへのアクセスと管理ができるようになります。</string>
+  <string name="WipeWallet.startMessage">別のウォレットを開設するか復元することにより、このデバイス上で異なるfoxdウォレットへのアクセスと管理ができるようになります。</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">このデバイスから現在使用中のRVNウォレットへのアクセスはできなくなります。残高はフレーズに残されます。</string>
+  <string name="WipeWallet.startWarning">このデバイスから現在使用中のfoxdウォレットへのアクセスはできなくなります。残高はフレーズに残されます。</string>
   <!-- Wipe wallet navigation item title. -->
     <!-- Wipe wallet button title -->
   <string name="WipeWallet.wipe">消去</string>

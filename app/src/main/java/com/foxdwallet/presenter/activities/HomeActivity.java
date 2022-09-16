@@ -41,7 +41,7 @@ import com.google.gson.Gson;
 import com.platform.assets.Asset;
 import com.platform.assets.AssetsRepository;
 import com.platform.assets.adapter.AssetsAdapter;
-import com.platform.chart.model.RVNToBTCData;
+import com.platform.chart.model.foxdToBTCData;
 import com.platform.chart.widget.ChartModel;
 import com.platform.chart.widget.ChartView;
 import com.platform.chart.widget.SeriesElement;
@@ -119,7 +119,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     private GifDrawable gifDrawable = null;
 
     private String chartType = ChartModel.ChartType.AreaSpline;
-    String CHART_URL = "https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=BTC-RVN&tickInterval=day";
+    String CHART_URL = "https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=BTC-foxd&tickInterval=day";
 
     private static HomeActivity app;
     private SyncNotificationBroadcastReceiver mSyncNotificationBroadcastReceiver = new SyncNotificationBroadcastReceiver();
@@ -286,7 +286,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mChart.setBackgroundColor(getColor(R.color.primaryColor));
         mChart.setBackground(drawable);
         mChart.setLayerType(WebView.LAYER_TYPE_NONE, null);
-        getRVNValueHistory();
+        getfoxdValueHistory();
         mWalletInfos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -324,7 +324,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         mWalletBalanceCurrency.setVisibility(!mShowSyncing ? View.VISIBLE : View.INVISIBLE);
     }
 
-    private void getRVNValueHistory() {
+    private void getfoxdValueHistory() {
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
 
@@ -333,7 +333,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        RVNToBTCData data = new Gson().fromJson(response, RVNToBTCData.class);
+                        foxdToBTCData data = new Gson().fromJson(response, foxdToBTCData.class);
 
                         // Set the data on the chart view
                         setChartData(data);
@@ -351,7 +351,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
         queue.add(stringRequest);
     }
 
-    private void setChartData(RVNToBTCData data) {
+    private void setChartData(foxdToBTCData data) {
         chartModel = new ChartModel()
                 .chartType(chartType)
                 .backgroundColor("#2e3e80")
@@ -360,7 +360,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                 .borderRadius(4)
                 .series(
                         new SeriesElement[]{
-                                new SeriesElement().name("RVN").data(
+                                new SeriesElement().name("foxd").data(
                                         data.toObjectArray()
                                 ).lineWidth(1.0f)
                                         .step(true)
@@ -486,7 +486,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                 mNotificationBar.setVisibility(View.GONE);
             }
             if (mChart.getVisibility() == View.GONE)
-                getRVNValueHistory();
+                getfoxdValueHistory();
             startObserving();
         } else {
             if (mNotificationBar != null) {

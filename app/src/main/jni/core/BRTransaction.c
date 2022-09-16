@@ -336,9 +336,9 @@ BRTransaction *BRTransactionCopy(const BRTransaction *tx) {
     cpy->outputs = outputs;
     cpy->inCount = cpy->outCount = 0;
     
-    /* RVN Start */
+    /* foxd Start */
     cpy->asset = tx->asset;
-    /* RVN End */
+    /* foxd End */
     
     for (size_t i = 0; i < tx->inCount; i++) {
         BRTransactionAddInput(cpy, tx->inputs[i].txHash, tx->inputs[i].index, tx->inputs[i].amount,
@@ -405,7 +405,7 @@ BRTransaction *BRTransactionParse(const uint8_t *buf, size_t bufLen) {
         if (off + sLen <= bufLen) BRTxOutputSetScript(output, &buf[off], sLen);
         off += sLen;
         
-        /*RVN PROCESS START*/
+        /*foxd PROCESS START*/
         if (!tx->asset) {
             if(tx->blockHeight >= ASSET_ACTIVATION) {// if assets are deployed
                 if (IsScriptAsset(output->script, output->scriptLen) && !IsScriptOwnerAsset(output->script, output->scriptLen)) {
@@ -423,7 +423,7 @@ BRTransaction *BRTransactionParse(const uint8_t *buf, size_t bufLen) {
                 GetAssetData(output->script, output->scriptLen, tx->asset);
             } /*else if(IsScriptTransferAsset(output->script, output->scriptLen)) continue;*/
         }
-        /*RVN PROCESS END*/
+        /*foxd PROCESS END*/
     }
     
     tx->lockTime = (off + sizeof(uint32_t) <= bufLen) ? UInt32GetLE(&buf[off]) : 0;

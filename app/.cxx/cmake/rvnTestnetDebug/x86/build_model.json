@@ -5,9 +5,9 @@
     "environmentVariables": []
   },
   "cmake": {
-    "cmakeArtifactsBaseFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86",
-    "cmakeServerLogFile": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86\\cmake_server_log.txt",
-    "cmakeWrappingBaseFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cxx\\rvnTestnetDebug\\x86",
+    "cmakeArtifactsBaseFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86",
+    "cmakeServerLogFile": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86\\cmake_server_log.txt",
+    "cmakeWrappingBaseFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cxx\\foxdTestnetDebug\\x86",
     "effectiveConfiguration": {
       "name": "traditional-android-studio-cmake-environment",
       "description": "Composite reified CMakeSettings configuration",
@@ -15,7 +15,7 @@
       "inheritEnvironments": [
         "ndk"
       ],
-      "buildRoot": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86",
+      "buildRoot": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86",
       "cmakeToolchain": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake",
       "cmakeExecutable": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\cmake.exe",
       "variables": [
@@ -57,7 +57,7 @@
         },
         {
           "name": "CMAKE_LIBRARY_OUTPUT_DIRECTORY",
-          "value": "C:\\Users\\bill\\foxdwallet-android\\app\\build\\intermediates\\cmake\\rvnTestnetDebug\\obj\\x86"
+          "value": "C:\\Users\\bill\\foxdwallet-android\\app\\build\\intermediates\\cmake\\foxdTestnetDebug\\obj\\x86"
         },
         {
           "name": "CMAKE_MAKE_PROGRAM",
@@ -82,14 +82,14 @@
       ]
     }
   },
-  "cxxBuildFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86",
+  "cxxBuildFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86",
   "info": {
     "abi": "X86",
     "bitness": 32,
     "deprecated": false,
     "default": true
   },
-  "originalCxxBuildFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\rvnTestnetDebug\\x86",
+  "originalCxxBuildFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\.cxx\\cmake\\foxdTestnetDebug\\x86",
   "variant": {
     "buildSystemArgumentList": [
       "-DANDROID_TOOLCHAIN\u003dclang",
@@ -202,8 +202,8 @@
         "SYSTEM": {}
       }
     },
-    "objFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\build\\intermediates\\cmake\\rvnTestnetDebug\\obj",
-    "variantName": "rvnTestnetDebug",
+    "objFolder": "C:\\Users\\bill\\foxdwallet-android\\app\\build\\intermediates\\cmake\\foxdTestnetDebug\\obj",
+    "variantName": "foxdTestnetDebug",
     "validAbiList": [
       "ARMEABI_V7A",
       "ARM64_V8A",

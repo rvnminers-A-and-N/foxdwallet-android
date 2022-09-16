@@ -37,7 +37,7 @@ public class CurrencyEntity implements Serializable {
     public String code;//this currency code (USD, EUR)
     public String name;//this currency name (Dollar)
     public float rate;
-    public String iso;//this wallet's iso (RVN, BTC)
+    public String iso;//this wallet's iso (foxd, BTC)
 
     public CurrencyEntity(String code, String name, float rate, String iso) {
         this.code = code;

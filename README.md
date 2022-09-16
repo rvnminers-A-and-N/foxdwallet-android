@@ -1,5 +1,5 @@
 ![ƀ](./images/header.png) 
-RVN Wallet for Android
+foxd Wallet for Android
 ----------------------------------
 
 [![Get it on Google Play](./images/icon-google-play.png)](https://play.google.com/store/apps/details?id=foxdwallet)
@@ -14,7 +14,7 @@ This wallet is designed to protect you from malware, browser security holes. Wit
 
 ### beautiful simplicity
 
-Simplicity is the RVN wallet core design principle. A simple list of 12 words is all you need to restore your wallet on another device if yours is ever lost or broken.  Because it is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), your balance and transaction history can be recovered from just your backup words. These words are now compatible with the Ravencoin core wallet available [here](https://github.com/RavenProject/Ravencoin/releases/latest).
+Simplicity is the foxd wallet core design principle. A simple list of 12 words is all you need to restore your wallet on another device if yours is ever lost or broken.  Because it is [deterministic](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki), your balance and transaction history can be recovered from just your backup words. These words are now compatible with the Ravencoin core wallet available [here](https://github.com/RavenProject/Ravencoin/releases/latest).
 
 ## features
 
@@ -50,7 +50,7 @@ Simplicity is the RVN wallet core design principle. A simple list of 12 words is
 20. In the *SDK Quickfix Installation* pop-up window, read throught the license agreement and click on the *Accept* radio button and click *Next*. This will download and install the SDK/NDK, click *Finish* once the installation is done.
 21. Android Studio will now download all the required tool and build the project. This will take several minutes.
 22. If any information dialogs are visible in the lower-right corner, click on the link and follow the instructions. You may have more than one. For example you may see a dialog indicating *Plugin Update Recommended - Android Gradle Plugin is ready to update* or *Restart to activate plugin updates*. Click on the underlined actions for each of these and follow the prompts.
-23. Select the build variant by clicking on the *Build Variants* tab near the bottom of the left-side (available options are rvnDebug, rvnRelease, rvnTestnetDebug, and rvnTestnetRelease). For general testing and development the best option is to choose the *rvnTestnetDebug* in the *Build Variants / Active Build Variant* window. Also select the *x86_64* in the *Build Variants / Active ABI* window. 
+23. Select the build variant by clicking on the *Build Variants* tab near the bottom of the left-side (available options are foxdDebug, foxdRelease, foxdTestnetDebug, and foxdTestnetRelease). For general testing and development the best option is to choose the *foxdTestnetDebug* in the *Build Variants / Active Build Variant* window. Also select the *x86_64* in the *Build Variants / Active ABI* window. 
 24. In the *Android Studio / Build* window the build should now show *ravenwallet-android: successful*, there may be warnings, these can be ignored.
 25. The following steps allow you to run and test the app in an *Android Virtual Device*.
 26. In *Android Studio*, click on *Tools->AVD Manager* from the menu.
@@ -60,9 +60,9 @@ Simplicity is the RVN wallet core design principle. A simple list of 12 words is
 30. On the right side of the *Virtual Device Configuration* window, there may be a warning *HAXM is not installed*, if so click on the *Install HAXM* link, accept the default values and click *Next*, and finally *Finish* once the HAXM installation is done.
 31. Back in the *Virtual Device Configuraion* window select an Android version (Q or R are good options), click on the *Download* link for the desired version. Read and accept the Tearms and Conditions and click *Next*. This will download and install the desired version. Click *Finish* once the installation is done. This can be repeated for as many system images as desired.
 32. You should now have a virtual device listed in the *Android Virtual Device Manager*, this window can now be closed.
-33. Finally it is time to run the RVN Wallet app in the virtual device you just created. Click *Run->Run* from the *Android Studio* window, or click the *play* (sideways-triangle) button. This should build the app, launch a virtual phone device, and install-run the RVN Wallet!
+33. Finally it is time to run the foxd Wallet app in the virtual device you just created. Click *Run->Run* from the *Android Studio* window, or click the *play* (sideways-triangle) button. This should build the app, launch a virtual phone device, and install-run the foxd Wallet!
 34. You can switch between Testnet and Mainnet versions using the *Build Variants / Active Build Variant* window. You should uninstall the installed version when switching.
-35. Have fun and help support RavenCoin by contributing. An up-to-date list of desired features and enhancements can be found [here](https://github.com/RavenProject/Ravencoin/tree/master/community). Submit or work on any of the issues which can be found [here](https://github.com/RavenProject/ravenwallet-android/issues). The RVN community is stronger when you help!
+35. Have fun and help support RavenCoin by contributing. An up-to-date list of desired features and enhancements can be found [here](https://github.com/RavenProject/Ravencoin/tree/master/community). Submit or work on any of the issues which can be found [here](https://github.com/RavenProject/ravenwallet-android/issues). The foxd community is stronger when you help!
 
 ## Android Basics
 An basic tutorial for understanding how to use Android Studio can be found [here](https://developer.android.com/training/basics/firstapp)

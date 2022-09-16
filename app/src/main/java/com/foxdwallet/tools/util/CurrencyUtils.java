@@ -104,7 +104,7 @@ public class CurrencyUtils {
         return Utils.isNullOrEmpty(symbol) ? iso : symbol;
     }
 
-//    //get currency denomination (iso) RVN, ETH etc.
+//    //get currency denomination (iso) foxd, ETH etc.
 //    public static String getCurrencyIso(Context app, String iso) {
 //        BaseWalletManager wallet = WalletsMaster.getInstance(app).getWalletByIso(iso);
 //        if (wallet == null) return iso;

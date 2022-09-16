@@ -186,32 +186,32 @@ public class BRApiManager {
     private static JSONArray fetchRates(Activity app, BaseWalletManager walletManager) {
         JSONArray jsonArray = null;
 
-        if ("RVN".equals(walletManager.getIso(app))) {
-            String rvn_btc_MultiplierURL = "https://api.bittrex.com/v3/markets/RVN-BTC/ticker";
-            String rvn_btc_jsonString = urlGET(app, rvn_btc_MultiplierURL);
-            String rvn_usd_MultiplierURL = "https://api.bittrex.com/v3/markets/RVN-USD/ticker";
-            String rvn_usd_jsonString = urlGET(app, rvn_usd_MultiplierURL);
+        if ("foxd".equals(walletManager.getIso(app))) {
+            String foxd_btc_MultiplierURL = "https://api.bittrex.com/v3/markets/foxd-BTC/ticker";
+            String foxd_btc_jsonString = urlGET(app, foxd_btc_MultiplierURL);
+            String foxd_usd_MultiplierURL = "https://api.bittrex.com/v3/markets/foxd-USD/ticker";
+            String foxd_usd_jsonString = urlGET(app, foxd_usd_MultiplierURL);
             try {
                 jsonArray = new JSONArray();
-                JSONObject rvn_obj = new JSONObject();
+                JSONObject foxd_obj = new JSONObject();
 
                 double usdRate;
                 double btcRate;
 
-                if (rvn_btc_jsonString != null || rvn_usd_jsonString != null) {
-                    JSONObject rvn_btc_obj = (JSONObject) new JSONTokener(rvn_btc_jsonString).nextValue();
-                    JSONObject rvn_usd_obj = (JSONObject) new JSONTokener(rvn_usd_jsonString).nextValue();
+                if (foxd_btc_jsonString != null || foxd_usd_jsonString != null) {
+                    JSONObject foxd_btc_obj = (JSONObject) new JSONTokener(foxd_btc_jsonString).nextValue();
+                    JSONObject foxd_usd_obj = (JSONObject) new JSONTokener(foxd_usd_jsonString).nextValue();
                     String name = "US Dollar";
                     String code = "USD";
-                    usdRate = Double.parseDouble(rvn_usd_obj.getString("lastTradeRate"));
-                    btcRate = Double.parseDouble(rvn_btc_obj.getString("lastTradeRate"));
-                    rvn_obj.put("code", code);
-                    rvn_obj.put("name", name);
-                    rvn_obj.put("rate", usdRate);
-                    jsonArray.put(rvn_obj);
+                    usdRate = Double.parseDouble(foxd_usd_obj.getString("lastTradeRate"));
+                    btcRate = Double.parseDouble(foxd_btc_obj.getString("lastTradeRate"));
+                    foxd_obj.put("code", code);
+                    foxd_obj.put("name", name);
+                    foxd_obj.put("rate", usdRate);
+                    jsonArray.put(foxd_obj);
 
-                    System.out.println("\nRVN-USD Rate: " + usdRate + "\n");
-                    System.out.println("\nRVN-BTC Rate: " + btcRate + "\n");
+                    System.out.println("\nfoxd-USD Rate: " + usdRate + "\n");
+                    System.out.println("\nfoxd-BTC Rate: " + btcRate + "\n");
 
                     JSONArray multiFiatJson = multiFiatCurrency(app);
 
@@ -224,9 +224,9 @@ public class BRApiManager {
                             if (tmpObj.getString("code").equalsIgnoreCase("USD"))
                                 continue;
 
-                            double rvnRate = (float) tmpObj.getDouble("rate") * btcRate;
+                            double foxdRate = (float) tmpObj.getDouble("rate") * btcRate;
                             tmpObj.remove("rate");
-                            tmpObj.put("rate", rvnRate);
+                            tmpObj.put("rate", foxdRate);
 
                             jsonArray.put(tmpObj);
                         } catch (JSONException e) {
@@ -274,7 +274,7 @@ public class BRApiManager {
             Log.e(TAG, "urlGET: network on main thread");
             throw new RuntimeException("network on main thread");
         }
-        Map<String, String> headers = new HashMap<>();//FoxdApp.getRvnHeaders();
+        Map<String, String> headers = new HashMap<>();//FoxdApp.getfoxdHeaders();
 
         Request.Builder builder = new Request.Builder()
                 .url(myURL)
@@ -338,7 +338,7 @@ public class BRApiManager {
         // for test
         // String path = "https://api.testnet.ravencoin.orgapi/addr/mqaak11jfP7LsJ2hH6gcNiQetMX7ZWmwXB/utxo";
         String path = isAsset ? String.format(BRConstants.fetchAssetUtxosPath(), address)
-                : String.format(BRConstants.fetchRvnUtxosPath(), address);
+                : String.format(BRConstants.fetchfoxdUtxosPath(), address);
 
         RequestQueue volleyQueue = Volley.newRequestQueue(context);
         RequestFuture<JSONArray> future = RequestFuture.newFuture();

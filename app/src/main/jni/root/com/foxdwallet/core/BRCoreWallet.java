@@ -203,7 +203,7 @@ public class BRCoreWallet extends BRCoreJniReference {
     // Need to remove 'forkId' - should be derived from the chainParams leading to this wallet.
 
     /**
-     * Sign `transaction` for the provided `forkId` (RVN) using `phrase`.  The `phrase` must
+     * Sign `transaction` for the provided `forkId` (foxd) using `phrase`.  The `phrase` must
      * be the 'paper key' used when the wallet's MasterPubKey was originally created.
      *
      * @param transaction

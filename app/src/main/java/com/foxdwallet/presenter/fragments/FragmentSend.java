@@ -276,7 +276,7 @@ public class FragmentSend extends BaseAddressValidation {
             }
         });
         double maxAmount = FoxdWalletManager.getInstance(getActivity()).getMaxAmount(getActivity()).doubleValue();
-        int maxDecimal = CurrencyUtils.getMaxDecimalPlaces(getActivity(), "RVN");
+        int maxDecimal = CurrencyUtils.getMaxDecimalPlaces(getActivity(), "foxd");
         amountEdit.setFilters(new InputFilter[]{new DecimalDigitsInputFilter(maxDecimal),
                 new InputFilterMinMax(0, maxAmount)});
         setButton(true);

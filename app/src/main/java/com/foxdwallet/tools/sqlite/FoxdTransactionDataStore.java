@@ -88,7 +88,7 @@ public class FoxdTransactionDataStore implements BRDataSourceInterface {
 
             database.setTransactionSuccessful();
 //            for (OnTxAdded listener : listeners) {
-//                if (listener != null) listener.onTxAdded("RVN");
+//                if (listener != null) listener.onTxAdded("foxd");
 //            }
             return transactionEntity1;
         } catch (Exception ex) {

@@ -99,7 +99,7 @@ size_t BRTxOutputSetTransferOwnerAssetScript(uint8_t *script, size_t scriptLen, 
 // TODO: test test remove this, don't FORGET!
 size_t BRTxOutputSetTransferOwnerAssetScriptWithoutTag(uint8_t *script, size_t scriptLen, BRAsset *asset);
 
-bool CreateAssetTransaction(BRWallet* wallet, const BRAsset* asset, const char *address, char *rvnChangeAddress,
+bool CreateAssetTransaction(BRWallet* wallet, const BRAsset* asset, const char *address, char *foxdChangeAddress,
                             BRKey* key, Amount* nFeeRequired);
 
 bool CreateReissueAssetTransaction(BRWallet *pwallet, const BRAsset *asset, const char *address,

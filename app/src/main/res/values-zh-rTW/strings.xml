@@ -4,7 +4,7 @@
     <!-- About screen blog label -->
   <string name="About.blog">部落格</string>
   <!-- About screen footer -->
-  <string name="About.footer">由全球 RVN 團隊製作。版本 %1$s</string>
+  <string name="About.footer">由全球 foxd 團隊製作。版本 %1$s</string>
   <!-- Privay Policy button label -->
   <string name="About.privacy">隱私政策</string>
   <!-- About screen reddit label -->
@@ -26,7 +26,7 @@
   <!-- Keystore error -->
   <string name="Alert.keystore.generic.android">您的 Android OS 金鑰儲存區有問題，請聯絡 support@ravencoin.org</string>
   <!-- KeyStore error, keys are invalidated -->
-  <string name="Alert.keystore.invalidated.android">您的 RVN 加密資料最近已被判定為無效，因爲您的 Android 螢幕鎖定已被停用。</string>
+  <string name="Alert.keystore.invalidated.android">您的 foxd 加密資料最近已被判定為無效，因爲您的 Android 螢幕鎖定已被停用。</string>
   <!-- Keystore error title -->
   <string name="Alert.keystore.title.android">Android 金鑰儲存區錯誤</string>
   <!-- No internet alert message -->
@@ -102,7 +102,7 @@
   <!-- Email unavailable alert title -->
     <!-- Email unavailable alert title -->
     <!-- Message that gets shown when we've detected the user has encountered the looping lock-screen bug. (preserve [ ] characters) -->
-  <string name="ErrorMessages.loopingLockScreen.android">由於您安卓系統版本中的錯誤，因此 RVN 無法取得認證。[請點擊此瞭解更多資訊。]</string>
+  <string name="ErrorMessages.loopingLockScreen.android">由於您安卓系統版本中的錯誤，因此 foxd 無法取得認證。[請點擊此瞭解更多資訊。]</string>
   <!-- Messaging unavailable alert title -->
     <!-- Messaging unavailable alert title -->
     <!-- Fingerprint was not recognized by the scanner, please try scanning again -->
@@ -136,7 +136,7 @@
     <!-- Importing wallet progress view label -->
     <!-- Caption for graphics -->
     <!-- Import wallet intro screen message -->
-  <string name="Import.message">匯入一個電子錢包會以單一交易的方式將您其它電子錢包的所有資金轉帳至您的 RVN 錢包。</string>
+  <string name="Import.message">匯入一個電子錢包會以單一交易的方式將您其它電子錢包的所有資金轉帳至您的 foxd 錢包。</string>
   <!-- Enter password alert view title -->
   <string name="Import.password">此私密金鑰受密碼保護。</string>
   <!-- password textfield placeholder -->
@@ -197,7 +197,7 @@
   <!-- Node status label -->
   <string name="NodeSelector.statusLabel">節點連線狀態</string>
   <!-- Node Selector view title -->
-  <string name="RvnNodeSelector.title">比特幣節點</string>
+  <string name="foxdNodeSelector.title">比特幣節點</string>
   <!-- Bad Payment request alert title -->
   <string name="PaymentProtocol.Errors.badPaymentRequest">不良的付款請求</string>
   <!-- Error opening payment protocol file message -->
@@ -227,7 +227,7 @@
   <!-- Transaction rejected prompt title -->
   <string name="Prompts.RecommendRescan.title">交易被拒</string>
   <!-- Share data prompt body -->
-  <string name="Prompts.ShareData.body">和我們分享您的匿名資料來協助改善 RVN</string>
+  <string name="Prompts.ShareData.body">和我們分享您的匿名資料來協助改善 foxd</string>
   <!-- Share data prompt title -->
   <string name="Prompts.ShareData.title">分享匿名資料</string>
   <!-- Enable touch ID prompt body -->
@@ -239,11 +239,11 @@
   <!-- Button on fingerprint prompt so the user can enter their PIN instead -->
   <string name="Prompts.TouchId.usePin.android">密碼</string>
   <!-- Upgrade PIN prompt body. -->
-  <string name="Prompts.UpgradePin.body">RVN 已經升級至 6 位數 PIN 碼。請點這裡升級。</string>
+  <string name="Prompts.UpgradePin.body">foxd 已經升級至 6 位數 PIN 碼。請點這裡升級。</string>
   <!-- Upgrade PIN prompt title. -->
   <string name="Prompts.UpgradePin.title">升級 PIN 碼</string>
   <!-- Notifications will be added later but users can set their preferences now, which is why we specify "in the future". -->
-  <string name="PushNotifications.body">開啟通知，好在未來收到 RVN 的特別訊息。</string>
+  <string name="PushNotifications.body">開啟通知，好在未來收到 foxd 的特別訊息。</string>
   <!-- Push notifications toggle switch label -->
   <string name="PushNotifications.label">推播</string>
   <!-- Push notifications are off label -->
@@ -271,7 +271,7 @@
   <!-- Enter paper key instruction -->
   <string name="RecoverWallet.instruction">輸入紙本金鑰</string>
   <!-- Recover wallet intro -->
-  <string name="RecoverWallet.intro">以您的紙本金鑰復原您的 RVN</string>
+  <string name="RecoverWallet.intro">以您的紙本金鑰復原您的 foxd</string>
   <!-- Invalid paper key message -->
   <string name="RecoverWallet.invalid">紙本金鑰</string>
   <!-- Previous button accessibility label -->
@@ -293,7 +293,7 @@
   <!-- extimated time -->
   <string name="ReScan.body1">20-45 分鐘</string>
   <!-- Syncing explanation -->
-  <string name="ReScan.body2">如果交易在比特幣網上已經顯示為完成，但沒有出現在您的 RVN 上。</string>
+  <string name="ReScan.body2">如果交易在比特幣網上已經顯示為完成，但沒有出現在您的 foxd 上。</string>
   <!-- Syncing explanation -->
   <string name="ReScan.body3">你不斷收到「交易被拒」的錯誤。</string>
   <!-- Start Sync button label -->
@@ -321,13 +321,13 @@
   <!-- Paper Key button title -->
   <string name="SecurityCenter.paperKeyTitle">紙本金鑰</string>
   <!-- PIN button description -->
-  <string name="SecurityCenter.pinDescription">保護您的 RVN，防範未經授權的使用者。</string>
+  <string name="SecurityCenter.pinDescription">保護您的 foxd，防範未經授權的使用者。</string>
   <!-- PIN button title -->
   <string name="SecurityCenter.pinTitle">6 位數 PIN 碼</string>
   <!-- Security Center Title -->
   <string name="SecurityCenter.title">資訊安全中心</string>
   <!-- Touch ID button description -->
-  <string name="SecurityCenter.touchIdDescription">輕鬆解鎖您的 RVN，並在設定好的限額內寄送款項。</string>
+  <string name="SecurityCenter.touchIdDescription">輕鬆解鎖您的 foxd，並在設定好的限額內寄送款項。</string>
   <!-- Touch ID button title -->
     <!-- Security center fingerprint authentication button -->
   <string name="SecurityCenter.touchIdTitle.android">指紋驗證</string>
@@ -336,9 +336,9 @@
   <!-- Balance: $4.00 -->
   <string name="Send.balance">餘額：%1$s</string>
   <!-- Instructions how to allow the camera access for the app -->
-  <string name="Send.cameraUnavailabeMessage.android">到「設定」 &gt; 「應用程式」 &gt; 「RVN」 &gt; 「權限」允許相機存取</string>
+  <string name="Send.cameraUnavailabeMessage.android">到「設定」 &gt; 「應用程式」 &gt; 「foxd」 &gt; 「權限」允許相機存取</string>
   <!-- Permission required to access camera -->
-  <string name="Send.cameraUnavailabeTitle.android">RVN 尚未獲准存取相機</string>
+  <string name="Send.cameraUnavailabeTitle.android">foxd 尚未獲准存取相機</string>
   <!-- Camera not allowed message -->
     <!-- Camera not allowed alert title -->
     <!-- Warning when sending to self. -->
@@ -401,14 +401,14 @@
   <!-- Start or recover another wallet menu label. -->
   <string name="Settings.wipe">開啟／復原其他錢包</string>
   <!-- Share data view body -->
-  <string name="ShareData.body">請跟我們分享您的匿名資料，以協助我們改善 RVN。其中不會包含財務資訊。我們尊重您的財務隱私。</string>
+  <string name="ShareData.body">請跟我們分享您的匿名資料，以協助我們改善 foxd。其中不會包含財務資訊。我們尊重您的財務隱私。</string>
   <!-- Share data header -->
   <string name="ShareData.header">分享資料？</string>
   <!-- Share data switch label. -->
   <string name="ShareData.toggleLabel">分享匿名資料？</string>
   <!-- button label -->
     <!-- Paper key explanation text. -->
-  <string name="StartPaperPhrase.body">您的手機遺失、損壞或升級時，紙本金鑰是復原\n RVN 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。</string>
+  <string name="StartPaperPhrase.body">您的手機遺失、損壞或升級時，紙本金鑰是復原\n foxd 唯一的方式。\n\n我們會向您出示一個字串，請寫在紙上並妥善保管。</string>
   <!-- button label -->
   <string name="StartPaperPhrase.buttonTitle">寫下紙本金鑰</string>
   <!-- Argument is date -->
@@ -430,12 +430,12 @@
   <!-- Fingerprint Is Not Setup -->
   <string name="TouchIdSettings.disabledWarning.title.android">指紋驗證並未啟用</string>
   <!-- Touch Id screen label -->
-  <string name="TouchIdSettings.label">以您的指紋解鎖 RVN，並在設定好的限額內寄送款項。</string>
+  <string name="TouchIdSettings.label">以您的指紋解鎖 foxd，並在設定好的限額內寄送款項。</string>
   <!-- Link Text (see TouchIdSettings.customizeText) -->
     <!-- Spending Limit: b100,000 ($100) -->
   <string name="TouchIdSettings.spendingLimit">花費上限：%1$s（%2$s）</string>
   <!-- Touch id switch label. -->
-    <!-- Enable fingerprint for this wallet called RVN -->
+    <!-- Enable fingerprint for this wallet called foxd -->
   <string name="TouchIdSettings.switchLabel.android">指紋驗證</string>
   <!-- Touch ID settings view title -->
     <!-- Fingerprint authentication label -->
@@ -504,7 +504,7 @@
   <!-- Update PIN caption text -->
   <string name="UpdatePin.caption">請記住此 PIN 碼。如果忘記，會無法存取您的比特幣。</string>
   <!-- PIN creation info. -->
-  <string name="UpdatePin.createInstruction">您的 PIN 碼會用於解鎖 RVN 及送出款項。</string>
+  <string name="UpdatePin.createInstruction">您的 PIN 碼會用於解鎖 foxd 及送出款項。</string>
   <!-- Update PIN title -->
   <string name="UpdatePin.createTitle">設定 PIN 碼</string>
   <!-- Update PIN title -->
@@ -546,9 +546,9 @@
     <!-- Enter phrase to wipe wallet instruction. -->
   <string name="WipeWallet.instruction">輸入此錢包的復原短語（recovery phrase）以進行抹除，並開啟或復原其他錢包。您目前的餘額會保留在於短語。</string>
   <!-- Start wipe wallet view message -->
-  <string name="WipeWallet.startMessage">開始或復原另一個電子錢包會讓您能夠在這項裝置上存取和管理不一樣的 RVN 錢包。</string>
+  <string name="WipeWallet.startMessage">開始或復原另一個電子錢包會讓您能夠在這項裝置上存取和管理不一樣的 foxd 錢包。</string>
   <!-- Start wipe wallet view warning -->
-  <string name="WipeWallet.startWarning">您將再也無法從這項裝置存取目前的 RVN 錢包。餘額會留在片段上。</string>
+  <string name="WipeWallet.startWarning">您將再也無法從這項裝置存取目前的 foxd 錢包。餘額會留在片段上。</string>
   <!-- Wipe wallet navigation item title. -->
     <!-- Wipe wallet button title -->
   <string name="WipeWallet.wipe">抹除</string>

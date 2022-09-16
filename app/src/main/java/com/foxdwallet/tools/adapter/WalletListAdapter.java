@@ -22,7 +22,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.gson.Gson;
-import com.platform.chart.model.RVNToBTCData;
+import com.platform.chart.model.foxdToBTCData;
 import com.platform.chart.widget.ChartModel;
 import com.platform.chart.widget.ChartView;
 import com.platform.chart.widget.SeriesElement;
@@ -53,7 +53,7 @@ public class WalletListAdapter extends RecyclerView.Adapter<WalletListAdapter.Wa
     //   private SyncManager mSyncManager;
     private boolean mObserverIsStarting;
     private boolean chartLoaded;
-    private String CHART_URL = "https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=BTC-RVN&tickInterval=day";
+    private String CHART_URL = "https://bittrex.com/Api/v2.0/pub/market/GetTicks?marketName=BTC-foxd&tickInterval=day";
 
 
     public WalletListAdapter(HomeActivity context, ArrayList<BaseWalletManager> walletList) {
@@ -110,7 +110,7 @@ public class WalletListAdapter extends RecyclerView.Adapter<WalletListAdapter.Wa
         holder.mChart.setBackground(drawable);
         holder.mChart.setLayerType(WebView.LAYER_TYPE_NONE, null);
         if (!chartLoaded)
-            getRVNValueHistory(holder.mChart);
+            getfoxdValueHistory(holder.mChart);
         holder.mWalletInfos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -252,7 +252,7 @@ public class WalletListAdapter extends RecyclerView.Adapter<WalletListAdapter.Wa
         }
     }
 
-    private void getRVNValueHistory(final ChartView chartView) {
+    private void getfoxdValueHistory(final ChartView chartView) {
         // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(mContext);
 
@@ -261,7 +261,7 @@ public class WalletListAdapter extends RecyclerView.Adapter<WalletListAdapter.Wa
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        RVNToBTCData data = new Gson().fromJson(response, RVNToBTCData.class);
+                        foxdToBTCData data = new Gson().fromJson(response, foxdToBTCData.class);
 
                         // Set the data on the chart view
                         setChartData(chartView, data);
@@ -279,7 +279,7 @@ public class WalletListAdapter extends RecyclerView.Adapter<WalletListAdapter.Wa
         queue.add(stringRequest);
     }
 
-    private void setChartData(ChartView chartView, RVNToBTCData data) {
+    private void setChartData(ChartView chartView, foxdToBTCData data) {
         ChartModel chartModel = new ChartModel()
                 .chartType(ChartModel.ChartType.AreaSpline)
                 .backgroundColor("#2e3e80")
@@ -287,7 +287,7 @@ public class WalletListAdapter extends RecyclerView.Adapter<WalletListAdapter.Wa
                 .yAxisGridLineWidth(0)
                 .borderRadius(5)
                 .series(new SeriesElement[]{
-                        new SeriesElement().name("RVN")
+                        new SeriesElement().name("foxd")
                                 .data(
                                         data.toObjectArray()
                                 ).lineWidth(1.0f)

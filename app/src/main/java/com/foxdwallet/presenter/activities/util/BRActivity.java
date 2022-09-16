@@ -323,7 +323,7 @@ public class BRActivity extends Activity {
                 && !(app instanceof DisabledActivity)) {
             if (!BRKeyStore.getPinCode(app).isEmpty()) {
                 Log.e(TAG, "lockIfNeeded: " + FoxdApp.backgroundedTime);
-                BRAnimator.startRvnActivity(app, true);
+                BRAnimator.startfoxdActivity(app, true);
             }
         }
 

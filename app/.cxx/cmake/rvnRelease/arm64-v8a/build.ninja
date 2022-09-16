@@ -449,9 +449,9 @@ build CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionAsset
 
 
 #############################################
-# Link the shared library ..\..\..\..\build\intermediates\cmake\rvnRelease\obj\arm64-v8a\libcore.so
+# Link the shared library ..\..\..\..\build\intermediates\cmake\foxdRelease\obj\arm64-v8a\libcore.so
 
-build ../../../../build/intermediates/cmake/rvnRelease/obj/arm64-v8a/libcore.so: CXX_SHARED_LIBRARY_LINKER__core CMakeFiles/core.dir/src/main/jni/core/BRAddress.c.o CMakeFiles/core.dir/src/main/jni/core/BRBase58.c.o CMakeFiles/core.dir/src/main/jni/core/BRBIP44Sequence.c.o CMakeFiles/core.dir/src/main/jni/core/BRBIP38Key.c.o CMakeFiles/core.dir/src/main/jni/core/BRBIP39Mnemonic.c.o CMakeFiles/core.dir/src/main/jni/core/BRBloomFilter.c.o CMakeFiles/core.dir/src/main/jni/core/BRCrypto.c.o CMakeFiles/core.dir/src/main/jni/core/BRKey.c.o CMakeFiles/core.dir/src/main/jni/core/BRMerkleBlock.c.o CMakeFiles/core.dir/src/main/jni/core/BRPaymentProtocol.c.o CMakeFiles/core.dir/src/main/jni/core/BRPeer.c.o CMakeFiles/core.dir/src/main/jni/core/BRPeerManager.c.o CMakeFiles/core.dir/src/main/jni/core/BRSet.c.o CMakeFiles/core.dir/src/main/jni/core/BRTransaction.c.o CMakeFiles/core.dir/src/main/jni/core/BRWallet.c.o CMakeFiles/core.dir/src/main/jni/core/BRAssets.c.o CMakeFiles/core.dir/src/main/jni/core/BRScript.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/blake.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/bmw.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/cubehash.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/echo.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/groestl.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/jh.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/keccak.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/luffa.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/shavite.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/simd.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/skein.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_fugue.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_hamsi.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_hamsi_helper.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_sha2.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_sha512.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_shabal.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_whirlpool.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/tiger.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/keccak.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/keccakf800.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/keccakf1600.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/managed.cpp.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/primes.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/ethash.cpp.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/progpow.cpp.o CMakeFiles/core.dir/src/main/jni/BRCoreJni.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreJniReference.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreAddress.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreChainParams.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePeer.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreMasterPubKey.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreKey.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreMerkleBlock.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePeerManager.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransaction.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionInput.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionOutput.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePaymentProtocol.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreWallet.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionAsset.c.o
+build ../../../../build/intermediates/cmake/foxdRelease/obj/arm64-v8a/libcore.so: CXX_SHARED_LIBRARY_LINKER__core CMakeFiles/core.dir/src/main/jni/core/BRAddress.c.o CMakeFiles/core.dir/src/main/jni/core/BRBase58.c.o CMakeFiles/core.dir/src/main/jni/core/BRBIP44Sequence.c.o CMakeFiles/core.dir/src/main/jni/core/BRBIP38Key.c.o CMakeFiles/core.dir/src/main/jni/core/BRBIP39Mnemonic.c.o CMakeFiles/core.dir/src/main/jni/core/BRBloomFilter.c.o CMakeFiles/core.dir/src/main/jni/core/BRCrypto.c.o CMakeFiles/core.dir/src/main/jni/core/BRKey.c.o CMakeFiles/core.dir/src/main/jni/core/BRMerkleBlock.c.o CMakeFiles/core.dir/src/main/jni/core/BRPaymentProtocol.c.o CMakeFiles/core.dir/src/main/jni/core/BRPeer.c.o CMakeFiles/core.dir/src/main/jni/core/BRPeerManager.c.o CMakeFiles/core.dir/src/main/jni/core/BRSet.c.o CMakeFiles/core.dir/src/main/jni/core/BRTransaction.c.o CMakeFiles/core.dir/src/main/jni/core/BRWallet.c.o CMakeFiles/core.dir/src/main/jni/core/BRAssets.c.o CMakeFiles/core.dir/src/main/jni/core/BRScript.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/blake.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/bmw.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/cubehash.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/echo.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/groestl.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/jh.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/keccak.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/luffa.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/shavite.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/simd.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/skein.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_fugue.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_hamsi.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_hamsi_helper.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_sha2.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_sha512.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_shabal.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/sph_whirlpool.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/tiger.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/keccak.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/keccakf800.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/keccakf1600.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/managed.cpp.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/primes.c.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/ethash.cpp.o CMakeFiles/core.dir/src/main/jni/core/crypto/ethash/progpow.cpp.o CMakeFiles/core.dir/src/main/jni/BRCoreJni.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreJniReference.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreAddress.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreChainParams.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePeer.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreMasterPubKey.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreKey.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreMerkleBlock.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePeerManager.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransaction.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionInput.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionOutput.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCorePaymentProtocol.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreWallet.c.o CMakeFiles/core.dir/src/main/jni/com_ravencoin_core_BRCoreTransactionAsset.c.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG
   LINK_FLAGS = -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -landroid -llog -latomic -lm
@@ -460,14 +460,14 @@ build ../../../../build/intermediates/cmake/rvnRelease/obj/arm64-v8a/libcore.so:
   PRE_LINK = cd .
   SONAME = libcore.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\rvnRelease\obj\arm64-v8a\libcore.so
+  TARGET_FILE = ..\..\..\..\build\intermediates\cmake\foxdRelease\obj\arm64-v8a\libcore.so
   TARGET_PDB = core.so.dbg
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnRelease\arm64-v8a && C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdRelease\arm64-v8a && C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -476,7 +476,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnRelease\arm64-v8a && C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\Users\bill\foxdwallet-android\app -BC:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnRelease\arm64-v8a"
+  COMMAND = cmd.exe /C "cd /D C:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdRelease\arm64-v8a && C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\Users\bill\foxdwallet-android\app -BC:\Users\bill\foxdwallet-android\app\.cxx\cmake\foxdRelease\arm64-v8a"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -484,8 +484,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build core: phony ../../../../build/intermediates/cmake/rvnRelease/obj/arm64-v8a/libcore.so
-build libcore.so: phony ../../../../build/intermediates/cmake/rvnRelease/obj/arm64-v8a/libcore.so
+build core: phony ../../../../build/intermediates/cmake/foxdRelease/obj/arm64-v8a/libcore.so
+build libcore.so: phony ../../../../build/intermediates/cmake/foxdRelease/obj/arm64-v8a/libcore.so
 # =============================================================================
 # Folder targets.
 
@@ -497,7 +497,7 @@ build libcore.so: phony ../../../../build/intermediates/cmake/rvnRelease/obj/arm
 #############################################
 # The main all target.
 
-build all: phony ../../../../build/intermediates/cmake/rvnRelease/obj/arm64-v8a/libcore.so
+build all: phony ../../../../build/intermediates/cmake/foxdRelease/obj/arm64-v8a/libcore.so
 
 #############################################
 # Make the all target the default.

@@ -144,12 +144,12 @@ public class FingerprintActivity extends BRActivity {
         //amount in satoshis
         BigDecimal satoshis = new BigDecimal(BRKeyStore.getSpendLimit(this));
         WalletsMaster master = WalletsMaster.getInstance(this);
-        //amount in RVN, mRVN or uRVN
+        //amount in foxd, mfoxd or ufoxd
         BigDecimal amount = master.getCurrentWallet(this).getFiatForSmallestCrypto(this, satoshis, null);
         //amount in user preferred ISO (e.g. USD)
         BigDecimal curAmount = master.getCurrentWallet(this).getFiatForSmallestCrypto(this, satoshis, null);
         //formatted string for the label
-        return String.format(getString(R.string.TouchIdSettings_spendingLimit), CurrencyUtils.getFormattedAmount(this, "RVN", amount), CurrencyUtils.getFormattedAmount(this, iso, curAmount));
+        return String.format(getString(R.string.TouchIdSettings_spendingLimit), CurrencyUtils.getFormattedAmount(this, "foxd", amount), CurrencyUtils.getFormattedAmount(this, iso, curAmount));
     }
 
     @Deprecated
@@ -201,7 +201,7 @@ public class FingerprintActivity extends BRActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-//        BRAnimator.startRvnActivity(this, false);
+//        BRAnimator.startfoxdActivity(this, false);
         overridePendingTransition(R.anim.enter_from_left, R.anim.exit_to_right);
     }
 

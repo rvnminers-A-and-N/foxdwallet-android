@@ -173,9 +173,9 @@ public class ReEnterPinActivity extends BRActivity {
                 if (getIntent().getBooleanExtra(IS_CREATE_WALLET, false)) {
                     PostAuth.getInstance().onCreateWalletAuth(ReEnterPinActivity.this, false);
                 } else
-                    BRAnimator.startRvnActivity(this, false);
+                    BRAnimator.startfoxdActivity(this, false);
             } else {
-                BRAnimator.showRvnSignal(this, getString(R.string.Alerts_pinSet), getString(R.string.UpdatePin_createInstruction), R.drawable.ic_check_mark_white, new BROnSignalCompletion() {
+                BRAnimator.showfoxdSignal(this, getString(R.string.Alerts_pinSet), getString(R.string.UpdatePin_createInstruction), R.drawable.ic_check_mark_white, new BROnSignalCompletion() {
                     @Override
                     public void onComplete() {
                         PostAuth.getInstance().onCreateWalletAuth(ReEnterPinActivity.this, false);

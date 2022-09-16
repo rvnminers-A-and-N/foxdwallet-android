@@ -72,10 +72,10 @@ Release_checklist
 /app/.externalNativeBuild/
 .idea/caches/gradle_models.ser
 .idea/caches/build_file_checksums.ser
-app/rvn/release/app.aab
-app/rvn/release/output.json
-app/rvnTestnet/release/app.aab
-app/rvnTestnet/release/app.aab
-app/rvn/release/output.json
+app/foxd/release/app.aab
+app/foxd/release/output.json
+app/foxdTestnet/release/app.aab
+app/foxdTestnet/release/app.aab
+app/foxd/release/output.json
 .idea/caches/gradle_models.ser
 .idea/caches/build_file_checksums.ser

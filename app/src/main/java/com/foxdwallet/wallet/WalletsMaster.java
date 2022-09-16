@@ -60,7 +60,7 @@ public class WalletsMaster {
     public BaseWalletManager getWalletByIso(Context app, String iso) {
         if (Utils.isNullOrEmpty(iso))
             throw new RuntimeException("getWalletByIso with iso = null, Cannot happen!");
-        if (iso.equalsIgnoreCase("RVN"))
+        if (iso.equalsIgnoreCase("foxd"))
             return FoxdWalletManager.getInstance(app);
         return null;
     }
@@ -240,7 +240,7 @@ public class WalletsMaster {
             }
         }
         BaseWalletManager wallet = getWalletByIso(app, BRSharedPrefs.getCurrentWalletIso(app));
-        if (wallet == null) wallet = getWalletByIso(app, "RVN");
+        if (wallet == null) wallet = getWalletByIso(app, "foxd");
         wallet.connectWallet(app);
     }
 
@@ -278,7 +278,7 @@ public class WalletsMaster {
                     }, 0);
         } else {
             if (!m.noWallet(app)) {
-                BRAnimator.startRvnActivity(app, true);
+                BRAnimator.startfoxdActivity(app, true);
             }
             //else just sit in the intro screen
 

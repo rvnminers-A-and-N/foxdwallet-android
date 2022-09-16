@@ -142,7 +142,7 @@ public class SecurityCenterActivity extends BRActivity {
     public void onBackPressed() {
         super.onBackPressed();
         if (ActivityUTILS.isLast(this)) {
-            BRAnimator.startRvnActivity(this, false);
+            BRAnimator.startfoxdActivity(this, false);
         } else {
             super.onBackPressed();
         }
