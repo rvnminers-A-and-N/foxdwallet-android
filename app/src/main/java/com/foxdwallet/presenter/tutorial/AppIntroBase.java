@@ -46,11 +46,11 @@ public abstract class AppIntroBase extends AppCompatActivity implements
     private static final int DEFAULT_SCROLL_DURATION_FACTOR = 1;
     private static final int PERMISSIONS_REQUEST_ALL_PERMISSIONS = 1;
     private static final String INSTANCE_DATA_IMMERSIVE_MODE_ENABLED =
-            "com.foxdwallet.presenter.intro_immersive_mode_enabled";
+            "com.com.foxdwallet.presenter.intro_immersive_mode_enabled";
     private static final String INSTANCE_DATA_IMMERSIVE_MODE_STICKY =
-            "com.foxdwallet.presenter.intro_immersive_mode_sticky";
+            "com.com.foxdwallet.presenter.intro_immersive_mode_sticky";
     private static final String INSTANCE_DATA_COLOR_TRANSITIONS_ENABLED =
-            "com.foxdwallet.presenter.intro_color_transitions_enabled";
+            "com.com.foxdwallet.presenter.intro_color_transitions_enabled";
     protected final List<Fragment> fragments = new Vector<>();
     private final ArgbEvaluator argbEvaluator = new ArgbEvaluator();
     protected PagerAdapter mPagerAdapter;

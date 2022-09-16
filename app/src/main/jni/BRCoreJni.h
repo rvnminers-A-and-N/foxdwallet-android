@@ -1,5 +1,5 @@
 //  Created by Ed Gamble on 1/23/2018
-//  Copyright (c) 2018 ravenwallet LLC.
+//  Copyright (c) 2018 com.foxdwallet LLC.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -24,7 +24,7 @@
 
 #include <jni.h>
 #include <BRTransaction.h>
-#include "com_ravencoin_core_BRCoreJniReference.h"
+#include "com_foxdcoin_core_BRCoreJniReference.h"
 
 /**
  *

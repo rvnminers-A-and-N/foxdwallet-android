@@ -114,7 +114,7 @@ public class SendManager {
                     long minAmount = walletManager.getWallet().getMinOutputAmount();
                     errTitle[0] = app.getString(R.string.Alerts_sendFailure);
                     errMessage[0] = String.format(Locale.getDefault(), app.getString(R.string.PaymentProtocol_Errors_smallPayment),
-                            "µ"+BRConstants.symbolRavenPrimary + new BigDecimal(minAmount).divide(new BigDecimal(100), BRConstants.ROUNDING_MODE));
+                            "µ"+BRConstants.symbolFoxdPrimary + new BigDecimal(minAmount).divide(new BigDecimal(100), BRConstants.ROUNDING_MODE));
                 } catch (SpendingNotAllowed spendingNotAllowed) {
                     ((Activity) app).runOnUiThread(new Runnable() {
                         @Override

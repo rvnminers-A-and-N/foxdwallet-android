@@ -28,13 +28,13 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 //import static com.platform.APIClient.BREAD_POINT;
 
-public class RavenApp extends Application {
+public class FoxdApp extends Application {
 
-    private static final String TAG = RavenApp.class.getName();
+    private static final String TAG = FoxdApp.class.getName();
     public static int DISPLAY_HEIGHT_PX;
     FingerprintManager mFingerprintManager;
     // host is the server(s) on which the API is hosted
-    public static String HOST = "api.foxdwallet.org";
+    public static String HOST = "api.com.foxdwallet.org";
     private static List<OnAppBackgrounded> listeners;
     private static Timer isBackgroundChecker;
     public static AtomicInteger activityCounter = new AtomicInteger();
@@ -102,14 +102,14 @@ public class RavenApp extends Application {
 //        return mHeaders;
 //    }
 
-    public static Context getRvnContext() {
+    public static Context getFoxdContext() {
         Context app = currentActivity;
         if (app == null) app = SyncReceiver.app;
         if (app == null) app = mContext;
         return app;
     }
 
-    public static void setRvnContext(Activity app) {
+    public static void setFoxdContext(Activity app) {
         currentActivity = app;
     }
 

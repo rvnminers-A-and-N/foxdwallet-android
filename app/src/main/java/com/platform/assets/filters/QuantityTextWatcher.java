@@ -5,12 +5,9 @@ import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.widget.EditText;
 
-import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.Locale;
-
-import static com.ravenwallet.tools.util.BRConstants.MAX_ASSET_QUANTITY;
 
 public class QuantityTextWatcher implements TextWatcher {
 

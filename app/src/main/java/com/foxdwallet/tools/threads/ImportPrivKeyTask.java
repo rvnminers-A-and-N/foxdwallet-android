@@ -111,7 +111,7 @@ public class ImportPrivKeyTask extends AsyncTask<String, String, String> {
         String decoratedAddress = wm.decorateAddress(app, tmpAddress);
 
         //automatically uses testnet if x-testnet is true
-//        String fullUrl = String.format("https://%s/q/addr/%s/utxo?currency=%s", RavenApp.HOST, decoratedAddress, iso);
+//        String fullUrl = String.format("https://%s/q/addr/%s/utxo?currency=%s", FoxdApp.HOST, decoratedAddress, iso);
         String fullUrl = String.format(BRConstants.networkUrl(), decoratedAddress);
         mTransaction = createSweepingTx(app, fullUrl);
         if (mTransaction == null) {

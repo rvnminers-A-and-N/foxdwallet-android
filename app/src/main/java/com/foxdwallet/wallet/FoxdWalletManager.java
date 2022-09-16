@@ -60,7 +60,7 @@ import com.foxdwallet.tools.security.BRKeyStore;
 import com.foxdwallet.tools.sqlite.CurrencyDataSource;
 import com.foxdwallet.tools.sqlite.MerkleBlockDataSource;
 import com.foxdwallet.tools.sqlite.PeerDataSource;
-import com.foxdwallet.tools.sqlite.RvnTransactionDataStore;
+import com.foxdwallet.tools.sqlite.FoxdTransactionDataStore;
 import com.foxdwallet.tools.sqlite.TransactionStorageManager;
 import com.foxdwallet.tools.threads.executor.BRExecutor;
 import com.foxdwallet.tools.util.BRConstants;
@@ -96,17 +96,17 @@ import static com.foxdwallet.tools.util.BRConstants.SATOSHIS;
 import static com.foxdwallet.tools.util.BRConstants.SUB_FEE;
 import static com.foxdwallet.tools.util.BRConstants.UNIQUE_FEE;
 
-public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletManager {
+public class FoxdWalletManager extends BRCoreWalletManager implements BaseWalletManager {
 
-    private static final String TAG = RvnWalletManager.class.getName();
+    private static final String TAG = FoxdWalletManager.class.getName();
 
-    public static String ISO = "RVN";
+    public static String ISO = "FOXD";
 
-    private static final String mName = "Ravencoin";
-    public static final String RVN_SCHEME = "raven";
-    public static final long MAX_RVN = 21000000 * 1000L;
+    private static final String mName = "Foxdcoin";
+    public static final String FOXD_SCHEME = "foxd";
+    public static final long MAX_FOXD = 21000000 * 1000L;
 
-    private static RvnWalletManager instance;
+    private static FoxdWalletManager instance;
     private WalletUiConfiguration uiConfig;
     private boolean isTransfer = true;
     private boolean isTransferAsset = false;
@@ -123,7 +123,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     private Executor listenerExecutor = Executors.newSingleThreadExecutor();
 
-    public synchronized static RvnWalletManager getInstance(Context app) {
+    public synchronized static FoxdWalletManager getInstance(Context app) {
         if (instance == null) {
             byte[] rawPubKey = BRKeyStore.getMasterPublicKey(app);
             if (Utils.isNullOrEmpty(rawPubKey)) {
@@ -136,14 +136,14 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 //            int time = (int) (System.currentTimeMillis() / DateUtils.SECOND_IN_MILLIS);
             long time = BRKeyStore.getWalletCreationTime(app);
 
-            instance = new RvnWalletManager(app, pubKey, BuildConfig.TESTNET ? BRCoreChainParams.testnetChainParams : BRCoreChainParams.mainnetChainParams, time);
+            instance = new FoxdWalletManager(app, pubKey, BuildConfig.TESTNET ? BRCoreChainParams.testnetChainParams : BRCoreChainParams.mainnetChainParams, time);
         }
         return instance;
     }
 
-    private RvnWalletManager(final Context app, BRCoreMasterPubKey masterPubKey,
-                             BRCoreChainParams chainParams,
-                             double earliestPeerTime) {
+    private FoxdWalletManager(final Context app, BRCoreMasterPubKey masterPubKey,
+                              BRCoreChainParams chainParams,
+                              double earliestPeerTime) {
         super(masterPubKey, chainParams, earliestPeerTime);
         if (isInitiatingWallet) return;
         isInitiatingWallet = true;
@@ -203,7 +203,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     @Override
     public void updateFee(Context app) {
         if (app == null) {
-            app = FoxdApp.getRvnContext();
+            app = FoxdApp.getFoxdContext();
             if (app == null) {
                 Log.e(TAG, "updateFee: FAILED, app is null");
                 return;
@@ -299,27 +299,27 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
         if (app != null) {
             int unit = BRSharedPrefs.getCryptoDenomination(app, getIso(app));
             switch (unit) {
-                case BRConstants.CURRENT_UNIT_URVN:
-                    if (symbolUtils.doesDeviceSupportSymbol(BRConstants.symbolRavenPrimary)) {
-                        currencySymbolString = "µ" + BRConstants.symbolRavenPrimary;
+                case BRConstants.CURRENT_UNIT_UFOXD:
+                    if (symbolUtils.doesDeviceSupportSymbol(BRConstants.symbolFoxdPrimary)) {
+                        currencySymbolString = "µ" + BRConstants.symbolFoxdPrimary;
                     } else {
-                        currencySymbolString = "µ" + BRConstants.symbolRavenSecondary;
+                        currencySymbolString = "µ" + BRConstants.symbolFoxdSecondary;
                     }
                     break;
-                case BRConstants.CURRENT_UNIT_MRVN:
-                    if (symbolUtils.doesDeviceSupportSymbol(BRConstants.symbolRavenPrimary)) {
-                        currencySymbolString = "m" + BRConstants.symbolRavenPrimary;
+                case BRConstants.CURRENT_UNIT_MFOXD:
+                    if (symbolUtils.doesDeviceSupportSymbol(BRConstants.symbolFoxdPrimary)) {
+                        currencySymbolString = "m" + BRConstants.symbolFoxdPrimary;
                     } else {
-                        currencySymbolString = "m" + BRConstants.symbolRavenSecondary;
+                        currencySymbolString = "m" + BRConstants.symbolFoxdSecondary;
                     }
                     break;
-                case BRConstants.CURRENT_UNIT_RAVENS:
+                case BRConstants.CURRENT_UNIT_FOXDS:
 
-                    if (symbolUtils.doesDeviceSupportSymbol(BRConstants.symbolRavenPrimary)) {
-                        currencySymbolString = BRConstants.symbolRavenPrimary;
+                    if (symbolUtils.doesDeviceSupportSymbol(BRConstants.symbolFoxdPrimary)) {
+                        currencySymbolString = BRConstants.symbolFoxdPrimary;
 
                     } else {
-                        currencySymbolString = BRConstants.symbolRavenPrimary;
+                        currencySymbolString = BRConstants.symbolFoxdPrimary;
 
                     }
                     break;
@@ -335,7 +335,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     @Override
     public String getScheme(Context app) {
-        return RVN_SCHEME;
+        return FOXD_SCHEME;
     }
 
     @Override
@@ -367,9 +367,9 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     public int getMaxDecimalPlaces(Context app) {
         int unit = BRSharedPrefs.getCryptoDenomination(app, getIso(app));
         switch (unit) {
-            case BRConstants.CURRENT_UNIT_URVN:
+            case BRConstants.CURRENT_UNIT_UFOXD:
                 return 5;
-            case BRConstants.CURRENT_UNIT_MRVN:
+            case BRConstants.CURRENT_UNIT_MFOXD:
                 return 8;
             default:
                 return 8;
@@ -388,7 +388,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     @Override
     public void wipeData(Context app) {
-        RvnTransactionDataStore.getInstance(app).deleteAllTransactions(app, getIso(app));
+        FoxdTransactionDataStore.getInstance(app).deleteAllTransactions(app, getIso(app));
         MerkleBlockDataSource.getInstance(app).deleteAllBlocks(app, getIso(app));
         PeerDataSource.getInstance(app).deleteAllPeers(app, getIso(app));
         AssetsRepository.getInstance(app).deleteAllAssets();
@@ -433,7 +433,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     @Override
     public BigDecimal getMaxAmount(Context app) {
         //return max raven
-        return new BigDecimal(MAX_RVN);
+        return new BigDecimal(MAX_FOXD);
     }
 
     @Override
@@ -480,13 +480,13 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
         int unit = BRSharedPrefs.getCryptoDenomination(app, getIso(app));
         BigDecimal result = new BigDecimal(0);
         switch (unit) {
-            case BRConstants.CURRENT_UNIT_URVN:
+            case BRConstants.CURRENT_UNIT_UFOXD:
                 result = fiatAmount.divide(new BigDecimal(rate), 2, ROUNDING_MODE).multiply(new BigDecimal("1000000"));
                 break;
-            case BRConstants.CURRENT_UNIT_MRVN:
+            case BRConstants.CURRENT_UNIT_MFOXD:
                 result = fiatAmount.divide(new BigDecimal(rate), 5, ROUNDING_MODE).multiply(new BigDecimal("100000"));
                 break;
-            case BRConstants.CURRENT_UNIT_RAVENS:
+            case BRConstants.CURRENT_UNIT_FOXDS:
                 result = fiatAmount.divide(new BigDecimal(rate), 8, ROUNDING_MODE);
                 break;
         }
@@ -500,13 +500,13 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
         BigDecimal result = new BigDecimal(0);
         int unit = BRSharedPrefs.getCryptoDenomination(app, getIso(app));
         switch (unit) {
-            case BRConstants.CURRENT_UNIT_URVN:
+            case BRConstants.CURRENT_UNIT_UFOXD:
                 result = amount.divide(new BigDecimal("100"), 2, ROUNDING_MODE);
                 break;
-            case BRConstants.CURRENT_UNIT_MRVN:
+            case BRConstants.CURRENT_UNIT_MFOXD:
                 result = amount.divide(new BigDecimal("100000"), 5, ROUNDING_MODE);
                 break;
-            case BRConstants.CURRENT_UNIT_RAVENS:
+            case BRConstants.CURRENT_UNIT_FOXDS:
                 result = amount.divide(new BigDecimal("100000000"), 8, ROUNDING_MODE);
                 break;
         }
@@ -519,13 +519,13 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
         BigDecimal result = new BigDecimal(0);
         int unit = BRSharedPrefs.getCryptoDenomination(app, getIso(app));
         switch (unit) {
-            case BRConstants.CURRENT_UNIT_URVN:
+            case BRConstants.CURRENT_UNIT_UFOXD:
                 result = amount.multiply(new BigDecimal("1"));
                 break;
-            case BRConstants.CURRENT_UNIT_MRVN:
+            case BRConstants.CURRENT_UNIT_MFOXD:
                 result = amount.multiply(new BigDecimal("100000"));
                 break;
-            case BRConstants.CURRENT_UNIT_RAVENS:
+            case BRConstants.CURRENT_UNIT_FOXDS:
                 result = amount.multiply(new BigDecimal("100000000"));
                 break;
         }
@@ -579,7 +579,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     @Override
     public void txPublished(final String error) {
         super.txPublished(error);
-        final Context app = FoxdApp.getRvnContext();
+        final Context app = FoxdApp.getFoxdContext();
       /*  if (Utils.isNullOrEmpty(error)) return;
         BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
             @Override
@@ -637,7 +637,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     @Override
     public void balanceChanged(long balance) {
         super.balanceChanged(balance);
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         setCashedBalance(app, balance);
         for (OnTxListModified list : txModifiedListeners)
             if (list != null) list.txListModified(null);
@@ -656,7 +656,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
             public void run() {
                 long blockHeight = getPeerManager().getLastBlockHeight();
 
-                final Context ctx = FoxdApp.getRvnContext();
+                final Context ctx = FoxdApp.getFoxdContext();
                 if (ctx == null) return;
                 BRSharedPrefs.putLastBlockHeight(ctx, getIso(ctx), (int) blockHeight);
             }
@@ -667,7 +667,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     public void saveBlocks(boolean replace, BRCoreMerkleBlock[] blocks) {
         super.saveBlocks(replace, blocks);
 
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         if (app == null) return;
         if (replace) MerkleBlockDataSource.getInstance(app).deleteAllBlocks(app, getIso(app));
         BlockEntity[] entities = new BlockEntity[blocks.length];
@@ -681,7 +681,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     @Override
     public void savePeers(boolean replace, BRCorePeer[] peers) {
         super.savePeers(replace, peers);
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         if (app == null) return;
         if (replace) PeerDataSource.getInstance(app).deleteAllPeers(app, getIso(app));
         PeerEntity[] entities = new PeerEntity[peers.length];
@@ -694,16 +694,16 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     @Override
     public boolean networkIsReachable() {
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         return InternetManager.getInstance().isConnected(app);
     }
 
 
     @Override
     public BRCoreTransaction[] loadTransactions() {
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
 
-        List<BRTransactionEntity> txs = RvnTransactionDataStore.getInstance(app).getAllTransactions(app, getIso(app));
+        List<BRTransactionEntity> txs = FoxdTransactionDataStore.getInstance(app).getAllTransactions(app, getIso(app));
         if (txs == null || txs.size() == 0) return new BRCoreTransaction[0];
 
         List<BRCoreTransaction> filteredTransactions = new ArrayList<>();
@@ -747,7 +747,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     @Override
     public BRCoreMerkleBlock[] loadBlocks() {
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         List<BRMerkleBlockEntity> blocks = MerkleBlockDataSource.getInstance(app).getAllMerkleBlocks(app, getIso(app));
         if (blocks == null || blocks.size() == 0) return new BRCoreMerkleBlock[0];
         BRCoreMerkleBlock arr[] = new BRCoreMerkleBlock[blocks.size()];
@@ -760,7 +760,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     @Override
     public BRCorePeer[] loadPeers() {
-        Context app = FoxdApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         List<BRPeerEntity> peers = PeerDataSource.getInstance(app).getAllPeers(app, getIso(app));
         if (peers == null || peers.size() == 0) return new BRCorePeer[0];
         BRCorePeer arr[] = new BRCorePeer[peers.size()];
@@ -775,7 +775,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     public void syncStarted() {
         super.syncStarted();
         Log.d(TAG, "syncStarted: ");
-        final Context app = FoxdApp.getRvnContext();
+        final Context app = FoxdApp.getFoxdContext();
         if (Utils.isEmulatorOrDebug(app))
             BRExecutor.getInstance().forMainThreadTasks().execute(new Runnable() {
                 @Override
@@ -793,7 +793,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     public void syncStopped(final String error) {
         super.syncStopped(error);
         Log.d(TAG, "syncStopped: " + error);
-        final Context app = FoxdApp.getRvnContext();
+        final Context app = FoxdApp.getFoxdContext();
         if (Utils.isNullOrEmpty(error))
             BRSharedPrefs.putAllowSpend(app, getIso(app), true);
         for (SyncListener list : syncListeners)
@@ -838,7 +838,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     @Override
     public void onTxAdded(BRCoreTransaction transaction) {
         super.onTxAdded(transaction);
-        final Context ctx = FoxdApp.getRvnContext();
+        final Context ctx = FoxdApp.getFoxdContext();
         final WalletsMaster master = WalletsMaster.getInstance(ctx);
 //        TxMetaData metaData = KVStoreManager.getInstance().createMetadata(ctx, this, transaction);
 //        KVStoreManager.getInstance().putTxMetaData(ctx, metaData, transaction.getHash());
@@ -979,7 +979,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
 
     // callback of wallet.getAssetData from JNI
     public void onGetAssetData(BRCoreTransactionAsset asset) {
-        final Context ctx = FoxdApp.getRvnContext();
+        final Context ctx = FoxdApp.getFoxdContext();
         AssetsRepository repository = AssetsRepository.getInstance(ctx);
         repository.updateAssetData(asset);
 
@@ -1007,7 +1007,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     public void onTxDeleted(final String hash, int notifyUser, int recommendRescan) {
         super.onTxDeleted(hash, notifyUser, recommendRescan);
         Log.e(TAG, "onTxDeleted: " + String.format("hash: %s, notifyUser: %d, recommendRescan: %d", hash, notifyUser, recommendRescan));
-        final Context ctx = FoxdApp.getRvnContext();
+        final Context ctx = FoxdApp.getFoxdContext();
         if (ctx != null) {
             if (recommendRescan != 0)
                 BRSharedPrefs.putScanRecommended(ctx, getIso(ctx), true);
@@ -1030,7 +1030,7 @@ public class RvnWalletManager extends BRCoreWalletManager implements BaseWalletM
     public void onTxUpdated(final String hash, int blockHeight, int timeStamp) {
         super.onTxUpdated(hash, blockHeight, timeStamp);
         Log.d(TAG, "onTxUpdated: " + String.format("hash: %s, blockHeight: %d, timestamp: %d", hash, blockHeight, timeStamp));
-        Context ctx = FoxdApp.getRvnContext();
+        Context ctx = FoxdApp.getFoxdContext();
         if (ctx != null) {
             TransactionStorageManager.updateTransaction(ctx, getIso(ctx), new BRTransactionEntity(null, blockHeight, timeStamp, hash, getIso(ctx)));
             if (getWallet().getTransactions() != null)

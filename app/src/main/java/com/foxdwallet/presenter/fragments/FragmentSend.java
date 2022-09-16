@@ -62,7 +62,7 @@ import com.foxdwallet.tools.manager.SendManager;
 import com.foxdwallet.tools.util.BRConstants;
 import com.foxdwallet.tools.util.CurrencyUtils;
 import com.foxdwallet.tools.util.Utils;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
 
@@ -275,7 +275,7 @@ public class FragmentSend extends BaseAddressValidation {
                 updateText();
             }
         });
-        double maxAmount = RvnWalletManager.getInstance(getActivity()).getMaxAmount(getActivity()).doubleValue();
+        double maxAmount = FoxdWalletManager.getInstance(getActivity()).getMaxAmount(getActivity()).doubleValue();
         int maxDecimal = CurrencyUtils.getMaxDecimalPlaces(getActivity(), "RVN");
         amountEdit.setFilters(new InputFilter[]{new DecimalDigitsInputFilter(maxDecimal),
                 new InputFilterMinMax(0, maxAmount)});

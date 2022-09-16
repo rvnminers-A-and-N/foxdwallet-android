@@ -11,7 +11,7 @@ import android.content.IntentFilter;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import android.util.Log;
 
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 import com.foxdwallet.tools.manager.BRSharedPrefs;
 import com.foxdwallet.tools.util.BRConstants;
 import com.foxdwallet.wallet.WalletsMaster;
@@ -47,10 +47,10 @@ import java.util.Objects;
 public class SyncService extends IntentService {
     private static final String TAG = SyncService.class.getSimpleName();
 
-    public static final String ACTION_START_SYNC_PROGRESS_POLLING = "com.foxdwallet.tools.services.ACTION_START_SYNC_PROGRESS_POLLING";
-    public static final String ACTION_SYNC_PROGRESS_UPDATE = "com.foxdwallet.tools.services.ACTION_SYNC_PROGRESS_UPDATE";
-    public static final String EXTRA_WALLET_CURRENCY_CODE = "com.foxdwallet.tools.services.EXTRA_WALLET_CURRENCY_CODE";
-    public static final String EXTRA_PROGRESS = "com.foxdwallet.tools.services.EXTRA_PROGRESS";
+    public static final String ACTION_START_SYNC_PROGRESS_POLLING = "com.com.foxdwallet.tools.services.ACTION_START_SYNC_PROGRESS_POLLING";
+    public static final String ACTION_SYNC_PROGRESS_UPDATE = "com.com.foxdwallet.tools.services.ACTION_SYNC_PROGRESS_UPDATE";
+    public static final String EXTRA_WALLET_CURRENCY_CODE = "com.com.foxdwallet.tools.services.EXTRA_WALLET_CURRENCY_CODE";
+    public static final String EXTRA_PROGRESS = "com.com.foxdwallet.tools.services.EXTRA_PROGRESS";
 
     private static final int POLLING_INTERVAL = 5; // in milliseconds
 
@@ -61,8 +61,8 @@ public class SyncService extends IntentService {
     public static final int PROGRESS_START = 0;
     public static final int PROGRESS_FINISH = 1;
 
-    private static final String PACKAGE_NAME = RavenApp.getRvnContext() == null ? null
-            : RavenApp.getRvnContext().getApplicationContext().getPackageName();
+    private static final String PACKAGE_NAME = FoxdApp.getFoxdContext() == null ? null
+            : FoxdApp.getFoxdContext().getApplicationContext().getPackageName();
 
     static {
         try {
@@ -71,7 +71,7 @@ public class SyncService extends IntentService {
             e.printStackTrace();
             Log.d(TAG, "Native code library failed to load.\\n\" + " + e);
             Log.d(TAG, "Installer Package Name -> " + (PACKAGE_NAME == null ? "null"
-                    : RavenApp.getRvnContext().getPackageManager().getInstallerPackageName(PACKAGE_NAME)));
+                    : FoxdApp.getFoxdContext().getPackageManager().getInstallerPackageName(PACKAGE_NAME)));
         }
     }
 

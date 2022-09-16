@@ -22,7 +22,7 @@ import com.foxdwallet.tools.security.AuthManager;
 import com.foxdwallet.tools.security.BRKeyStore;
 import com.foxdwallet.tools.util.BRConstants;
 import com.foxdwallet.tools.util.CurrencyUtils;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -150,7 +150,7 @@ public class SpendLimitActivity extends BRActivity {
             // get the TextView and then set the text (item name) and tag (item ID) values
             final long item = getItem(position);
 
-            String cryptoAmount = CurrencyUtils.getFormattedAmount(mContext, RvnWalletManager.ISO, new BigDecimal(item));
+            String cryptoAmount = CurrencyUtils.getFormattedAmount(mContext, FoxdWalletManager.ISO, new BigDecimal(item));
             String text = String.format(item == 0 ? mContext.getString(R.string.TouchIdSpendingLimit) : "%s", cryptoAmount);
             holder.textViewItem.setText(text);
 
@@ -165,7 +165,7 @@ public class SpendLimitActivity extends BRActivity {
                     limit = item;
                     notifyDataSetChanged();
                     BRKeyStore.putSpendLimit(item, mContext);
-                    RvnWalletManager wallet = RvnWalletManager.getInstance(mContext);
+                    FoxdWalletManager wallet = FoxdWalletManager.getInstance(mContext);
                     if (wallet != null) {
                         long totalSent = wallet.getTotalSent(mContext); //collect total total sent
                         AuthManager.getInstance().setTotalLimit(mContext, totalSent + BRKeyStore.getSpendLimit(mContext));

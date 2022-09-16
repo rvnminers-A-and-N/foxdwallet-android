@@ -6,9 +6,7 @@ import android.graphics.Point;
 import android.os.Bundle;
 import android.util.Log;
 
-//import com.platform.HTTPServer;
-import com.platform.addressBook.AddressBookItem;
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 import com.foxdwallet.R;
 import com.foxdwallet.presenter.activities.DisabledActivity;
 import com.foxdwallet.presenter.activities.WalletActivity;
@@ -28,6 +26,7 @@ import com.foxdwallet.tools.util.BRConstants;
 import com.foxdwallet.tools.util.Utils;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.util.CryptoUriParser;
+import com.platform.addressBook.AddressBookItem;
 
 public class BRActivity extends Activity {
     private static final String TAG = BRActivity.class.getName();
@@ -46,15 +45,15 @@ public class BRActivity extends Activity {
     @Override
     protected void onStop() {
         super.onStop();
-        RavenApp.activityCounter.decrementAndGet();
-        RavenApp.onStop(this);
+        FoxdApp.activityCounter.decrementAndGet();
+        FoxdApp.onStop(this);
     }
 
     @Override
     protected void onResume() {
         init(this);
         super.onResume();
-        RavenApp.backgroundedTime = 0;
+        FoxdApp.backgroundedTime = 0;
 
     }
 
@@ -165,7 +164,7 @@ public class BRActivity extends Activity {
 //                            else if (BRBitId.isBitId(result))
 //                                BRBitId.signBitID(BRActivity.this, result, null);
                             else
-                                Log.e(TAG, "onActivityResult: not foxdwallet address");
+                                Log.e(TAG, "onActivityResult: not com.foxdwallet address");
                         }
                     });
                 }
@@ -302,8 +301,8 @@ public class BRActivity extends Activity {
             if (AuthManager.getInstance().isWalletDisabled(app))
                 AuthManager.getInstance().setWalletDisabled(app);
 
-        RavenApp.activityCounter.incrementAndGet();
-        RavenApp.setRvnContext(app);
+        FoxdApp.activityCounter.incrementAndGet();
+        FoxdApp.setFoxdContext(app);
 
 //        if (!HTTPServer.isStarted())
 //            BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
@@ -319,11 +318,11 @@ public class BRActivity extends Activity {
 
     private void lockIfNeeded(Activity app) {
         //lock wallet if 3 minutes passed
-        if (RavenApp.backgroundedTime != 0
-                && ((System.currentTimeMillis() - RavenApp.backgroundedTime) >= 180 * 1000)
+        if (FoxdApp.backgroundedTime != 0
+                && ((System.currentTimeMillis() - FoxdApp.backgroundedTime) >= 180 * 1000)
                 && !(app instanceof DisabledActivity)) {
             if (!BRKeyStore.getPinCode(app).isEmpty()) {
-                Log.e(TAG, "lockIfNeeded: " + RavenApp.backgroundedTime);
+                Log.e(TAG, "lockIfNeeded: " + FoxdApp.backgroundedTime);
                 BRAnimator.startRvnActivity(app, true);
             }
         }

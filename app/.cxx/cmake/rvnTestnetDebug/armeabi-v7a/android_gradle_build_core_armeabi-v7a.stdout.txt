@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnTestnetDebug\armeabi-v7a'
+ninja: no work to do.

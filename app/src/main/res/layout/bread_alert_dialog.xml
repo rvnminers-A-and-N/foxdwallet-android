@@ -45,7 +45,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/dialog_header" />
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/dialog_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +62,7 @@
             app:customTFont="CircularPro-Bold.otf"
             android:text="Raven alert title" />
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/dialog_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="1dp" />
-            <com.ravenwallet.presenter.customviews.BRButton
+            <com.foxdwallet.presenter.customviews.BRButton
                 android:id="@+id/neg_button"
                 style="?android:attr/buttonBarNegativeButtonStyle"
                 android:layout_width="wrap_content"
@@ -101,7 +101,7 @@
                 android:filterTouchesWhenObscured="true"
                 tools:text="@string/Button.cancel" />
 
-            <com.ravenwallet.presenter.customviews.BRButton
+            <com.foxdwallet.presenter.customviews.BRButton
                 android:id="@+id/pos_button"
                 style="?android:attr/buttonBarPositiveButtonStyle"
                 android:layout_width="wrap_content"

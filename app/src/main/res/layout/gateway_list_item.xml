@@ -6,7 +6,7 @@
                 android:background="@color/white"
     android:orientation="vertical">
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gateway_item_name"
         android:layout_width="fill_parent"
@@ -35,7 +35,7 @@
         android:filterTouchesWhenObscured="true"
         android:visibility="gone"/>
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/gateway_item_hostname"
         android:layout_width="fill_parent"

@@ -10,7 +10,7 @@ import android.security.keystore.UserNotAuthenticatedException;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 import com.foxdwallet.R;
 import com.foxdwallet.core.BRCoreKey;
 import com.foxdwallet.core.BRCoreMasterPubKey;
@@ -61,7 +61,7 @@ public class WalletsMaster {
         if (Utils.isNullOrEmpty(iso))
             throw new RuntimeException("getWalletByIso with iso = null, Cannot happen!");
         if (iso.equalsIgnoreCase("RVN"))
-            return RvnWalletManager.getInstance(app);
+            return FoxdWalletManager.getInstance(app);
         return null;
     }
 
@@ -227,13 +227,13 @@ public class WalletsMaster {
     }
 
     public void initWallets(Context app) {
-        if (!mWallets.contains(RvnWalletManager.getInstance(app)))
-            mWallets.add(RvnWalletManager.getInstance(app));
+        if (!mWallets.contains(FoxdWalletManager.getInstance(app)))
+            mWallets.add(FoxdWalletManager.getInstance(app));
     }
 
     public void initLastWallet(Context app) {
         if (app == null) {
-            app = RavenApp.getRvnContext();
+            app = FoxdApp.getFoxdContext();
             if (app == null) {
                 Log.e(TAG, "initLastWallet: FAILED, app is null");
                 return;

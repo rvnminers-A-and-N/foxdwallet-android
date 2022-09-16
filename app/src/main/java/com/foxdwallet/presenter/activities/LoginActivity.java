@@ -27,7 +27,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 import com.foxdwallet.R;
 import com.foxdwallet.presenter.activities.camera.ScanQRActivity;
 import com.foxdwallet.presenter.activities.util.BRActivity;
@@ -209,7 +209,7 @@ public class LoginActivity extends BRActivity {
             }
         }, 500);
 
-        RavenApp.addOnBackgroundedListener(new RavenApp.OnAppBackgrounded() {
+        FoxdApp.addOnBackgroundedListener(new FoxdApp.OnAppBackgrounded() {
             @Override
             public void onBackgrounded() {
                 //disconnect all wallets on backgrounded

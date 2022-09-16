@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.ravenwallet">
+    package="com.foxdwallet">
 
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -39,7 +39,7 @@
         android:required="false"/>
 
     <application
-        android:name="com.ravenwallet.RavenApp"
+        android:name="com.foxdwallet.FoxdApp"
         android:allowBackup="false"
         android:fullBackupContent="false"
         android:icon="@mipmap/ic_launcher"
@@ -53,7 +53,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.ravenwallet"
+            android:authorities="com.foxddev.foxdwallet"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -62,7 +62,7 @@
         </provider>
 
         <activity
-            android:name=".presenter.activities.intro.IntroActivity"
+            android:name="com.foxdwallet.presenter.activities.intro.IntroActivity"
             android:label="@string/app_name"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
@@ -73,7 +73,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".presenter.activities.WalletActivity"
+            android:name="com.foxdwallet.presenter.activities.WalletActivity"
             android:label="@string/app_name"
             android:launchMode="standard"
             android:screenOrientation="portrait"
@@ -95,178 +95,178 @@
                 android:resource="@xml/searchable"/>
         </activity>
         <activity
-            android:name="com.ravenwallet.presenter.activities.SetPinActivity"
+            android:name="com.foxdwallet.presenter.activities.SetPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.intro.RecoverActivity"
+            android:name="com.foxdwallet.presenter.activities.intro.RecoverActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.UnlinkActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.UnlinkActivity"
             android:launchMode="singleTask"
 
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.ImportActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.ImportActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.ReEnterPinActivity"
+            android:name="com.foxdwallet.presenter.activities.ReEnterPinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.UpdatePinActivity"
+            android:name="com.foxdwallet.presenter.activities.UpdatePinActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.LoginActivity"
+            android:name="com.foxdwallet.presenter.activities.LoginActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.SettingsActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.SettingsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.NotificationActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.NotificationActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.SyncBlockchainActivity"
-            android:launchMode="singleTask"
-
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name="com.ravenwallet.presenter.activities.settings.DisplayCurrencyActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.SyncBlockchainActivity"
             android:launchMode="singleTask"
 
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.IPFSGatewayActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.DisplayCurrencyActivity"
             android:launchMode="singleTask"
 
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.AboutActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.IPFSGatewayActivity"
             android:launchMode="singleTask"
 
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.SecurityCenterActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.AboutActivity"
             android:launchMode="singleTask"
 
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.AddressBookActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.SecurityCenterActivity"
+            android:launchMode="singleTask"
+
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.foxdwallet.presenter.activities.AddressBookActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.UserAddressesActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.UserAddressesActivity"
             android:windowSoftInputMode="adjustResize"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.ShareDataActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.ShareDataActivity"
             android:launchMode="singleTask"
 
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.intro.WriteDownActivity"
+            android:name="com.foxdwallet.presenter.activities.intro.WriteDownActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.PaperKeyActivity"
-            android:launchMode="singleTask"
-            android:screenOrientation="portrait"/>
-
-        <activity
-            android:name="com.ravenwallet.presenter.activities.settings.SpendLimitActivity"
+            android:name="com.foxdwallet.presenter.activities.PaperKeyActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.PaperKeyProveActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.SpendLimitActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.foxdwallet.presenter.activities.PaperKeyProveActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.InputWordsActivity"
+            android:name="com.foxdwallet.presenter.activities.InputWordsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.camera.ScanQRActivity"
+            android:name="com.foxdwallet.presenter.activities.camera.ScanQRActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait">
         </activity>
         <!--Use launchMode="standard for WebViewActivity in order to be able to have multiple instances"-->
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.WebViewActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.WebViewActivity"
             android:configChanges="orientation|keyboardHidden"
             android:launchMode="standard"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.DisabledActivity"
+            android:name="com.foxdwallet.presenter.activities.DisabledActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.FingerprintActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.FingerprintActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.AdvancedActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.AdvancedActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.NodesActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.NodesActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.camera.CameraActivity"
+            android:name="com.foxdwallet.presenter.activities.camera.CameraActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
         <activity
-            android:name="com.ravenwallet.presenter.activities.settings.TestActivity"
+            android:name="com.foxdwallet.presenter.activities.settings.TestActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.HomeActivity"
+            android:name="com.foxdwallet.presenter.activities.HomeActivity"
             android:launchMode="singleTask"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait"/>
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.CurrencySettingsActivity"
+            android:name="com.foxdwallet.presenter.activities.CurrencySettingsActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.ravenwallet.presenter.activities.settings.SupportWebViewActivity" />
+        <activity android:name="com.foxdwallet.presenter.activities.settings.SupportWebViewActivity" />
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.ManageAssetsActivity"
+            android:name="com.foxdwallet.presenter.activities.ManageAssetsActivity"
             android:windowSoftInputMode="adjustPan"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="com.ravenwallet.presenter.activities.TermsAndConditionsActivity"
+            android:name="com.foxdwallet.presenter.activities.TermsAndConditionsActivity"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="portrait" />
 
-        <activity android:name="com.ravenwallet.presenter.newTutorial.TutorialActivity"
+        <activity android:name="com.foxdwallet.presenter.newTutorial.TutorialActivity"
             android:windowSoftInputMode="stateAlwaysHidden"
             android:screenOrientation="portrait" />
         <service
-            android:name="com.ravenwallet.tools.services.SyncService"
+            android:name="com.foxdwallet.tools.services.SyncService"
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
         <service
-            android:name="com.ravenwallet.tools.listeners.SyncReceiver"
+            android:name="com.foxdwallet.tools.listeners.SyncReceiver"
             android:enabled="true"
             android:exported="false"
             android:label="SyncReceiver"/>

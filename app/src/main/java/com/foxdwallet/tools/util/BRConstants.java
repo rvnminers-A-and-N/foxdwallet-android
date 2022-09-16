@@ -79,13 +79,13 @@ public class BRConstants {
      */
     public static final int DEFAULT_FRACTION_DIGITS = 8;
 
-    public static final int CURRENT_UNIT_URVN = 0;
-    public static final int CURRENT_UNIT_MRVN = 1;
-    public static final int CURRENT_UNIT_RAVENS = 2;
+    public static final int CURRENT_UNIT_UFOXD = 0;
+    public static final int CURRENT_UNIT_MFOXD = 1;
+    public static final int CURRENT_UNIT_FOXDS = 2;
 
     public static final String symbolRotunda = "\uA75A";
-    public static final String symbolRavenSecondary = "\uA75B";
-    public static final String symbolRavenPrimary = "\uA75A";
+    public static final String symbolFoxdSecondary = "\uA75B";
+    public static final String symbolFoxdPrimary = "\uA75A";
 
     public static final long PASS_CODE_TIME_LIMIT = TimeUnit.MILLISECONDS.convert(6, TimeUnit.DAYS);
 

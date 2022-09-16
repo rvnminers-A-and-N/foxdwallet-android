@@ -130,8 +130,8 @@ const char *GetOpName(enum OPCODETYPE opcode) {
     case OP_NOP9                   : return "OP_NOP9";
     case OP_NOP10                  : return "OP_NOP10";
 
-    // rvn
-    case OP_RVN_ASSET              : return "OP_RVN_ASSET";
+    // foxd
+    case OP_FOXD_ASSET              : return "OP_FOXD_ASSET";
 
     case OP_INVALIDOPCODE          : return "OP_INVALIDOPCODE";
 
@@ -161,45 +161,45 @@ bool IsPayToScriptHash(const uint8_t *script, size_t scriptLen) {
 bool IsScriptNewAsset(const uint8_t *script, size_t scriptLen) {
 
     return (scriptLen > 39 &&
-            script[25] == OP_RVN_ASSET &&
-            script[27] == RVN_R &&
-            script[28] == RVN_V &&
-            script[29] == RVN_N &&
-            script[30] == RVN_Q);// &&
+            script[25] == OP_FOXD_ASSET &&
+            script[27] == FOXD_F &&
+            script[28] == FOXD_X &&
+            script[29] == FOXD_D &&
+            script[30] == FOXD_Q);// &&
 //            script[scriptLen - 2] == OP_DROP);
 }
 
 bool IsScriptOwnerAsset(const uint8_t *script, size_t scriptLen) {
 
-    bool helper = (scriptLen > 30 &&
-            script[25] == OP_RVN_ASSET &&
-            script[27] == RVN_R &&
-            script[28] == RVN_V &&
-            script[29] == RVN_N &&
-            script[30] == RVN_O);// &&
+    bool helper = (scriptLen > 31 &&
+            script[25] == OP_FOXD_ASSET &&
+            script[27] == FOXD_F &&
+            script[28] == FOXD_X &&
+            script[29] == FOXD_D &&
+            script[30] == FOXD_O);// &&
             //script[scriptLen - 2] == OP_DROP);
     return helper;
 }
 
 bool IsScriptReissueAsset(const uint8_t *script, size_t scriptLen) {
 
-    return (scriptLen > 30 &&
-            script[25] == OP_RVN_ASSET &&
-            script[27] == RVN_R &&
-            script[28] == RVN_V &&
-            script[29] == RVN_N &&
-            script[30] == RVN_R);// &&
+    return (scriptLen > 31 &&
+            script[25] == OP_FOXD_ASSET &&
+            script[27] == FOXD_F &&
+            script[28] == FOXD_X &&
+            script[29] == FOXD_D &&
+            script[30] == FOXD_R);// &&
             //script[scriptLen - 2] == OP_DROP);
 }
 
 bool IsScriptTransferAsset(const uint8_t *script, size_t scriptLen) {
 
-    bool helper = (scriptLen > 30 &&
-            script[25] == OP_RVN_ASSET &&
-            script[27] == RVN_R &&
-            script[28] == RVN_V &&
-            script[29] == RVN_N &&
-            script[30] == RVN_T);// &&
+    bool helper = (scriptLen > 31 &&
+            script[25] == OP_FOXD_ASSET &&
+            script[27] == FOXD_F &&
+            script[28] == FOXD_X &&
+            script[29] == FOXD_D &&
+            script[30] == FOXD_T);// &&
            // script[scriptLen - 2] == OP_DROP);
 
     return helper;
@@ -207,12 +207,13 @@ bool IsScriptTransferAsset(const uint8_t *script, size_t scriptLen) {
 
 //bool IsScriptOwnershipTransferAsset(const uint8_t *script, size_t scriptLen) {
 //    
-//    bool helper = (scriptLen > 30 &&
-//                   script[25] == OP_RVN_ASSET &&
-//                   script[27] == RVN_R &&
-//                   script[28] == RVN_V &&
-//                   script[29] == RVN_N &&
-//                   script[30] == RVN_T);// &&
+//    bool helper = (scriptLen > 31 &&
+//                   script[25] == OP_FOXD_ASSET &&
+//                   script[27] == FOXD_F &&
+//                   script[28] == FOXD_O &&
+//                   script[29] == FOXD_X &&
+//                   script[30] == FOXD_D &&
+//                   script[31] == FOXD_T);// &&
 //    // script[scriptLen - 2] == OP_DROP);
 //
 //    return helper;

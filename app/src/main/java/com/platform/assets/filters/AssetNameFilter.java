@@ -2,10 +2,6 @@ package com.platform.assets.filters;
 
 import android.text.InputFilter;
 import android.text.Spanned;
-import android.text.TextUtils;
-
-import com.platform.assets.AssetsRepository;
-import com.ravenwallet.presenter.fragments.FragmentCreateAsset;
 
 import java.util.regex.Pattern;
 

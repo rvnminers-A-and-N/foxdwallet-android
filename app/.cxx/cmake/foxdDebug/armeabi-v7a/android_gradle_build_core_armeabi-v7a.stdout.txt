@@ -1,0 +1,7 @@
+ninja: Entering directory `C:\Users\bill\foxdwallet-android-testing\app\.cxx\cmake\foxdDebug\armeabi-v7a'
+[0/1] Re-running CMake...
+-- Selecting Windows SDK version 10.0.19041.0 to target Windows 10.0.19044.
+-- Configuring incomplete, errors occurred!
+See also "C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/foxdDebug/armeabi-v7a/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+C:\Users\bill\AppData\Local\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe -HC:\Users\bill\foxdwallet-android-testing\app -BC:\Users\bill\foxdwallet-android-testing\app\.cxx\cmake\foxdDebug\armeabi-v7a

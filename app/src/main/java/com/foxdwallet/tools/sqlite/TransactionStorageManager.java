@@ -27,7 +27,7 @@ public class TransactionStorageManager {
         }
 
         if (iso.equalsIgnoreCase("RVN")/* || iso.equalsIgnoreCase("bch")*/) {
-            BRTransactionEntity result = RvnTransactionDataStore.getInstance(app).putTransaction(app, iso, tx);
+            BRTransactionEntity result = FoxdTransactionDataStore.getInstance(app).putTransaction(app, iso, tx);
             return result != null;
         }
 
@@ -44,7 +44,7 @@ public class TransactionStorageManager {
         }
 
         if (iso.equalsIgnoreCase("RVN")/* || iso.equalsIgnoreCase("bch")*/) {
-            return RvnTransactionDataStore.getInstance(app).getAllTransactions(app, iso);
+            return FoxdTransactionDataStore.getInstance(app).getAllTransactions(app, iso);
         }
 
         //other wallets
@@ -60,7 +60,7 @@ public class TransactionStorageManager {
         }
 
         if (iso.equalsIgnoreCase("RVN")/* || iso.equalsIgnoreCase("bch")*/) {
-            return RvnTransactionDataStore.getInstance(app).updateTransaction(app, iso, tx);
+            return FoxdTransactionDataStore.getInstance(app).updateTransaction(app, iso, tx);
 
         }
 
@@ -77,7 +77,7 @@ public class TransactionStorageManager {
         }
 
         if (iso.equalsIgnoreCase("RVN")/* || iso.equalsIgnoreCase("bch")*/) {
-            RvnTransactionDataStore.getInstance(app).deleteTxByHash(app, iso, hash);
+            FoxdTransactionDataStore.getInstance(app).deleteTxByHash(app, iso, hash);
             return true;
         }
         //other wallets

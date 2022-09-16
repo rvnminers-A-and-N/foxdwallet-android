@@ -51,7 +51,7 @@ import com.foxdwallet.tools.util.CurrencyUtils;
 import com.foxdwallet.tools.util.Utils;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -434,7 +434,7 @@ public class FragmentManageAsset extends BaseAddressAndIpfsHashValidation implem
     private void getAssetData() {
         doneButton.setText("Processing...");
         doneButton.setEnabled(false);
-        RvnWalletManager walletManager = RvnWalletManager.getInstance(getActivity());
+        FoxdWalletManager walletManager = FoxdWalletManager.getInstance(getActivity());
         BRCoreWallet wallet = walletManager.getWallet();
         wallet.getAssetData(walletManager.getPeerManager(), mAsset.getName(),
                 mAsset.getName().length(), this);
@@ -483,7 +483,7 @@ public class FragmentManageAsset extends BaseAddressAndIpfsHashValidation implem
     private void reissueAsset(final BRCoreTransactionAsset asset) {
         final Activity app = getActivity();
         if (app == null) return;
-        final RvnWalletManager walletManager = RvnWalletManager.getInstance(app);
+        final FoxdWalletManager walletManager = FoxdWalletManager.getInstance(app);
         walletManager.requestConfirmation(app, REISSUE, asset, null, mAddress, false, FragmentManageAsset.this);
     }
 

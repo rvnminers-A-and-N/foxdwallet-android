@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:background="@drawable/ic_close_white_with_padding" />
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
         android:textSize="24sp"
         app:customTFont="CircularPro-Bold.otf" />
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/subTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
             android:clickable="false"
             android:focusable="false" />
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -97,7 +97,7 @@
             android:focusable="false"
             android:textColor="@color/white" />
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
@@ -108,7 +108,7 @@
 
     </LinearLayout>
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         app:customTFont="CircularPro-Book.otf"
         android:id="@+id/policy_text"
         android:layout_width="wrap_content"
@@ -152,7 +152,7 @@
                 android:layout_gravity="center_vertical"
                 android:focusable="false" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/understood_terms_of_use_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -164,7 +164,7 @@
                 app:customTFont="CircularPro-Book.otf" />
         </LinearLayout>
 
-        <com.ravenwallet.presenter.customviews.BRButton
+        <com.foxdwallet.presenter.customviews.BRButton
             android:id="@+id/confirm_button"
             android:layout_width="match_parent"
             android:layout_height="80dp"

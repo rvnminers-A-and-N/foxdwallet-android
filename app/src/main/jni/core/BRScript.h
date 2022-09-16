@@ -16,12 +16,13 @@
 #include <string.h>
 #include <stdbool.h>
 
-#define RVN_R 114
-#define RVN_V 118
-#define RVN_N 110
-#define RVN_Q 113
-#define RVN_T 116
-#define RVN_O 111
+#define FOXD_F 102
+#define FOXD_O 111
+#define FOXD_X 120
+#define FOXD_D 100
+#define FOXD_T 116
+#define FOXD_R 114
+#define FOXD_Q 113
 
 #define OWNERSHIP_TRANSFER_TAG 0x21
 
@@ -162,8 +163,8 @@ enum OPCODETYPE
     OP_NOP9 = 0xb8,
     OP_NOP10 = 0xb9,
 
-    // RVN
-    OP_RVN_ASSET = 0xc0,
+    // FOXD
+    OP_FOXD_ASSET = 0xc0,
 
     // template matching params
     OP_SMALLINTEGER = 0xfa,

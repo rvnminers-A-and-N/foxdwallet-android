@@ -41,7 +41,7 @@
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="81dp" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -77,7 +77,7 @@
                 android:hint="@string/name_hint"
                 android:theme="@style/TextInputLayoutAppearance">
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/asset_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -112,7 +112,7 @@
                 android:visibility="gone"
                 tools:visibility="visible" />
 
-            <com.ravenwallet.presenter.customviews.BRButton
+            <com.foxdwallet.presenter.customviews.BRButton
                 android:id="@+id/check_name_available_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -153,7 +153,7 @@
                 android:hint="@string/Send.toLabel"
                 android:theme="@style/TextInputLayoutAppearance">
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/address_edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                 android:layout_alignParentBottom="true"
                 android:gravity="bottom|end">
 
-                <com.ravenwallet.presenter.customviews.BRButton
+                <com.foxdwallet.presenter.customviews.BRButton
                     android:id="@+id/generate_address_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -197,7 +197,7 @@
                     app:buttonType="4"
                     app:isBreadButton="true" />
 
-                <com.ravenwallet.presenter.customviews.PasteButton
+                <com.foxdwallet.presenter.customviews.PasteButton
                     android:id="@+id/paste_address_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -217,7 +217,7 @@
                     app:buttonType="4"
                     app:isBreadButton="true" />
 
-                <com.ravenwallet.presenter.customviews.ScanButton
+                <com.foxdwallet.presenter.customviews.ScanButton
                     android:id="@+id/scan_address_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -237,7 +237,7 @@
                     app:buttonType="4"
                     app:isBreadButton="true" />
 
-                <com.ravenwallet.presenter.customviews.ContactButton
+                <com.foxdwallet.presenter.customviews.ContactButton
                     android:id="@+id/import_contact"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -280,7 +280,7 @@
             android:paddingBottom="8dp"
             android:theme="@style/TextInputLayoutAppearance">
 
-            <com.ravenwallet.presenter.customviews.BREdit
+            <com.foxdwallet.presenter.customviews.BREdit
                 android:id="@+id/quantity_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -310,7 +310,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <com.ravenwallet.presenter.customviews.BRKeyboard
+            <com.foxdwallet.presenter.customviews.BRKeyboard
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/extra_light_gray" />
@@ -333,7 +333,7 @@
             android:paddingBottom="12dp"
             android:theme="@style/TextInputLayoutAppearance">
 
-            <com.ravenwallet.presenter.customviews.BREdit
+            <com.foxdwallet.presenter.customviews.BREdit
                 android:id="@+id/units_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -363,7 +363,7 @@
             android:orientation="vertical"
             android:visibility="gone">
 
-            <com.ravenwallet.presenter.customviews.BRKeyboard
+            <com.foxdwallet.presenter.customviews.BRKeyboard
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/extra_light_gray" />
@@ -395,7 +395,7 @@
             <!--android:padding="5dp"-->
             <!--android:text="@string/reissuable"-->
             <!--android:textSize="@dimen/sub_header" />-->
-            <com.ravenwallet.presenter.customviews.BREdit
+            <com.foxdwallet.presenter.customviews.BREdit
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -443,7 +443,7 @@
                 android:hint="@string/ipfs_hash"
                 android:theme="@style/TextInputLayoutAppearance">
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/ipfs_hash_edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -470,7 +470,7 @@
                 android:layout_marginEnd="17dp"
                 android:buttonTint="@color/primaryColor" />
 
-            <com.ravenwallet.presenter.customviews.PasteButton
+            <com.foxdwallet.presenter.customviews.PasteButton
                 android:id="@+id/paste_ipfs_hash_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -492,7 +492,7 @@
                 app:isBreadButton="true"
                 tools:visibility="visible" />
 
-            <com.ravenwallet.presenter.customviews.ScanButton
+            <com.foxdwallet.presenter.customviews.ScanButton
                 android:id="@+id/scan_ipfs_hash_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -531,7 +531,7 @@
             android:paddingEnd="16dp"
             android:paddingBottom="10dp">
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/balance_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -545,7 +545,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:id="@+id/fee_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -562,7 +562,7 @@
 
             </LinearLayout>
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/asset_creation_fee_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -572,7 +572,7 @@
 
         </LinearLayout>
 
-        <com.ravenwallet.presenter.customviews.BRLinearLayoutWithCaret
+        <com.foxdwallet.presenter.customviews.BRLinearLayoutWithCaret
             android:id="@+id/fee_buttons_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -585,7 +585,7 @@
             app:withStroke="true"
             tools:visibility="visible">
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -595,7 +595,7 @@
                 android:textSize="@dimen/sub_header"
                 android:textStyle="bold" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/fee_description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -613,7 +613,7 @@
                 android:orientation="horizontal"
                 android:weightSum="2.0">
 
-                <com.ravenwallet.presenter.customviews.BRButton
+                <com.foxdwallet.presenter.customviews.BRButton
                     android:id="@+id/left_button"
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -626,7 +626,7 @@
                     app:customBFont="CircularPro-Medium.otf"
                     app:isBreadButton="false" />
 
-                <com.ravenwallet.presenter.customviews.BRButton
+                <com.foxdwallet.presenter.customviews.BRButton
                     android:id="@+id/right_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -640,7 +640,7 @@
                     app:isBreadButton="false" />
             </LinearLayout>
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/warning_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -651,14 +651,14 @@
                 android:textColor="@color/red_text"
                 android:textSize="@dimen/paragraph" />
 
-        </com.ravenwallet.presenter.customviews.BRLinearLayoutWithCaret>
+        </com.foxdwallet.presenter.customviews.BRLinearLayoutWithCaret>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="@color/extra_light_gray" />
 
-        <com.ravenwallet.presenter.customviews.BRButton
+        <com.foxdwallet.presenter.customviews.BRButton
             android:id="@+id/create_asset_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

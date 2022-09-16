@@ -36,6 +36,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.google.gson.Gson;
 import com.platform.assets.Asset;
 import com.platform.assets.AssetsRepository;
@@ -65,7 +66,6 @@ import com.foxdwallet.tools.threads.executor.BRExecutor;
 import com.foxdwallet.tools.util.CurrencyUtils;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
-import com.foxdwallet.wallet.RvnWalletManager;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;
@@ -277,7 +277,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
                     Log.e(TAG, "Continue :" + info.title + " (FAILED)");
             }
         });
-        BaseWalletManager wallet = RvnWalletManager.getInstance(this);
+        BaseWalletManager wallet = FoxdWalletManager.getInstance(this);
         setWalletFields(true, null);
         Drawable drawable = getResources().getDrawable(R.drawable.crypto_card_shape, null);
         assert wallet != null;
@@ -300,7 +300,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     }
 
     private void setWalletFields(boolean mShowSyncing, String labelSync) {
-        BaseWalletManager wallet = RvnWalletManager.getInstance(this);
+        BaseWalletManager wallet = FoxdWalletManager.getInstance(this);
         if (wallet == null) return;
         String name = wallet.getName(this);
         String exchangeRate = CurrencyUtils.getFormattedAmount(this,
@@ -539,7 +539,7 @@ public class HomeActivity extends BRActivity implements InternetManager.Connecti
     }
 
     public void startObserving() {
-        SyncService.startService(HomeActivity.this, RvnWalletManager.getInstance(this).getIso(this));
+        SyncService.startService(HomeActivity.this, FoxdWalletManager.getInstance(this).getIso(this));
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)

@@ -266,12 +266,12 @@ public class SettingsActivity extends BRActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent appStoreIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.foxdwallet"));
+                    Intent appStoreIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + "com.com.foxdwallet"));
                     appStoreIntent.setPackage("com.android.vending");
 
                     startActivity(appStoreIntent);
                 } catch (android.content.ActivityNotFoundException exception) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + "com.foxdwallet")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=" + "com.com.foxdwallet")));
                 }
                 overridePendingTransition(R.anim.enter_from_right, R.anim.exit_to_left);
             }

@@ -44,15 +44,15 @@ extern "C" {
 #define MAX_SCRIPT_LENGTH       0x100 // scripts over this size will not be parsed for an address
 #define NONE_ASSETS_SCRIPT      0x37
 
-// ravenwallet address prefixes
-#define RAVENCOIN_PUBKEY_ADDRESS          60
-#define RAVENCOIN_SCRIPT_ADDRESS          122
+// com.foxdwallet address prefixes
+#define FOXDCOIN_PUBKEY_ADDRESS          35
+#define FOXDCOIN_SCRIPT_ADDRESS          30
 
-#define RAVENCOIN_PUBKEY_ADDRESS_TEST     111
-#define RAVENCOIN_SCRIPT_ADDRESS_TEST     196
+#define FOXDCOIN_PUBKEY_ADDRESS_TEST     95
+#define FOXDCOIN_SCRIPT_ADDRESS_TEST     90
 
-#define RAVENCOIN_PUBKEY_ADDRESS_REGTEST  111
-#define RAVENCOIN_SCRIPT_ADDRESS_REGTEST  196
+#define FOXDCOIN_PUBKEY_ADDRESS_REGTEST  111
+#define FOXDCOIN_SCRIPT_ADDRESS_REGTEST  196
 
 // script opcodes: https://en.bitcoin.it/wiki/Script#Constants
 //#define OP_0           0x00
@@ -92,11 +92,11 @@ typedef struct {
 
 #define ADDRESS_NONE ((const BRAddress) { "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0" })
 
-// writes the ravenwallet address for a scriptPubKey to addr
+// writes the com.foxdwallet address for a scriptPubKey to addr
 // returns the number of bytes written, or addrLen needed if addr is NULL
 size_t BRAddressFromScriptPubKey(char *addr, size_t addrLen, const uint8_t *script, size_t scriptLen);
 
-// writes the RAVENCOIN address for a scriptSig to addr
+// writes the FOXDCOIN address for a scriptSig to addr
 // returns the number of bytes written, or addrLen needed if addr is NULL
 size_t BRAddressFromScriptSig(char *addr, size_t addrLen, const uint8_t *script, size_t scriptLen);
 
@@ -104,7 +104,7 @@ size_t BRAddressFromScriptSig(char *addr, size_t addrLen, const uint8_t *script,
 // returns the number of bytes written, or scriptLen needed if script is NULL
 size_t BRAddressScriptPubKey(uint8_t *script, size_t scriptLen, const char *addr);
 
-// returns true if addr is a valid ravenwallet address
+// returns true if addr is a valid com.foxdwallet address
 int BRAddressIsValid(const char *addr);
 
 // writes the 20 byte hash160 of addr to md20 and returns true on success

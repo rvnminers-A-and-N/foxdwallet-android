@@ -1,0 +1,2 @@
+ninja: Entering directory `C:\Users\bill\foxdwallet-android\app\.cxx\cmake\rvnTestnetDebug\x86_64'
+ninja: no work to do.

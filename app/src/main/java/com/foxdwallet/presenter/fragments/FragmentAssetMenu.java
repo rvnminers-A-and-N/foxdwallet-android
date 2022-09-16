@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.platform.assets.Asset;
 import com.foxdwallet.R;
 import com.foxdwallet.core.BRCoreTransactionAsset;
@@ -30,7 +31,6 @@ import com.foxdwallet.tools.manager.BRSharedPrefs;
 import com.foxdwallet.tools.util.Utils;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
-import com.foxdwallet.wallet.RvnWalletManager;
 
 import java.math.BigDecimal;
 
@@ -259,7 +259,7 @@ public class FragmentAssetMenu extends Fragment implements BurnFragmentListener,
             public void onClick(View v) {
                 getDataButton.setText("Loading data...");
                 getDataButton.setEnabled(false);
-                RvnWalletManager walletManager = RvnWalletManager.getInstance(getActivity());
+                FoxdWalletManager walletManager = FoxdWalletManager.getInstance(getActivity());
                 BRCoreWallet wallet = walletManager.getWallet();
                 String name = mAsset.getName();
                 wallet.getAssetData(walletManager.getPeerManager(), mAsset.getName(), name.length(), FragmentAssetMenu.this);
@@ -297,7 +297,7 @@ public class FragmentAssetMenu extends Fragment implements BurnFragmentListener,
     public void performBurn() {
         final Activity app = getActivity();
         if (app == null) return;
-        final RvnWalletManager walletManager = RvnWalletManager.getInstance(app);
+        final FoxdWalletManager walletManager = FoxdWalletManager.getInstance(app);
         walletManager.requestConfirmation(app, BURN,mAsset.getCoreAsset(),null,null,false,FragmentAssetMenu.this);
     }
 

@@ -17,7 +17,7 @@
         android:layout_marginEnd="10dp"
         android:orientation="vertical">
 
-        <com.ravenwallet.presenter.customviews.BaseTextView
+        <com.foxdwallet.presenter.customviews.BaseTextView
             android:id="@+id/sync_status_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
             android:textSize="14sp"
             app:customTFont="CircularPro-Book.otf" />
 
-        <com.ravenwallet.presenter.customviews.BaseTextView
+        <com.foxdwallet.presenter.customviews.BaseTextView
             android:id="@+id/syncing_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -28,8 +28,8 @@ import com.foxdwallet.tools.threads.executor.BRExecutor;
 import com.foxdwallet.tools.util.BRConstants;
 import com.foxdwallet.tools.util.TrustedNode;
 import com.foxdwallet.tools.util.Utils;
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.foxdwallet.wallet.WalletsMaster;
-import com.foxdwallet.wallet.RvnWalletManager;
 
 import static com.foxdwallet.tools.util.BRConstants.getNodePort;
 
@@ -88,7 +88,7 @@ public class NodesActivity extends BRActivity {
             public void onClick(View v) {
                 if (!BRAnimator.isClickAllowed()) return;
                 final Activity app = NodesActivity.this;
-                final RvnWalletManager wm = RvnWalletManager.getInstance(NodesActivity.this);
+                final FoxdWalletManager wm = FoxdWalletManager.getInstance(NodesActivity.this);
 
                 if (BRSharedPrefs.getTrustNode(app, wm.getIso(app)).isEmpty()) {
                     createDialog();
@@ -122,7 +122,7 @@ public class NodesActivity extends BRActivity {
     }
 
     private void updateButtonText() {
-        RvnWalletManager wm = RvnWalletManager.getInstance(this);
+        FoxdWalletManager wm = FoxdWalletManager.getInstance(this);
         if (BRSharedPrefs.getTrustNode(this, wm.getIso(this)).isEmpty()) {
             switchButton.setText(getString(R.string.NodeSelector_manualButton));
         } else {
@@ -207,7 +207,7 @@ public class NodesActivity extends BRActivity {
             public void onClick(View v) {
                 String str = input.getText().toString();
                 str += ":" + getNodePort();
-                final RvnWalletManager wm = RvnWalletManager.getInstance(app);
+                final FoxdWalletManager wm = FoxdWalletManager.getInstance(app);
                 if (TrustedNode.isValid(str)) {
                     mDialog.setMessage("");
                     BRSharedPrefs.putTrustNode(app, wm.getIso(app), str);

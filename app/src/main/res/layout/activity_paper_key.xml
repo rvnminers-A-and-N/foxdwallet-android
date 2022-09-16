@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="com.ravenwallet.presenter.activities.intro.WriteDownActivity">
+    tools:context="com.foxdwallet.presenter.activities.intro.WriteDownActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/gradient_layout"
@@ -15,7 +15,7 @@
         android:background="@drawable/gradient_blue"
         android:orientation="vertical">
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="@+id/title"/>
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/description"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
         android:layout_marginBottom="32dp"
         android:weightSum="2.0">
 
-        <com.ravenwallet.presenter.customviews.BRButton
+        <com.foxdwallet.presenter.customviews.BRButton
             android:id="@+id/button_previous"
             android:layout_width="0dp"
             android:layout_height="72dp"
@@ -112,7 +112,7 @@
             app:isBreadButton="true"
             />
 
-        <com.ravenwallet.presenter.customviews.BRButton
+        <com.foxdwallet.presenter.customviews.BRButton
             android:id="@+id/send_button"
             android:layout_width="0dp"
             android:background="@android:color/transparent"
@@ -133,7 +133,7 @@
 
     </LinearLayout>
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/item_index_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

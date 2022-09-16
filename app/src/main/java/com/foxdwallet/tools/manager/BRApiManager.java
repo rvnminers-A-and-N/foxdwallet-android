@@ -10,13 +10,13 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.RequestFuture;
 import com.android.volley.toolbox.Volley;
+import com.foxdwallet.FoxdApp;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.platform.APIClient;
 import com.foxdwallet.tools.api.ApiAddress;
 import com.foxdwallet.tools.api.ApiUTxo;
 import com.foxdwallet.tools.api.GsonRequest;
-import com.foxdwallet.RavenApp;
 import com.foxdwallet.presenter.activities.util.ActivityUTILS;
 import com.foxdwallet.presenter.entities.CurrencyEntity;
 import com.foxdwallet.tools.sqlite.CurrencyDataSource;
@@ -147,7 +147,7 @@ public class BRApiManager {
                         BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                             @Override
                             public void run() {
-                                if (RavenApp.isAppInBackground(context)) {
+                                if (FoxdApp.isAppInBackground(context)) {
                                     Log.e(TAG, "doInBackground: Stopping timer, no activity on.");
                                     stopTimerTask();
                                 }
@@ -274,7 +274,7 @@ public class BRApiManager {
             Log.e(TAG, "urlGET: network on main thread");
             throw new RuntimeException("network on main thread");
         }
-        Map<String, String> headers = new HashMap<>();//RavenApp.getRvnHeaders();
+        Map<String, String> headers = new HashMap<>();//FoxdApp.getRvnHeaders();
 
         Request.Builder builder = new Request.Builder()
                 .url(myURL)

@@ -55,11 +55,11 @@ import com.foxdwallet.tools.sqlite.CurrencyDataSource;
 import com.foxdwallet.tools.threads.executor.BRExecutor;
 import com.foxdwallet.tools.util.CurrencyUtils;
 import com.foxdwallet.tools.util.Utils;
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
 import com.foxdwallet.wallet.abstracts.OnTxListModified;
 import com.foxdwallet.wallet.abstracts.SyncListener;
-import com.foxdwallet.wallet.RvnWalletManager;
 import com.foxdwallet.wallet.util.CryptoUriParser;
 
 import java.math.BigDecimal;
@@ -693,9 +693,9 @@ public class WalletActivity extends BRActivity implements InternetManager.Connec
             mProgressLabel.setText(labelText);
             mProgressLayout.setVisibility(View.VISIBLE);
 
-            if (mWallet instanceof RvnWalletManager) {
-                RvnWalletManager rvnWalletManager = (RvnWalletManager) mWallet;
-                long syncThroughDateInMillis = rvnWalletManager.getPeerManager().getLastBlockTimestamp() * DateUtils.SECOND_IN_MILLIS;
+            if (mWallet instanceof FoxdWalletManager) {
+                FoxdWalletManager foxdWalletManager = (FoxdWalletManager) mWallet;
+                long syncThroughDateInMillis = foxdWalletManager.getPeerManager().getLastBlockTimestamp() * DateUtils.SECOND_IN_MILLIS;
                 String syncedThroughDate = new SimpleDateFormat(SYNCED_THROUGH_DATE_FORMAT).format(syncThroughDateInMillis);
                 mSyncStatusLabel.setText(String.format(getString(R.string.SyncingView_syncedThrough), syncedThroughDate));
             }

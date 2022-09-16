@@ -1362,9 +1362,9 @@ int BRWalletSignTransaction(BRWallet *wallet, BRTransaction *tx, const void *see
     BRKey keys[internalCount + externalCount];
 
     if (seed) {
-        BRBIP44PrivKeyList(keys, internalCount, seed, seedLen, BIP44_RVN_COINTYPE,
+        BRBIP44PrivKeyList(keys, internalCount, seed, seedLen, BIP44_FOXD_COINTYPE,
                            BIP44_DEFAULT_ACCOUNT, SEQUENCE_INTERNAL_CHAIN, internalIdx);
-        BRBIP44PrivKeyList(&keys[internalCount], externalCount, seed, seedLen, BIP44_RVN_COINTYPE,
+        BRBIP44PrivKeyList(&keys[internalCount], externalCount, seed, seedLen, BIP44_FOXD_COINTYPE,
                            BIP44_DEFAULT_ACCOUNT, SEQUENCE_EXTERNAL_CHAIN, externalIdx);
         // TODO: XXX wipe seed callback
         seed = NULL;

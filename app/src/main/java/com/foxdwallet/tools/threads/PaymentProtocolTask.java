@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 import com.foxdwallet.R;
 import com.foxdwallet.core.BRCoreAddress;
 import com.foxdwallet.core.BRCorePaymentProtocolRequest;
@@ -70,7 +70,7 @@ public class PaymentProtocolTask extends AsyncTask<String, String, String> {
     //params[0] = uri, params[1] = label
     @Override
     protected String doInBackground(String... params) {
-        app = (Activity) RavenApp.getRvnContext();
+        app = (Activity) FoxdApp.getFoxdContext();
         InputStream in;
         try {
             Log.e(TAG, "the uri: " + params[0]);
@@ -293,7 +293,7 @@ public class PaymentProtocolTask extends AsyncTask<String, String, String> {
                 double minOutput = wallet.getWallet().getMinOutputAmount();
                 if (txAmt < minOutput) {
                     final String bitcoinMinMessage = String.format(Locale.getDefault(), app.getString(R.string.PaymentProtocol_Errors_smallTransaction),
-                            "µ"+BRConstants.symbolRavenPrimary + new BigDecimal(minOutput).divide(new BigDecimal("100")));
+                            "µ"+BRConstants.symbolFoxdPrimary + new BigDecimal(minOutput).divide(new BigDecimal("100")));
                     app.runOnUiThread(new Runnable() {
                         @Override
                         public void run() {

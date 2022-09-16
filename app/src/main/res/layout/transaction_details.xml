@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/tx_action"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,7 +36,7 @@
             android:src="@drawable/ic_close_light_grey" />
 
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/tx_amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:background="@color/light_gray" />
 
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/tx_status"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
             app:customTFont="CircularPro-Book.otf" />
 
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/tx_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,7 +92,7 @@
             android:background="@color/light_gray" />
 
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/tx_to_from"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
             android:textColor="@color/settings_chevron_right"
             app:customTFont="CircularPro-Book.otf" />
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/tx_to_from_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -142,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/tx_starting_balance_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                 android:textColor="@color/settings_chevron_right"
                 app:customTFont="CircularPro-Book.otf" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/tx_starting_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -178,7 +178,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="14dp"
@@ -187,7 +187,7 @@
                 android:textColor="@color/settings_chevron_right"
                 app:customTFont="CircularPro-Book.otf" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/tx_ending_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -206,7 +206,7 @@
                 android:background="@color/light_gray" />
             </RelativeLayout>
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/confirmed_in_block_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -218,7 +218,7 @@
                 app:customTFont="CircularPro-Book.otf" />
 
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/confirmed_in_block_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -238,7 +238,7 @@
                 android:layout_marginTop="14dp"
                 android:background="@color/light_gray" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/transaction_id_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -249,7 +249,7 @@
                 android:textColor="@color/settings_chevron_right"
                 app:customTFont="CircularPro-Book.otf" />
 
-            <com.ravenwallet.presenter.customviews.BRText
+            <com.foxdwallet.presenter.customviews.BRText
                 android:id="@+id/transaction_id"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
@@ -276,7 +276,7 @@
 
         </RelativeLayout>
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/show_hide_details"
             android:layout_width="match_parent"
             android:gravity="center"

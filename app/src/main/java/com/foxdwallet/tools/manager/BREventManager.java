@@ -3,7 +3,7 @@ package com.foxdwallet.tools.manager;
 import android.content.Context;
 import android.util.Log;
 
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -45,7 +45,7 @@ import java.util.UUID;
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-public class BREventManager implements RavenApp.OnAppBackgrounded {
+public class BREventManager implements FoxdApp.OnAppBackgrounded {
     private static final String TAG = BREventManager.class.getName();
 
     private static BREventManager instance;
@@ -54,7 +54,7 @@ public class BREventManager implements RavenApp.OnAppBackgrounded {
 
     private BREventManager() {
         sessionId = UUID.randomUUID().toString();
-        RavenApp.addOnBackgroundedListener(this);
+        FoxdApp.addOnBackgroundedListener(this);
     }
 
     public static BREventManager getInstance() {
@@ -104,7 +104,7 @@ public class BREventManager implements RavenApp.OnAppBackgrounded {
 //            Log.e(TAG, "saveEvents: insert json to array: " + obj);
             array.put(obj);
         }
-        Context app = RavenApp.getRvnContext();
+        Context app = FoxdApp.getFoxdContext();
         if (app != null) {
             String fileName = app.getFilesDir().getAbsolutePath() + "/events/" + UUID.randomUUID().toString();
             writeEventsToDisk(fileName, array.toString());
@@ -115,7 +115,7 @@ public class BREventManager implements RavenApp.OnAppBackgrounded {
 
 //    private void pushToServer() {
 ////        Log.d(TAG, "pushToServer");
-//        Context app = RavenApp.getRvnContext();
+//        Context app = FoxdApp.getRvnContext();
 //        if (app != null) {
 //            List<JSONArray> arrs = getEventsFromDisk(app);
 //            int fails = 0;

@@ -30,9 +30,9 @@
 #include <assert.h>
 #include <pthread.h>
 
-#define RAVENCOIN_PRIVKEY             128
-#define RAVENCOIN_PRIVKEY_TEST        239
-#define RAVENCOIN_PRIVKEY_REGTEST     239
+#define FOXDCOIN_PRIVKEY             128
+#define FOXDCOIN_PRIVKEY_TEST        239
+#define FOXDCOIN_PRIVKEY_REGTEST     239
 
 #if __BIG_ENDIAN__ || (defined(__BYTE_ORDER__) && __BYTE_ORDER__ == __ORDER_BIG_ENDIAN__) ||\
     __ARMEB__ || __THUMBEB__ || __AARCH64EB__ || __MIPSEB__
@@ -134,11 +134,11 @@ int BRPrivKeyIsValid(const char *privKey)
     
     if (dataLen == 33 || dataLen == 34) { // wallet import format: https://en.bitcoin.it/wiki/Wallet_import_format
 #if TESTNET
-        r = (data[0] == RAVENCOIN_PRIVKEY_TEST);
+        r = (data[0] == FOXDCOIN_PRIVKEY_TEST);
 #elif REGTEST
-        r = (data[0] == RAVENCOIN_PRIVKEY_REGTEST);
+        r = (data[0] == FOXDCOIN_PRIVKEY_REGTEST);
 #else
-        r = (data[0] == RAVENCOIN_PRIVKEY);
+        r = (data[0] == FOXDCOIN_PRIVKEY);
 #endif
     }
     else if ((strLen == 30 || strLen == 22) && privKey[0] == 'S') { // mini private key format
@@ -174,13 +174,13 @@ int BRKeySetSecret(BRKey *key, const UInt256 *secret, int compressed)
 int BRKeySetPrivKey(BRKey *key, const char *privKey)
 {
     size_t len = strlen(privKey);
-    uint8_t data[34], version = RAVENCOIN_PRIVKEY;
+    uint8_t data[34], version = FOXDCOIN_PRIVKEY;
     int r = 0;
     
 #if TESTNET
-    version = RAVENCOIN_PRIVKEY_TEST;
+    version = FOXDCOIN_PRIVKEY_TEST;
 #elif REGTEST
-    version = RAVENCOIN_PRIVKEY_REGTEST;
+    version = FOXDCOIN_PRIVKEY_REGTEST;
 #endif
 
     assert(key != NULL);
@@ -239,11 +239,11 @@ size_t BRKeyPrivKey(const BRKey *key, char *privKey, size_t pkLen)
     assert(key != NULL);
     
     if (secp256k1_ec_seckey_verify(_ctx, key->secret.u8)) {
-        data[0] = RAVENCOIN_PRIVKEY;
+        data[0] = FOXDCOIN_PRIVKEY;
 #if TESTNET
-        data[0] = RAVENCOIN_PRIVKEY_TEST;
+        data[0] = FOXDCOIN_PRIVKEY_TEST;
 #elif REGTEST
-        data[0] = RAVENCOIN_PRIVKEY_REGTEST;
+        data[0] = FOXDCOIN_PRIVKEY_REGTEST;
 #endif
         
         UInt256Set(&data[1], key->secret);
@@ -300,11 +300,11 @@ size_t BRKeyAddress(BRKey *key, char *addr, size_t addrLen)
     assert(key != NULL);
     
     hash = BRKeyHash160(key);
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS;
 #if TESTNET
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS_TEST;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS_TEST;
 #elif REGTEST
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS_REGTEST;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS_REGTEST;
 #endif
     UInt160Set(&data[1], hash);
 

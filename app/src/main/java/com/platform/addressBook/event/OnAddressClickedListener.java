@@ -1,7 +1,7 @@
 package com.platform.addressBook.event;
 
 import com.platform.addressBook.AddressBookItem;
-import com.ravenwallet.core.BRCoreAddress;
+import com.foxdwallet.core.BRCoreAddress;
 
 public interface OnAddressClickedListener {
 

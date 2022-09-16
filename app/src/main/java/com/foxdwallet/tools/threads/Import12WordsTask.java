@@ -22,7 +22,7 @@ import com.foxdwallet.tools.manager.BRReportsManager;
 import com.foxdwallet.tools.threads.executor.BRExecutor;
 import com.foxdwallet.tools.util.CurrencyUtils;
 import com.foxdwallet.tools.util.TypesConverter;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -42,7 +42,7 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
     private int countFails;
     private int chain;
     private Import12WordsListener listener;
-    private RvnWalletManager rvnWalletManager;
+    private FoxdWalletManager foxdWalletManager;
     private ProgressDialog progressBar;
     private String bipToUse;
 
@@ -53,8 +53,8 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
         this.mKeys = new ArrayList<>();
         this.phrase = phraseStr;
         this.bipToUse = bip;
-        this.rvnWalletManager = RvnWalletManager.getInstance(context);
-//        this.mWallet = rvnWalletManager.getWallet();
+        this.foxdWalletManager = FoxdWalletManager.getInstance(context);
+//        this.mWallet = foxdWalletManager.getWallet();
         countFails = 0;
         chain = SEQUENCE_EXTERNAL_CHAIN;
         progressBar = ProgressDialog.show(context, null, null,
@@ -103,7 +103,7 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
             return;
         }
 
-        BigDecimal bigAmount = new BigDecimal(rvnWalletManager.getWallet().getTransactionAmount(transaction));
+        BigDecimal bigAmount = new BigDecimal(foxdWalletManager.getWallet().getTransactionAmount(transaction));
         BigDecimal bigFee = new BigDecimal(0);
 
         for (BRCoreTransactionInput in : transaction.getInputs())
@@ -111,8 +111,8 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
         for (BRCoreTransactionOutput out : transaction.getOutputs())
             bigFee = bigFee.subtract(new BigDecimal(out.getAmount()));
 
-        String amount = CurrencyUtils.getFormattedAmount(context, rvnWalletManager.getIso(context), bigAmount);
-        String fee = CurrencyUtils.getFormattedAmount(context, rvnWalletManager.getIso(context), bigFee.abs());
+        String amount = CurrencyUtils.getFormattedAmount(context, foxdWalletManager.getIso(context), bigAmount);
+        String fee = CurrencyUtils.getFormattedAmount(context, foxdWalletManager.getIso(context), bigFee.abs());
         String message = String.format(context.getString(R.string.Import_confirm), amount, fee);
         BRDialog.showCustomDialog(context, "", message, "Import", context.getString(R.string.Button_cancel), new BRDialogView.BROnClickListener() {
             @Override
@@ -120,7 +120,7 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
                 BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
                     @Override
                     public void run() {
-                        transaction.sign(mKeys.toArray(new BRCoreKey[mKeys.size()]), rvnWalletManager.getForkId());
+                        transaction.sign(mKeys.toArray(new BRCoreKey[mKeys.size()]), foxdWalletManager.getForkId());
 
                         if (!transaction.isSigned()) {
                             if (listener != null)
@@ -129,7 +129,7 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
                             BRReportsManager.reportBug(new IllegalArgumentException(err));
                             return;
                         }
-                        rvnWalletManager.getPeerManager().publishTransaction(transaction);
+                        foxdWalletManager.getPeerManager().publishTransaction(transaction);
                     }
                 });
 
@@ -164,8 +164,8 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
 
             if (totalAmount <= 0) return null;
 //
-            BRCoreAddress address = rvnWalletManager.getWallet().getReceiveAddress();
-            long fee = rvnWalletManager.getWallet().getFeeForTransactionAmount(totalAmount);
+            BRCoreAddress address = foxdWalletManager.getWallet().getReceiveAddress();
+            long fee = foxdWalletManager.getWallet().getFeeForTransactionAmount(totalAmount);
             transaction.addOutput(new BRCoreTransactionOutput(totalAmount - fee, address.getPubKeyScript()));
         } catch (Exception e) {
             e.printStackTrace();
@@ -179,7 +179,7 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
             return;
         }
 
-        BRCoreKey privKey = rvnWalletManager.getWallet().generatePrivateKeyBip44(phrase, index, chain);
+        BRCoreKey privKey = foxdWalletManager.getWallet().generatePrivateKeyBip44(phrase, index, chain);
         if (privKey != null) {
             String address = privKey.address();
             boolean isUsed = BRApiManager.isAddressUsed(context, address);
@@ -208,7 +208,7 @@ public class Import12WordsTask extends AsyncTask<Void, Void, Void> {
             return;
         }
 
-        BRCoreKey privKey = rvnWalletManager.getWallet().generatePrivateKeyBip32(phrase, index, chain);
+        BRCoreKey privKey = foxdWalletManager.getWallet().generatePrivateKeyBip32(phrase, index, chain);
         if (privKey != null) {
             String address = privKey.address();
             boolean isUsed = BRApiManager.isAddressUsed(context, address);

@@ -1,4 +1,4 @@
-/*package com.foxdwallet.tools.manager;
+/*package com.com.foxdwallet.tools.manager;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -7,9 +7,9 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.ProgressBar;
 
-import com.foxdwallet.tools.listeners.SyncReceiver;
-import com.foxdwallet.tools.threads.executor.BRExecutor;
-import com.foxdwallet.wallet.abstracts.BaseWalletManager;
+import com.com.foxdwallet.tools.listeners.SyncReceiver;
+import com.com.foxdwallet.tools.threads.executor.BRExecutor;
+import com.com.foxdwallet.wallet.abstracts.BaseWalletManager;
 import com.crashlytics.android.Crashlytics;
 
 import java.util.concurrent.TimeUnit;

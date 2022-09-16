@@ -266,7 +266,7 @@ void BRWalletFree(BRWallet *wallet);
 int64_t BRLocalAmount(int64_t amount, double price);
 
 // returns the given local currency amount in corbies
-// price is local currency units (i.e. pennies, pence) per ravenwallet
+// price is local currency units (i.e. pennies, pence) per com.foxdwallet
 int64_t RavencoinAmount(int64_t localAmount, double price);
 
 // decompose a Creation asset or Reissue asset Transaction to burn + assets txs

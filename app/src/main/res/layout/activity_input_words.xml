@@ -6,9 +6,9 @@
     android:layout_height="match_parent"
     android:background="@color/extra_light_blue_background"
     android:padding="@dimen/bread_margin"
-    tools:context="com.ravenwallet.presenter.activities.SetPinActivity">
+    tools:context="com.foxdwallet.presenter.activities.SetPinActivity">
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -27,7 +27,7 @@
         android:layout_alignParentEnd="true"
         android:background="@drawable/faq_question_black" />
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/description"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
         tools:visibility="visible"
         android:visibility="gone">
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:orientation="horizontal"
             android:visibility="visible">
 
-            <com.ravenwallet.presenter.customviews.BRRadioButton
+            <com.foxdwallet.presenter.customviews.BRRadioButton
                 android:id="@+id/rbpBip44"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -79,7 +79,7 @@
                 android:background="@drawable/bg_rb_tab"
                 android:text="Bip 44" />
 
-            <com.ravenwallet.presenter.customviews.BRRadioButton
+            <com.foxdwallet.presenter.customviews.BRRadioButton
                 android:id="@+id/rbpBip32"
                 android:layout_width="wrap_content"
                 android:layout_height="40dp"
@@ -94,7 +94,7 @@
         </RadioGroup>
     </LinearLayout>
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/textView9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -128,7 +128,7 @@
                 android:orientation="vertical"
                 android:weightSum="2">
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -144,7 +144,7 @@
                     android:textCursorDrawable="@null"
                     app:customEFont="CircularPro-Medium.otf" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -163,7 +163,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -177,7 +177,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -196,7 +196,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -210,7 +210,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -236,7 +236,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -250,7 +250,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -269,7 +269,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word5"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -283,7 +283,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -302,7 +302,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -316,7 +316,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -340,7 +340,7 @@
                 android:orientation="vertical"
                 android:weightSum="2">
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word7"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -354,7 +354,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -373,7 +373,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -387,7 +387,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -406,7 +406,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word9"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -420,7 +420,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -448,7 +448,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -462,7 +462,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -482,7 +482,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word11"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -496,7 +496,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -516,7 +516,7 @@
 
                 >
 
-                <com.ravenwallet.presenter.customviews.BREdit
+                <com.foxdwallet.presenter.customviews.BREdit
                     android:id="@+id/word12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -529,7 +529,7 @@
                     android:textColor="@color/almost_black"
                     android:textColorHint="@color/extra_light_gray" />
 
-                <com.ravenwallet.presenter.customviews.BRText
+                <com.foxdwallet.presenter.customviews.BRText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center_horizontal"
@@ -543,7 +543,7 @@
 
     </GridLayout>
 
-    <com.ravenwallet.presenter.customviews.BRButton
+    <com.foxdwallet.presenter.customviews.BRButton
         android:id="@+id/send_button"
         android:layout_width="match_parent"
         android:layout_height="@dimen/big_button_height"

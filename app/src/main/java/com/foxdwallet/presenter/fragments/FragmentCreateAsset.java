@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import androidx.annotation.Nullable;
+
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.google.android.material.textfield.TextInputLayout;
 import android.text.Editable;
 import android.text.InputFilter;
@@ -53,7 +55,6 @@ import com.foxdwallet.tools.util.CurrencyUtils;
 import com.foxdwallet.tools.util.Utils;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
-import com.foxdwallet.wallet.RvnWalletManager;
 
 import java.math.BigDecimal;
 
@@ -560,7 +561,7 @@ public class FragmentCreateAsset extends BaseAddressAndIpfsHashValidation implem
     private void createTransactionAsset(final BRCoreTransactionAsset asset, String address) {
         final Activity app = getActivity();
         if (app == null) return;
-        final RvnWalletManager walletManager = RvnWalletManager.getInstance(app);
+        final FoxdWalletManager walletManager = FoxdWalletManager.getInstance(app);
         walletManager.requestConfirmation(app, NEW_ASSET, asset, null, address, false, FragmentCreateAsset.this);
     }
 
@@ -594,7 +595,7 @@ public class FragmentCreateAsset extends BaseAddressAndIpfsHashValidation implem
             checkingButton.setText(getString(R.string.txt_checking_availability));
         checkNameAvailableButton.setEnabled(false);
         createAssetButton.setEnabled(false);
-        RvnWalletManager walletManager = RvnWalletManager.getInstance(getActivity());
+        FoxdWalletManager walletManager = FoxdWalletManager.getInstance(getActivity());
         BRCoreWallet wallet = walletManager.getWallet();
         wallet.isAssetNameValid(walletManager.getPeerManager(), name, name.length(), this);
         new Handler().postDelayed(new Runnable() {

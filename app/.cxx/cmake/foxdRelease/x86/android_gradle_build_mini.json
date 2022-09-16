@@ -1,0 +1,19 @@
+{
+  "buildFiles": [
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\bill\\foxdwallet-android-testing\\app\\CMakeLists.txt",
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android-testing\\app\\.cxx\\cmake\\foxdRelease\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\bill\\foxdwallet-android-testing\\app\\.cxx\\cmake\\foxdRelease\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "core-Release-x86": {
+      "artifactName": "core",
+      "buildCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android-testing\\app\\.cxx\\cmake\\foxdRelease\\x86\" core",
+      "abi": "x86",
+      "output": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\build\\intermediates\\cmake\\foxdRelease\\obj\\x86\\libcore.so"
+    }
+  }
+}

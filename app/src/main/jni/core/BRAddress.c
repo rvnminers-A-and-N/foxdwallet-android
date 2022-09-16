@@ -218,7 +218,7 @@ size_t BRScriptPushData(uint8_t *script, size_t scriptLen, const uint8_t *data, 
 // we are unable to correctly sign later, then the entire wallet balance after that point would become stuck with the
 // current coin selection code
 
-// writes the ravenwallet address for a scriptPubKey to addr
+// writes the com.foxdwallet address for a scriptPubKey to addr
 // returns the number of bytes written, or addrLen needed if addr is NULL
 size_t BRAddressFromScriptPubKey(char *addr, size_t addrLen, const uint8_t *script, size_t scriptLen)
 {
@@ -229,11 +229,11 @@ size_t BRAddressFromScriptPubKey(char *addr, size_t addrLen, const uint8_t *scri
     const uint8_t *elems[BRScriptElements(NULL, 0, script, scriptLen)], *d = NULL;
     size_t count = BRScriptElements(elems, sizeof(elems) / sizeof(*elems), script, scriptLen), l = 0;
     
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS;
 #if TESTNET
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS_TEST;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS_TEST;
 #elif REGTEST
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS_REGTEST;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS_REGTEST;
 #endif
     
     // TODO count doesn't trigger/ for regular tx count =5 for assets tx =8
@@ -247,11 +247,11 @@ size_t BRAddressFromScriptPubKey(char *addr, size_t addrLen, const uint8_t *scri
 #warning TODO: doesn't support PSH count for assets tx will be >3
     else if (count == 3 && *elems[0] == OP_HASH160 && *elems[1] == 20 && *elems[2] == OP_EQUAL) {
         // pay-to-script-hash scriptPubKey
-        data[0] = RAVENCOIN_SCRIPT_ADDRESS;
+        data[0] = FOXDCOIN_SCRIPT_ADDRESS;
 #if TESTNET
-        data[0] = RAVENCOIN_SCRIPT_ADDRESS_TEST;
+        data[0] = FOXDCOIN_SCRIPT_ADDRESS_TEST;
 #elif REGTEST
-        data[0] = RAVENCOIN_SCRIPT_ADDRESS_REGTEST;
+        data[0] = FOXDCOIN_SCRIPT_ADDRESS_REGTEST;
 #endif
         d = BRScriptData(elems[1], &l);
         if (l != 20) d = NULL;
@@ -267,7 +267,7 @@ size_t BRAddressFromScriptPubKey(char *addr, size_t addrLen, const uint8_t *scri
     return (d) ? BRBase58CheckEncode(addr, addrLen, data, sizeof(data)) : 0;
 }
 
-// writes the ravenwallet address for a scriptSig to addr
+// writes the com.foxdwallet address for a scriptSig to addr
 // returns the number of bytes written, or addrLen needed if addr is NULL
 size_t BRAddressFromScriptSig(char *addr, size_t addrLen, const uint8_t *script, size_t scriptLen)
 {
@@ -278,11 +278,11 @@ size_t BRAddressFromScriptSig(char *addr, size_t addrLen, const uint8_t *script,
     const uint8_t *elems[BRScriptElements(NULL, 0, script, scriptLen)], *d = NULL;
     size_t count = BRScriptElements(elems, sizeof(elems) / sizeof(*elems), script, scriptLen), l = 0;
 
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS;
 #if TESTNET
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS_TEST;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS_TEST;
 #elif REGTEST
-    data[0] = RAVENCOIN_PUBKEY_ADDRESS_REGTEST;
+    data[0] = FOXDCOIN_PUBKEY_ADDRESS_REGTEST;
 #endif
     
     if (count >= 2 && *elems[count - 2] <= OP_PUSHDATA4 &&
@@ -293,11 +293,11 @@ size_t BRAddressFromScriptSig(char *addr, size_t addrLen, const uint8_t *script,
     }
     else if (count >= 2 && *elems[count - 2] <= OP_PUSHDATA4 && *elems[count - 1] <= OP_PUSHDATA4 &&
              *elems[count - 1] > 0) { // pay-to-script-hash scriptSig
-        data[0] = RAVENCOIN_SCRIPT_ADDRESS;
+        data[0] = FOXDCOIN_SCRIPT_ADDRESS;
 #if TESTNET
-        data[0] = RAVENCOIN_SCRIPT_ADDRESS_TEST;
+        data[0] = FOXDCOIN_SCRIPT_ADDRESS_TEST;
 #elif REGTEST
-        data[0] = RAVENCOIN_SCRIPT_ADDRESS_REGTEST;
+        data[0] = FOXDCOIN_SCRIPT_ADDRESS_REGTEST;
 #endif
         d = BRScriptData(elems[count - 1], &l);
         if (d) Hash160(&data[1], d, l);
@@ -313,18 +313,18 @@ size_t BRAddressFromScriptSig(char *addr, size_t addrLen, const uint8_t *script,
 // returns the number of bytes written, or scriptLen needed if script is NULL
 size_t BRAddressScriptPubKey(uint8_t *script, size_t scriptLen, const char *addr)
 {
-    static uint8_t pubkeyAddress = RAVENCOIN_PUBKEY_ADDRESS, scriptAddress = RAVENCOIN_SCRIPT_ADDRESS;
+    static uint8_t pubkeyAddress = FOXDCOIN_PUBKEY_ADDRESS, scriptAddress = FOXDCOIN_SCRIPT_ADDRESS;
     uint8_t data[21];
     size_t r = 0;
     
     assert(addr != NULL);
 
 #if TESTNET
-    pubkeyAddress = RAVENCOIN_PUBKEY_ADDRESS_TEST;
-    scriptAddress = RAVENCOIN_SCRIPT_ADDRESS_TEST;
+    pubkeyAddress = FOXDCOIN_PUBKEY_ADDRESS_TEST;
+    scriptAddress = FOXDCOIN_SCRIPT_ADDRESS_TEST;
 #elif REGTEST
-    pubkeyAddress = RAVENCOIN_PUBKEY_ADDRESS_REGTEST;
-    scriptAddress = RAVENCOIN_SCRIPT_ADDRESS_REGTEST;
+    pubkeyAddress = FOXDCOIN_PUBKEY_ADDRESS_REGTEST;
+    scriptAddress = FOXDCOIN_SCRIPT_ADDRESS_REGTEST;
 #endif
     
     if (BRBase58CheckDecode(data, sizeof(data), addr) == 21) {
@@ -355,7 +355,7 @@ size_t BRAddressScriptPubKey(uint8_t *script, size_t scriptLen, const char *addr
     return r;
 }
 
-// returns true if addr is a valid ravenwallet address
+// returns true if addr is a valid com.foxdwallet address
 int BRAddressIsValid(const char *addr)
 {
     uint8_t data[21];
@@ -364,12 +364,12 @@ int BRAddressIsValid(const char *addr)
     assert(addr != NULL);
     
     if (BRBase58CheckDecode(data, sizeof(data), addr) == 21) {
-        r = (data[0] == RAVENCOIN_PUBKEY_ADDRESS || data[0] == RAVENCOIN_SCRIPT_ADDRESS);
+        r = (data[0] == FOXDCOIN_PUBKEY_ADDRESS || data[0] == FOXDCOIN_SCRIPT_ADDRESS);
     
 #if TESTNET
-        r = (data[0] == RAVENCOIN_PUBKEY_ADDRESS_TEST || data[0] == RAVENCOIN_SCRIPT_ADDRESS_TEST);
+        r = (data[0] == FOXDCOIN_PUBKEY_ADDRESS_TEST || data[0] == FOXDCOIN_SCRIPT_ADDRESS_TEST);
 #elif REGTEST
-        r = (data[0] == RAVENCOIN_PUBKEY_ADDRESS_REGTEST || data[0] == RAVENCOIN_SCRIPT_ADDRESS_REGTEST);
+        r = (data[0] == FOXDCOIN_PUBKEY_ADDRESS_REGTEST || data[0] == FOXDCOIN_SCRIPT_ADDRESS_REGTEST);
 #endif
     }
     

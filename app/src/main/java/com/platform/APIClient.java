@@ -5,9 +5,9 @@ import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
 
-import com.ravenwallet.RavenApp;
-import com.ravenwallet.presenter.activities.util.ActivityUTILS;
-import com.ravenwallet.tools.util.Utils;
+import com.foxdwallet.FoxdApp;
+import com.foxdwallet.presenter.activities.util.ActivityUTILS;
+import com.foxdwallet.tools.util.Utils;
 //import com.platform.kvstore.RemoteKVStore;
 //import com.platform.kvstore.ReplicatedKVStore;
 
@@ -27,7 +27,7 @@ import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-import static com.ravenwallet.tools.util.BRCompressor.gZipExtract;
+import static com.foxdwallet.tools.util.BRCompressor.gZipExtract;
 
 
 /**
@@ -62,7 +62,7 @@ public class APIClient {
     private static final String PROTO = "https";
 
     // convenience getter for the API endpoint
-    public static String BASE_URL = PROTO + "://" + RavenApp.HOST;
+    public static String BASE_URL = PROTO + "://" + FoxdApp.HOST;
 //    //feePerKb url
 //    private static final String FEE_PER_KB_URL = "/v1/fee-per-kb";
 //    //token
@@ -111,7 +111,7 @@ public class APIClient {
 //        if (ActivityUTILS.isMainThread()) {
 //            throw new NetworkOnMainThreadException();
 //        }
-//        if (ctx == null) ctx = RavenApp.getRvnContext();
+//        if (ctx == null) ctx = FoxdApp.getRvnContext();
 //        if (ctx == null) return null;
 //        try {
 //            String strUtl = BASE_URL + TOKEN;
@@ -240,7 +240,7 @@ public class APIClient {
                 Uri newUri = Uri.parse(newLocation);
                 if (newUri == null) {
                     Log.e(TAG, "sendRequest: redirect uri is null");
-                } else if (!newUri.getHost().equalsIgnoreCase(RavenApp.HOST) || !newUri.getScheme().equalsIgnoreCase(PROTO)) {
+                } else if (!newUri.getHost().equalsIgnoreCase(FoxdApp.HOST) || !newUri.getScheme().equalsIgnoreCase(PROTO)) {
                     Log.e(TAG, "sendRequest: WARNING: redirect is NOT safe: " + newLocation);
                 } else {
                     Log.w(TAG, "redirecting: " + request.url() + " >>> " + newLocation);
@@ -510,7 +510,7 @@ public class APIClient {
 //    }
 
 //    public boolean tryExtractTar() {
-//        Context app = RavenApp.getRvnContext();
+//        Context app = FoxdApp.getRvnContext();
 //        if (app == null) {
 //            Log.e(TAG, "tryExtractTar: failed to extract, app is null");
 //            return false;

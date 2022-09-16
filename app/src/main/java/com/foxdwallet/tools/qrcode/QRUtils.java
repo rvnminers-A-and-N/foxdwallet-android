@@ -157,7 +157,7 @@ public class QRUtils {
 
         File file = saveToExternalStorage(QRUtils.encodeAsBitmap(bitcoinUri, 500), app);
         //Uri uri = Uri.fromFile(file);
-        Uri uri = FileProvider.getUriForFile(app, "com.foxdwallet", file);
+        Uri uri = FileProvider.getUriForFile(app, "com.com.foxdwallet", file);
 
         Intent intent = new Intent();
         if (via.equalsIgnoreCase("sms:")) {

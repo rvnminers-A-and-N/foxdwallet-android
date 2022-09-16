@@ -41,7 +41,7 @@ extern "C" {
 #define BIP32_HARD                  0x80000000
 
 #define BIP44_PURPOSE                   44
-#define BIP44_RVN_COINTYPE              175
+#define BIP44_FOXD_COINTYPE             175
 #define BIP44_DEFAULT_ACCOUNT           0
 
 #define SEQUENCE_GAP_LIMIT_EXTERNAL     10

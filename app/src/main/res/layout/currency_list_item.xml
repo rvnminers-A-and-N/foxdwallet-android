@@ -6,7 +6,7 @@
                 android:background="@color/white"
     android:orientation="vertical">
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/currency_item_text"
         android:layout_width="fill_parent"

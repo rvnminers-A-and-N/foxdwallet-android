@@ -5,8 +5,8 @@ import android.database.Cursor;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.ravenwallet.core.BRCoreTransactionAsset;
-import com.ravenwallet.core.MyTransactionAsset;
+import com.foxdwallet.core.BRCoreTransactionAsset;
+import com.foxdwallet.core.MyTransactionAsset;
 
 /**
  * RavenWallet

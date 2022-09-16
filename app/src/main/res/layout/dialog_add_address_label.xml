@@ -3,7 +3,7 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <com.ravenwallet.presenter.customviews.BREdit
+    <com.foxdwallet.presenter.customviews.BREdit
         android:id="@+id/address_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -251,7 +251,7 @@ public class FragmentRequestAmount extends Fragment {
                     amount = amount.divide(new BigDecimal(SATOSHIS), 8, BRConstants.ROUNDING_MODE);
                 }
 
-                String coinRequestUrl = "https://coinrequest.io/create?coin=ravencoin&address=" + mReceiveAddress + "&amount=" + amount.toString() + "&wallet=foxdwallet";
+                String coinRequestUrl = "https://coinrequest.io/create?coin=ravencoin&address=" + mReceiveAddress + "&amount=" + amount.toString() + "&wallet=com.foxdwallet";
                 QRUtils.share("https:", getActivity(), coinRequestUrl);
 
             }

@@ -7,7 +7,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.platform.sqlite.PlatformSqliteHelper;
-import com.ravenwallet.tools.util.BRConstants;
+import com.foxdwallet.tools.util.BRConstants;
 
 import java.util.ArrayList;
 import java.util.List;

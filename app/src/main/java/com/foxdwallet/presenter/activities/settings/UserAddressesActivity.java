@@ -21,7 +21,7 @@ import com.foxdwallet.R;
 import com.foxdwallet.core.BRCoreAddress;
 import com.foxdwallet.presenter.activities.util.BRActivity;
 import com.foxdwallet.tools.animation.BRAnimator;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -87,7 +87,7 @@ public class UserAddressesActivity extends BRActivity {
     }
 
     private void setAddresses() {
-        RvnWalletManager walletManager = RvnWalletManager.getInstance(this);
+        FoxdWalletManager walletManager = FoxdWalletManager.getInstance(this);
         BRCoreAddress[] addresses = walletManager.getWallet().getAllAddresses();
         if (addresses.length > 0) {
             mAddressBookList.setVisibility(View.VISIBLE);

@@ -21,7 +21,7 @@ import com.foxdwallet.tools.animation.BRDialog;
 import com.foxdwallet.tools.manager.BRSharedPrefs;
 import com.foxdwallet.tools.threads.executor.BRExecutor;
 import com.foxdwallet.tools.util.Utils;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
 
@@ -73,7 +73,7 @@ public class AuthManager {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                BaseWalletManager wallet = RvnWalletManager.getInstance(app);
+                BaseWalletManager wallet = FoxdWalletManager.getInstance(app);
                 AuthManager.getInstance().setTotalLimit(app, wallet == null ? 0 : wallet.getTotalSent(app)
                         + BRKeyStore.getSpendLimit(app));
             }

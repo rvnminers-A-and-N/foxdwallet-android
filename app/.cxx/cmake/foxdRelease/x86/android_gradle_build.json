@@ -1,0 +1,509 @@
+{
+  "stringTable": {
+    "0": "C:/Users/bill/foxdwallet-android-testing/app/.cxx/cmake/foxdRelease/x86",
+    "1": "--target=i686-none-linux-android24 --gcc-toolchain=C:/Users/bill/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/bill/AppData/Local/Android/Sdk/ndk/21.0.6113669/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dcore_EXPORTS -I../../../../src/main/jni -I../../../../src/main/jni/core -I../../../../src/main/jni/core/secp256k1/include -I../../../../src/main/jni/core/secp256k1/src -I../../../../src/main/jni/core/secp256k1 -I../../../../src/main/jni/core/crypto -I/System/Library/Frameworks/JavaVM.framework/Headers -I../../../../src/main/secp/secp256k1/include -I../../../../src/main/secp/secp256k1/src -I../../../../src/main/secp/secp256k1 -I../../../../src/main/secp -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -O2 -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\platforms.cmake",
+    "C:\\Users\\bill\\foxdwallet-android-testing\\app\\CMakeLists.txt",
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android-testing\\app\\.cxx\\cmake\\foxdRelease\\x86\" clean"
+  ],
+  "buildTargetsCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"C:\\Users\\bill\\foxdwallet-android-testing\\app\\.cxx\\cmake\\foxdRelease\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "core-Release-x86": {
+      "buildCommand": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"C:\\Users\\bill\\foxdwallet-android-testing\\app\\.cxx\\cmake\\foxdRelease\\x86\" core",
+      "buildType": "release",
+      "toolchain": "2346409482",
+      "abi": "x86",
+      "artifactName": "core",
+      "files": [
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRAddress.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBase58.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP44Sequence.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP38Key.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP39Mnemonic.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBloomFilter.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRCrypto.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRKey.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRMerkleBlock.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRPaymentProtocol.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRPeer.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRPeerManager.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRSet.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRTransaction.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRWallet.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRAssets.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRScript.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\blake.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\bmw.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\cubehash.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\echo.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\groestl.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\jh.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\keccak.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\luffa.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\shavite.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\simd.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\skein.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_fugue.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_hamsi.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_hamsi_helper.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_sha2.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_sha512.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_shabal.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_whirlpool.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\tiger.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\BRCoreJni.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreJniReference.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreAddress.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreChainParams.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCorePeer.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreMasterPubKey.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreKey.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreMerkleBlock.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCorePeerManager.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransaction.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransactionInput.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransactionOutput.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCorePaymentProtocol.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreWallet.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransactionAsset.c",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRAddress.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRArray.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBase58.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP44Sequence.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP38Key.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP39Mnemonic.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBIP39WordsEn.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRBloomFilter.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRChainParams.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRCrypto.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRInt.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRKey.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRMerkleBlock.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRPaymentProtocol.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRPeer.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRPeerManager.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRSet.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRTransaction.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRWallet.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRAssets.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\BRScript.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_blake.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_bmw.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_cubehash.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_echo.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_fugue.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_groestl.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_hamsi.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_jh.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_keccak.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_luffa.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_sha2.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_shabal.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_shavite.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_simd.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_skein.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_tiger.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_types.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\core\\crypto\\sph_whirlpool.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\BRCoreJni.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreJniReference.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreAddress.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreChainParams.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCorePeer.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreMasterPubKey.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreKey.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreMerkleBlock.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCorePeerManager.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransaction.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransactionInput.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransactionOutput.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCorePaymentProtocol.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreWallet.h",
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "header": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\src\\main\\jni\\com_foxdcoin_core_BRCoreTransactionAsset.h",
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "output": "C:\\Users\\bill\\foxdwallet-android-testing\\app\\build\\intermediates\\cmake\\foxdRelease\\obj\\x86\\libcore.so"
+    }
+  },
+  "toolchains": {
+    "2346409482": {
+      "cCompilerExecutable": "C:\\Users\\bill\\AppData\\Local\\Android\\Sdk\\ndk\\21.0.6113669\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": []
+}

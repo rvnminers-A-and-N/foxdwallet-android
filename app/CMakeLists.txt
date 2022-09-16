@@ -106,64 +106,64 @@ add_library( # The name of the library.
 			src/main/jni/core/crypto/sph_whirlpool.h
 			src/main/jni/core/crypto/tiger.c
 
-			# KAWPOW files
-			src/main/jni/core/crypto/ethash/attributes.h
-			src/main/jni/core/crypto/ethash/bit_manipulation.h
-			src/main/jni/core/crypto/ethash/builtins.h
-			src/main/jni/core/crypto/ethash/endianness.hpp
-			src/main/jni/core/crypto/ethash/ethash.h
-			src/main/jni/core/crypto/ethash/ethash.hpp
-			src/main/jni/core/crypto/ethash/ethash-internal.hpp
-			src/main/jni/core/crypto/ethash/hash_types.h
-			src/main/jni/core/crypto/ethash/hash_types.hpp
-			src/main/jni/core/crypto/ethash/helpers.hpp
-			src/main/jni/core/crypto/ethash/keccak.c
-			src/main/jni/core/crypto/ethash/keccak.h
-			src/main/jni/core/crypto/ethash/keccak.hpp
-			src/main/jni/core/crypto/ethash/keccakf800.c
-			src/main/jni/core/crypto/ethash/keccakf1600.c
-			src/main/jni/core/crypto/ethash/kiss99.hpp
-			src/main/jni/core/crypto/ethash/managed.cpp
-			src/main/jni/core/crypto/ethash/primes.h
-			src/main/jni/core/crypto/ethash/primes.c
-			src/main/jni/core/crypto/ethash/progpow.hpp
-			src/main/jni/core/crypto/ethash/version.h
-			src/main/jni/core/crypto/ethash/progpow_test_vectors.hpp
-			src/main/jni/core/crypto/ethash/ethash.cpp
-			src/main/jni/core/crypto/ethash/progpow.cpp
-			src/main/jni/core/crypto/ethash/portable_endian.h
+			 # KAWPOW files
+			 # src/main/jni/core/crypto/ethash/attributes.h
+			 # src/main/jni/core/crypto/ethash/bit_manipulation.h
+			 # src/main/jni/core/crypto/ethash/builtins.h
+			 # src/main/jni/core/crypto/ethash/endianness.hpp
+			 # src/main/jni/core/crypto/ethash/ethash.h
+			 # src/main/jni/core/crypto/ethash/ethash.hpp
+			 # src/main/jni/core/crypto/ethash/ethash-internal.hpp
+			 # src/main/jni/core/crypto/ethash/hash_types.h
+			 # src/main/jni/core/crypto/ethash/hash_types.hpp
+			 # src/main/jni/core/crypto/ethash/helpers.hpp
+			 # src/main/jni/core/crypto/ethash/keccak.c
+			 # src/main/jni/core/crypto/ethash/keccak.h
+			 # src/main/jni/core/crypto/ethash/keccak.hpp
+			 # src/main/jni/core/crypto/ethash/keccakf800.c
+			 # src/main/jni/core/crypto/ethash/keccakf1600.c
+			 # src/main/jni/core/crypto/ethash/kiss99.hpp
+			 # src/main/jni/core/crypto/ethash/managed.cpp
+			 # src/main/jni/core/crypto/ethash/primes.h
+			 # src/main/jni/core/crypto/ethash/primes.c
+			 # src/main/jni/core/crypto/ethash/progpow.hpp
+			 # src/main/jni/core/crypto/ethash/version.h
+			 # src/main/jni/core/crypto/ethash/progpow_test_vectors.hpp
+		     # src/main/jni/core/crypto/ethash/ethash.cpp
+			 # src/main/jni/core/crypto/ethash/progpow.cpp
+			 # src/main/jni/core/crypto/ethash/portable_endian.h
 
              # Core JNI files
              src/main/jni/BRCoreJni.h
              src/main/jni/BRCoreJni.c
-             src/main/jni/com_ravencoin_core_BRCoreJniReference.c
-             src/main/jni/com_ravencoin_core_BRCoreJniReference.h
-             src/main/jni/com_ravencoin_core_BRCoreAddress.c
-             src/main/jni/com_ravencoin_core_BRCoreAddress.h
-             src/main/jni/com_ravencoin_core_BRCoreChainParams.c
-             src/main/jni/com_ravencoin_core_BRCoreChainParams.h
-             src/main/jni/com_ravencoin_core_BRCorePeer.c
-             src/main/jni/com_ravencoin_core_BRCorePeer.h
-             src/main/jni/com_ravencoin_core_BRCoreMasterPubKey.c
-             src/main/jni/com_ravencoin_core_BRCoreMasterPubKey.h
-             src/main/jni/com_ravencoin_core_BRCoreKey.h
-             src/main/jni/com_ravencoin_core_BRCoreKey.c
-             src/main/jni/com_ravencoin_core_BRCoreMerkleBlock.c
-             src/main/jni/com_ravencoin_core_BRCoreMerkleBlock.h
-             src/main/jni/com_ravencoin_core_BRCorePeerManager.c
-             src/main/jni/com_ravencoin_core_BRCorePeerManager.h
-             src/main/jni/com_ravencoin_core_BRCoreTransaction.c
-             src/main/jni/com_ravencoin_core_BRCoreTransaction.h
-             src/main/jni/com_ravencoin_core_BRCoreTransactionInput.c
-             src/main/jni/com_ravencoin_core_BRCoreTransactionInput.h
-             src/main/jni/com_ravencoin_core_BRCoreTransactionOutput.c
-             src/main/jni/com_ravencoin_core_BRCoreTransactionOutput.h
-             src/main/jni/com_ravencoin_core_BRCorePaymentProtocol.c
-             src/main/jni/com_ravencoin_core_BRCorePaymentProtocol.h
-             src/main/jni/com_ravencoin_core_BRCoreWallet.c
-             src/main/jni/com_ravencoin_core_BRCoreWallet.h
-             src/main/jni/com_ravencoin_core_BRCoreTransactionAsset.c
-             src/main/jni/com_ravencoin_core_BRCoreTransactionAsset.h
+             src/main/jni/com_foxdcoin_core_BRCoreJniReference.c
+             src/main/jni/com_foxdcoin_core_BRCoreJniReference.h
+             src/main/jni/com_foxdcoin_core_BRCoreAddress.c
+             src/main/jni/com_foxdcoin_core_BRCoreAddress.h
+             src/main/jni/com_foxdcoin_core_BRCoreChainParams.c
+             src/main/jni/com_foxdcoin_core_BRCoreChainParams.h
+             src/main/jni/com_foxdcoin_core_BRCorePeer.c
+             src/main/jni/com_foxdcoin_core_BRCorePeer.h
+             src/main/jni/com_foxdcoin_core_BRCoreMasterPubKey.c
+             src/main/jni/com_foxdcoin_core_BRCoreMasterPubKey.h
+             src/main/jni/com_foxdcoin_core_BRCoreKey.h
+             src/main/jni/com_foxdcoin_core_BRCoreKey.c
+             src/main/jni/com_foxdcoin_core_BRCoreMerkleBlock.c
+             src/main/jni/com_foxdcoin_core_BRCoreMerkleBlock.h
+             src/main/jni/com_foxdcoin_core_BRCorePeerManager.c
+             src/main/jni/com_foxdcoin_core_BRCorePeerManager.h
+             src/main/jni/com_foxdcoin_core_BRCoreTransaction.c
+             src/main/jni/com_foxdcoin_core_BRCoreTransaction.h
+             src/main/jni/com_foxdcoin_core_BRCoreTransactionInput.c
+             src/main/jni/com_foxdcoin_core_BRCoreTransactionInput.h
+             src/main/jni/com_foxdcoin_core_BRCoreTransactionOutput.c
+             src/main/jni/com_foxdcoin_core_BRCoreTransactionOutput.h
+             src/main/jni/com_foxdcoin_core_BRCorePaymentProtocol.c
+             src/main/jni/com_foxdcoin_core_BRCorePaymentProtocol.h
+             src/main/jni/com_foxdcoin_core_BRCoreWallet.c
+             src/main/jni/com_foxdcoin_core_BRCoreWallet.h
+             src/main/jni/com_foxdcoin_core_BRCoreTransactionAsset.c
+             src/main/jni/com_foxdcoin_core_BRCoreTransactionAsset.h
 
              # Bech32 files
              #src/main/jni/core/BRBech32.c
@@ -176,7 +176,7 @@ include_directories(src/main/jni/core/)
 include_directories(src/main/jni/core/secp256k1/include)
 include_directories(src/main/jni/core/secp256k1/src)
 include_directories(src/main/jni/core/secp256k1)
-include_directories(src/main/jni/core/crypto/ethash)
+include_directories(src/main/jni/core/crypto)
 include_directories(/System/Library/Frameworks/JavaVM.framework/Headers)
 
 include_directories(src/main/secp/secp256k1/include/)

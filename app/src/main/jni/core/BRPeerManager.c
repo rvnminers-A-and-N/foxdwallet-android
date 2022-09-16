@@ -31,17 +31,13 @@ static const struct {
     uint32_t timestamp;
     uint32_t target;
 } checkpoint_array[] = {
-        {      0, "000000ecfc5e6324a079542221d00e10362bdc894d56500c414060eea8a3ad5a", 1537466400, 0x1e00ffff },
-        { 200000, "00000193aa316faba95ed25accf8da2c1f3783881e7978ba8674bd4b0a409a05", 1583232224, 0x1e041a01 },
-        { 230000, "00000000ce30881250378687ea468bbcd5f2b599b07f31fce487b9192d00d36b", 1585030961, 0x1d0130d0 },
-        { 240000, "00000000217e2446d26c65e0f28ca721206253301d98b31b5122ed94bf21db74", 1585665582, 0x1c2f4b8d }
-}; // New testnet, port:18770 useragent:"/Ravencoin2.2.0/"
+        NULL
+}; // New testnet, port:18770 useragent:"/Foxdcoin1.0.1/"
 
 static const char *dns_seeds[] = {
 //       "127.0.0.1", NULL
 //        "192.168.86.38", NULL
-        "seed-testnet-raven.ravencoin.org.", "seed-testnet-raven.ravencoin.com.",
-        "seed-testnet-raven.bitactivate.com.", NULL
+        NULL
 };
 
 #else // main net
@@ -49,40 +45,16 @@ static const char *dns_seeds[] = {
 // blockchain checkpoints - these are also used as starting points for partial chain downloads, so they need to be at
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 static const struct { uint32_t height; const char *hash; uint32_t timestamp; uint32_t target; } checkpoint_array[] = {
-        {      0, "0000006b444bc2f2ffe627be9d9e7e7a0730000870ef6eb6da46c8eae389df90", 1514999494, 0x1e00ffff },
-        {      1, "00000058bcc33dea08b53691edb9e49a9eb8bac36a0db17eb5a7588860b1f590", 1515015723, 0x1e00ffff },
-        {  20160, "00000000146e792b63f2a18db16f32d2afc9f0b332839eb502cb9c9a8f1bc033", 1515665731, 0x1c53dd22 },
-        {  40320, "00000000085e7d049938d66a08d151891c0087a6b3d78d400f1ca0944991ffde", 1516664426, 0x1c0a0075 },
-        {  60480, "0000000000683f2d1bb44dd545eb4fea28c0f51eb513ea32b4e813f185a1f6ab", 1517740553, 0x1c01b501 },
-        {  80640, "00000000000735f443ea62266bb7799a760c8336da0c7b7a987c895e83c9ea73", 1518771490, 0x1b43e935 },
-        { 100800, "00000000000bf40aa747ca97da99e1e6878efff28f709d1969f0a2d95dda1414", 1519826997, 0x1b0fabc1 },
-        { 120960, "000000000000203f20f1f2fc50546b4f3d0693a53e781b499884661e6762eb05", 1520934202, 0x1b060077 },
-        { 141120, "00000000000367e05ceca64ebf6b72a87510bdcb6252ff071b7f4971661e9acf", 1522092453, 0x1b03cc83 },
-        { 161280, "0000000000024a1d42423dd3e1cde28c78fe34857db63f08d21f11fc13e594c3", 1523259269, 0x1b028d7d },
-        { 181440, "000000000000d202bdeb7993a1de022f82231fdce97e22f054626291eb79f4cb", 1524510281, 0x1b038153 },
-        { 201600, "000000000001a16d8b86e19ac87df227458d29b5fb70dfef7e5b0203df085617", 1525709579, 0x1b0306f4 },
-        { 221760, "000000000002b4a1ef811a31e58489794dba047e4e78e18d5611c94d7fc60174", 1526920402, 0x1b02ff59 },
-        { 241920, "000000000001e64a356c6665afcb2871bc7f18e5609663b5b54a82fa204ee9b1", 1528150015, 0x1b037c77 },
-        { 262080, "0000000000014a11d3aacdc5ee21e69fd8aefe10f0e617508dfb3e78d1ca82be", 1529359488, 0x1b037276 },
-        { 282240, "00000000000182bbfada9dd47003bed09880b7a1025edcb605f9c048f2bad49e", 1530594496, 0x1b042cda },
-        { 302400, "000000000001e9862c28d3359f2b568b03811988f2db2f91ab8b412acac891ed", 1531808927, 0x1b0422c8 },
-        { 322560, "000000000001d50eaf12266c6ecaefec473fecd9daa7993db05b89e6ab381388", 1533209846, 0x1b04cb9e },
-        { 338778, "000000000003198106731cb28fc24e9ace995a37709b026b25dfa905aea54517", 1535599185, 0x1b07cf3a },
-        { 340704, "000000000001c5e10e9e94b761464548efd2bbcf22509ac6bfec35757da58687", 1535711279, 0x1b024145 },
-        { 673344, "00000000000041bbd71687002a65c4dac458cb8a775e7ca094d623ac50300979", 1555813777, 0x1a62c6e4 },
-        { 844704, "0000000000006361abddc32b21bef2bf1df669f731ec18a13adbd426cced17b6", 1566164045, 0x1a78e5ab },
-        { 899136, "00000000000015d1f71d3fac92e98d3a01f7ec310c10e90a966dcf1b64369239", 1569424946, 0x1a379754 },
-        { 322560, "000000000001d50eaf12266c6ecaefec473fecd9daa7993db05b89e6ab381388", 1533209846, 0x1b04cb9e },
-        { 340704, "000000000001c5e10e9e94b761464548efd2bbcf22509ac6bfec35757da58687", 1535711279, 0x1b024145 },
-        { 673344, "00000000000041bbd71687002a65c4dac458cb8a775e7ca094d623ac50300979", 1555813777, 0x1a62c6e4 },
-        { 844704, "0000000000006361abddc32b21bef2bf1df669f731ec18a13adbd426cced17b6", 1566164045, 0x1a78e5ab },
-        { 899136, "00000000000015d1f71d3fac92e98d3a01f7ec310c10e90a966dcf1b64369239", 1569424946, 0x1a379754 },
-        { 1196000, "0000000000000636f7177046a677203ea191d540b1aefdff63fd43eec538dd3b", 1587354658, 0x1a254bfb }
+        {      0, "000000a26ea2c04148915028ac33daef2c004e2c2f45841a5af07ce0b57a9cf4", 1582102162, 0x1e00ffff },
+    	{      1, "00000457e73653668af20d7cdb4932c49576a2783ea729e16a9ebe833584f482", 1582116536, 0x1e0fffff },
+	{      3, "000002c96c8a039acdee4a7a02f8d47b8dc057a14d14bdf02e64c908fa908296", 1582116544, 0x1e0fffff },
+    	{   5000, "000000649e183754abc34009b179fbf6201559411b14c6d2cd50ff92b5c6fbfd", 1582429607, 0x1e02786c },
+    	{  20000, "000000000bdec48ce19dedffc919a7f9fc7ec7a91d07af79961cb978fc6d4bed", 1583298994, 0x1c121ec0 }
 };
 
 static const char *dns_seeds[] = {
 //    "127.0.0.1", NULL
-        "seed-raven.ravencoin.com", "seed-raven.ravencoin.org.", "seed-raven.bitactivate.com.", NULL
+        "seed1.foxdcoin.com.", "seed2.foxdcoin.com.", "seed3.foxdcoin.com.", "seed4.foxdcoin.com.", NULL
 };
 
 #endif
@@ -623,7 +595,7 @@ static void _mempoolDone(void *info, int success) {
         }
 
         _PeerManagerRequestUnrelayedTx(manager, peer);
-        BRPeerSendGetaddr(peer); // request a list of other ravenwallet peers
+        BRPeerSendGetaddr(peer); // request a list of other com.foxdwallet peers
         pthread_mutex_unlock(&manager->lock);
         if (manager->txStatusUpdate) manager->txStatusUpdate(manager->info);
         if (syncFinished && manager->syncStopped) manager->syncStopped(manager->info, 0);
@@ -1700,7 +1672,7 @@ static int _PeerManagerRescan(BRPeerManager *manager, BRMerkleBlock *newLastBloc
     return 1;
 }
 
-// specifies a single fixed peer to use when connecting to the ravenwallet network
+// specifies a single fixed peer to use when connecting to the com.foxdwallet network
 // set address to UINT128_ZERO to revert to default behavior
 void BRPeerManagerSetFixedPeer(BRPeerManager *manager, UInt128 address, uint16_t port) {
     assert(manager != NULL);
@@ -2059,7 +2031,7 @@ static void _publishTxInvDone(void *info, int success) {
     pthread_mutex_unlock(&manager->lock);
 }
 
-// publishes tx to ravenwallet network (do not call TransactionFree() on tx afterward)
+// publishes tx to com.foxdwallet network (do not call TransactionFree() on tx afterward)
 void BRPeerManagerPublishTx(BRPeerManager *manager, BRTransaction *tx, void *info,
                             void (*callback)(void *info, int error)) {
     assert(manager != NULL);

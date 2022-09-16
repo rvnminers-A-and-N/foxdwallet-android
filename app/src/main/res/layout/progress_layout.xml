@@ -14,7 +14,7 @@
         android:layout_centerVertical="true"
         android:layout_marginEnd="10dp" />
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"

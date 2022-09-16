@@ -6,16 +6,20 @@ repositories {
     maven { url 'https://maven.fabric.io/public' }
 }
 android {
-    compileSdkVersion = 28
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    compileSdkVersion = 30
     buildToolsVersion = '28.0.3'
 
     defaultConfig {
         testInstrumentationRunner = 'androidx.test.runner.AndroidJUnitRunner'
-        applicationId = 'com.ravenwallet'
+        applicationId = 'com.foxddev.foxdcoin.wallet'
         minSdkVersion 24
-        targetSdkVersion 28
-        versionCode 50
-        versionName "3.0.0"
+        targetSdkVersion 30
+        versionCode 51
+        versionName "3.0.1"
         multiDexEnabled true
 
         // Similar to other properties in the defaultConfig block,
@@ -55,10 +59,10 @@ android {
     flavorDimensions "mode"
 
     productFlavors {
-        rvn {
-            applicationId = "com.ravenwallet"
+        foxd {
+            applicationId = "com.foxddev.foxdcoin.wallet"
             dimension "mode"
-            resValue "string", "app_name", "RVN Wallet"
+            resValue "string", "app_name", "FOXD Wallet"
             buildConfigField "boolean", "TESTNET", "false"
 
             externalNativeBuild {
@@ -72,10 +76,10 @@ android {
             }
         }
 
-        rvnTestnet {
-            applicationId = "com.ravenwallet"
+        foxdTestnet {
+            applicationId = "com.foxddev.foxdcoin.wallet"
             dimension "mode"
-            resValue "string", "app_name", "RVN-testnet"
+            resValue "string", "app_name", "FOXD-testnet"
             buildConfigField "boolean", "TESTNET", "true"
 
             externalNativeBuild {
@@ -137,8 +141,8 @@ android {
 }
 
 task copyResDirectoryToClasses(type: Copy) {
-    from "${projectDir}/src/test/res"
-    into "${buildDir}/intermediates/classes/test/debug/res"
+    from "${projectDir}/src/main/res"
+    into "${buildDir}/intermediates/classes/main/debug/res"
 }
 
 //def gitUpdateModules() {
@@ -166,7 +170,9 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.10.0'
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
     implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-analytics'
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
         transitive = true
     }

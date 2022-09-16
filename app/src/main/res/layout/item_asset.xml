@@ -26,7 +26,7 @@
         android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/root_asset_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
             app:customTFont="CircularPro-Black.otf"
             tools:text="Troncoin" />
 
-        <com.ravenwallet.presenter.customviews.BRText
+        <com.foxdwallet.presenter.customviews.BRText
             android:id="@+id/asset_name"
             android:layout_width="wrap_content"
             android:layout_below="@+id/root_asset_name"
@@ -58,7 +58,7 @@
 
     </LinearLayout>
 
-    <com.ravenwallet.presenter.customviews.BRText
+    <com.foxdwallet.presenter.customviews.BRText
         android:id="@+id/asset_amount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

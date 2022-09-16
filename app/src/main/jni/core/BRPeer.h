@@ -57,7 +57,7 @@ extern "C" {
 #elif REGTEST
 #define STANDARD_PORT 18444
 #else
-#define STANDARD_PORT 8767
+#define STANDARD_PORT 8769
 #endif
 
 #define SERVICES_NODE_NETWORK 0x01 // services value indicating a node carries full blocks, not just headers

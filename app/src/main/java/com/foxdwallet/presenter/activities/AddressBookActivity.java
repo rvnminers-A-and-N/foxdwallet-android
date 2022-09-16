@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -16,16 +13,20 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.foxdwallet.R;
+import com.foxdwallet.core.BRCoreAddress;
+import com.foxdwallet.presenter.activities.util.BRActivity;
+import com.foxdwallet.tools.animation.BRAnimator;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.platform.addressBook.AddressBookItem;
 import com.platform.addressBook.AddressBookRepository;
 import com.platform.addressBook.adapter.AddressBookAdapter;
 import com.platform.addressBook.adapter.CustomDividerItemDecoration;
 import com.platform.addressBook.event.OnAddressClickedListener;
 import com.platform.addressBook.event.OnAddressSavedListener;
-import com.foxdwallet.R;
-import com.foxdwallet.core.BRCoreAddress;
-import com.foxdwallet.presenter.activities.util.BRActivity;
-import com.foxdwallet.tools.animation.BRAnimator;
 
 import java.util.ArrayList;
 import java.util.List;

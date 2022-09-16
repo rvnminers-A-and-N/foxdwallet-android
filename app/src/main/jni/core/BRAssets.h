@@ -14,11 +14,11 @@
 #include "ChainParams.h"
 
 #ifdef TESTNET
-#define ASSET_ACTIVATION        6048
+#define ASSET_ACTIVATION        0
 #elif REGTEST
 #define ASSET_ACTIVATION        0
 #else
-#define ASSET_ACTIVATION        435456
+#define ASSET_ACTIVATION        100
 #endif
 
 #define OWNER_TAG               "!"

@@ -12,10 +12,10 @@ import android.util.Log;
 
 import com.platform.sqlite.PlatformSqliteHelper;
 import com.platform.sqlite.PlatformSqliteHelper.OwnedAsset;
-import com.ravenwallet.core.BRCoreTransactionAsset;
-import com.ravenwallet.presenter.AssetChangeListener;
-import com.ravenwallet.tools.threads.executor.BRExecutor;
-import com.ravenwallet.tools.util.BRConstants;
+import com.foxdwallet.core.BRCoreTransactionAsset;
+import com.foxdwallet.presenter.AssetChangeListener;
+import com.foxdwallet.tools.threads.executor.BRExecutor;
+import com.foxdwallet.tools.util.BRConstants;
 
 import java.util.ArrayList;
 import java.util.List;

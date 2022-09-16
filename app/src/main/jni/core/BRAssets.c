@@ -70,7 +70,7 @@ Amount GetIssueUniqueAssetBurnAmount() {
 
 bool IsNewAsset(const BRTransaction *tx) {
     
-    // Issuing an Asset must contain at least 1 TxOut( Raven Burn Output, Any Number of other Outputs ..., Owner Asset Output, issue Output)
+    // Issuing an Asset must contain at least 1 TxOut( FOXD Burn Output, Any Number of other Outputs ..., Owner Asset Output, issue Output)
     if (tx->outCount < 3)
         return false;
     
@@ -91,7 +91,7 @@ bool IsNewAsset(const BRTransaction *tx) {
 }
 
 bool IsReissueAsset(const BRTransaction *tx) {
-    // Reissuing an Asset must contain at least 3 CTxOut ( Raven Burn Tx, Any Number of other Outputs ..., Reissue Asset Output, Owner Asset Change Output)
+    // Reissuing an Asset must contain at least 3 CTxOut ( FOXD Burn Tx, Any Number of other Outputs ..., Reissue Asset Output, Owner Asset Change Output)
     if (tx->outCount < 3)
         return false;
     
@@ -411,7 +411,7 @@ bool CheckIssueBurnTx(const BRTxOutput *txOut) {
 }
 
 bool CheckReissueBurnTx(const BRTxOutput *txOut) {
-    // Check the transaction and verify that the correct RVN Amount
+    // Check the transaction and verify that the correct FOXD Amount
     if (txOut->amount != GetReissueAssetBurnAmount())
         return false;
     
@@ -504,12 +504,12 @@ size_t BRTxOutputSetNewAssetScript(uint8_t *script, size_t scriptLen, BRAsset *a
     }
     if (!script || scriptLen == 0 || scriptLen > MAX_SCRIPT_LENGTH) return 0;
     
-    script[25] = OP_RVN_ASSET;
+    script[25] = OP_FOXD_ASSET;
     
-    script[27] = RVN_R;
-    script[28] = RVN_V;
-    script[29] = RVN_N;
-    script[30] = RVN_Q;
+    script[27] = FOXD_F;
+    script[28] = FOXD_X;
+    script[29] = FOXD_D;
+    script[30] = FOXD_Q;
     
     off += 6;
     
@@ -556,12 +556,12 @@ size_t BRTxOutputSetTransferAssetScript(uint8_t *script, size_t scriptLen, BRAss
     if(!script) return 25 + 6 + 1 + asset->nameLen + sizeof(uint64_t) + 1;
     if (!script || scriptLen == 0 || scriptLen > MAX_SCRIPT_LENGTH) return 0;
     
-    script[25] = OP_RVN_ASSET;
+    script[25] = OP_FOXD_ASSET;
     
-    script[27] = RVN_R;
-    script[28] = RVN_V;
-    script[29] = RVN_N;
-    script[30] = RVN_T;
+    script[27] = FOXD_F;
+    script[28] = FOXD_X;
+    script[29] = FOXD_D;
+    script[30] = FOXD_T;
     
     off += 6;
     
@@ -595,12 +595,12 @@ size_t BRTxOutputSetReissueAssetScript(uint8_t *script, size_t scriptLen, BRAsse
     }
     if (!script || scriptLen == 0 || scriptLen > MAX_SCRIPT_LENGTH) return 0;
     
-    script[25] = OP_RVN_ASSET;
+    script[25] = OP_FOXD_ASSET;
     
-    script[27] = RVN_R;
-    script[28] = RVN_V;
-    script[29] = RVN_N;
-    script[30] = RVN_R;
+    script[27] = FOXD_F;
+    script[28] = FOXD_X;
+    script[29] = FOXD_D;
+    script[30] = FOXD_R;
     
     off += 6;
     
@@ -644,12 +644,12 @@ size_t BRTxOutputSetOwnerAssetScript(uint8_t *script, size_t scriptLen, BRAsset 
     if (!script) return 25 + 6 + 1 + asset->nameLen + OWNER_LENGTH + 1;
     if (!script || scriptLen == 0 || scriptLen > MAX_SCRIPT_LENGTH) return 0;
     
-    script[25] = OP_RVN_ASSET;
+    script[25] = OP_FOXD_ASSET;
     
-    script[27] = RVN_R;
-    script[28] = RVN_V;
-    script[29] = RVN_N;
-    script[30] = RVN_O;
+    script[27] = FOXD_F;
+    script[28] = FOXD_X;
+    script[29] = FOXD_D;
+    script[30] = FOXD_O;
     
     off += 6;
     
@@ -680,12 +680,12 @@ size_t BRTxOutputSetTransferOwnerAssetScript(uint8_t *script, size_t scriptLen, 
     if (!script) return 25 + 6 + 1 + asset->nameLen + sizeof(uint64_t) /*+ OWNER_LENGTH*/ + 1;
     if (!script || scriptLen == 0 || scriptLen > MAX_SCRIPT_LENGTH) return 0;
     
-    script[25] = OP_RVN_ASSET;
+    script[25] = OP_FOXD_ASSET;
     
-    script[27] = RVN_R;
-    script[28] = RVN_V;
-    script[29] = RVN_N;
-    script[30] = RVN_T;
+    script[27] = FOXD_F;
+    script[28] = FOXD_X;
+    script[29] = FOXD_D;
+    script[30] = FOXD_T;
     
     off += 6;
     
@@ -720,12 +720,12 @@ size_t BRTxOutputSetTransferOwnerAssetScriptWithoutTag(uint8_t *script, size_t s
     if (!script) return 25 + 6 + 1 + asset->nameLen + sizeof(uint64_t) + OWNER_LENGTH + 1;
     if (!script || scriptLen == 0 || scriptLen > MAX_SCRIPT_LENGTH) return 0;
     
-    script[25] = OP_RVN_ASSET;
+    script[25] = OP_FOXD_ASSET;
     
-    script[27] = RVN_R;
-    script[28] = RVN_V;
-    script[29] = RVN_N;
-    script[30] = RVN_T;
+    script[27] = FOXD_F;
+    script[28] = FOXD_X;
+    script[29] = FOXD_D;
+    script[30] = FOXD_T;
     
     off += 6;
     

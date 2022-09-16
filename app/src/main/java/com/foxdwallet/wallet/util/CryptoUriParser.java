@@ -24,7 +24,7 @@ import com.foxdwallet.tools.util.BRConstants;
 import com.foxdwallet.tools.util.Utils;
 import com.foxdwallet.wallet.WalletsMaster;
 import com.foxdwallet.wallet.abstracts.BaseWalletManager;
-import com.foxdwallet.wallet.RvnWalletManager;
+import com.foxdwallet.wallet.FoxdWalletManager;
 
 import java.io.UnsupportedEncodingException;
 import java.math.BigDecimal;
@@ -134,8 +134,8 @@ public class CryptoUriParser {
         String scheme = u.getScheme();
 
         if (scheme == null) {
-            scheme = RvnWalletManager.getInstance(app).getScheme(app);
-            obj.iso = RvnWalletManager.getInstance(app).getIso(app);
+            scheme = FoxdWalletManager.getInstance(app).getScheme(app);
+            obj.iso = FoxdWalletManager.getInstance(app).getIso(app);
 
         } else {
             for (BaseWalletManager walletManager : WalletsMaster.getInstance(app).getAllWallets()) {

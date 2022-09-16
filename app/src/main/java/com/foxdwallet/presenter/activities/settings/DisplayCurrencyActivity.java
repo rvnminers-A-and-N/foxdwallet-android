@@ -104,10 +104,10 @@ public class DisplayCurrencyActivity extends BRActivity {
         });
 
         int unit = BRSharedPrefs.getCryptoDenomination(this, "RVN"); // any iso, using one for all for now
-        if (unit == BRConstants.CURRENT_UNIT_URVN) {
+        if (unit == BRConstants.CURRENT_UNIT_UFOXD) {
             setButton(0);
         }
-        if (unit == BRConstants.CURRENT_UNIT_MRVN) {
+        if (unit == BRConstants.CURRENT_UNIT_MFOXD) {
             setButton(1);
         } else {
             setButton(2);
@@ -146,7 +146,7 @@ public class DisplayCurrencyActivity extends BRActivity {
     private void setButton(int position) {
         switch (position) {
             case 0:
-                BRSharedPrefs.putCryptoDenomination(this, mWalletManager.getIso(this), BRConstants.CURRENT_UNIT_URVN);
+                BRSharedPrefs.putCryptoDenomination(this, mWalletManager.getIso(this), BRConstants.CURRENT_UNIT_UFOXD);
                 leftButton.setTextColor(getColor(R.color.white));
                 leftButton.setBackground(getDrawable(R.drawable.b_half_left_blue));
                 rightButton.setTextColor(getColor(R.color.dark_blue));
@@ -155,7 +155,7 @@ public class DisplayCurrencyActivity extends BRActivity {
                 middleButton.setBackground(getDrawable(R.drawable.b_middle_blue_stroke));
                 break;
             case 1:
-                BRSharedPrefs.putCryptoDenomination(this, mWalletManager.getIso(this), BRConstants.CURRENT_UNIT_MRVN);
+                BRSharedPrefs.putCryptoDenomination(this, mWalletManager.getIso(this), BRConstants.CURRENT_UNIT_MFOXD);
                 middleButton.setTextColor(getColor(R.color.white));
                 middleButton.setBackground(getDrawable(R.drawable.b_half_middle_blue));
                 leftButton.setTextColor(getColor(R.color.dark_blue));
@@ -164,7 +164,7 @@ public class DisplayCurrencyActivity extends BRActivity {
                 rightButton.setBackground(getDrawable(R.drawable.b_half_right_blue_stroke));
                 break;
             case 2:
-                BRSharedPrefs.putCryptoDenomination(this, mWalletManager.getIso(this), BRConstants.CURRENT_UNIT_RAVENS);
+                BRSharedPrefs.putCryptoDenomination(this, mWalletManager.getIso(this), BRConstants.CURRENT_UNIT_FOXDS);
                 rightButton.setTextColor(getColor(R.color.white));
                 rightButton.setBackground(getDrawable(R.drawable.b_half_right_blue));
                 leftButton.setTextColor(getColor(R.color.dark_blue));

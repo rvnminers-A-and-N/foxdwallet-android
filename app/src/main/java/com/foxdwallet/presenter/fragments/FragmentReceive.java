@@ -19,7 +19,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.foxdwallet.RavenApp;
+import com.foxdwallet.FoxdApp;
 import com.foxdwallet.BuildConfig;
 import com.foxdwallet.R;
 import com.foxdwallet.presenter.customviews.BRButton;
@@ -181,7 +181,7 @@ public class FragmentReceive extends Fragment {
             @Override
             public void onClick(View v) {
                 if (!BRAnimator.isClickAllowed()) return;
-                String coinRequestUrl = "https://coinrequest.io/create?coin=ravencoin&address=" + mReceiveAddress + "&amount=0&wallet=foxdwallet";
+                String coinRequestUrl = "https://coinrequest.io/create?coin=ravencoin&address=" + mReceiveAddress + "&amount=0&wallet=com.foxdwallet";
                 QRUtils.share("https:", getActivity(), coinRequestUrl);
             }
         });
@@ -304,7 +304,7 @@ public class FragmentReceive extends Fragment {
     }
 
     private void updateQr() {
-        final Context ctx = getContext() == null ? RavenApp.getRvnContext() : (Activity) getContext();
+        final Context ctx = getContext() == null ? FoxdApp.getFoxdContext() : (Activity) getContext();
         BRExecutor.getInstance().forLightWeightBackgroundTasks().execute(new Runnable() {
             @Override
             public void run() {

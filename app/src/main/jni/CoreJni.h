@@ -24,7 +24,7 @@
 
 #include <jni.h>
 #include <BRTransaction.h>
-#include "com_ravencoin_core_BRCoreJniReference.h"
+#include "com_foxdcoin_core_BRCoreJniReference.h"
 
 /**
  *

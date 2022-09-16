@@ -1,6 +1,6 @@
 import android.util.Log;
 
-import com.ravenwallet.tools.util.Bip39Reader;
+import com.foxdwallet.tools.util.Bip39Reader;
 
 import org.apache.commons.io.IOUtils;
 import org.junit.Test;
